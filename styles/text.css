@@ -1,0 +1,47 @@
+/* Стили текстовых блоков */
+.p2eTextEng {
+  width: 547px;
+  height: 220px;
+  position: absolute;
+  top: 357px;
+  left: 896px;
+  animation: slideDownP2eTextEng 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes slideDownP2eTextEng {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  100% {
+    top: 357px;
+    opacity: 1;
+  }
+}
+
+.p2eTextCn {
+  width: 499px;
+  height: 357px;
+  position: absolute;
+  left: 896px;
+  animation: slideDownP2eTextCn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes slideDownP2eTextCn {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  100% {
+    top: 307px;
+    opacity: 1;
+  }
+}

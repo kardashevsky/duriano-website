@@ -1,0 +1,47 @@
+/* Стили персонажей и их анимаций */
+.character {
+  width: 435px;
+  height: 703px;
+  position: absolute;
+  top: 316px;
+  left: 476px;
+  animation: slideDownCharacter 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@keyframes slideDownCharacter {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  100% {
+    top: 316px;
+    opacity: 1;
+  }
+}
+
+.shadow {
+  width: 352px;
+  height: 65px;
+  position: absolute;
+  top: 985px;
+  left: 517px;
+  transform: scale(1);
+  transform-origin: center;
+  animation: shadow 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

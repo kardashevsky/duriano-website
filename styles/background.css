@@ -1,0 +1,185 @@
+/* Стили фона и фоновых блоков */
+.background {
+  position: absolute;
+  width: 1920px;
+  height: 6333px;
+  left: 0;
+  top: 0;
+  transform: translateY(-50px);
+  overflow: hidden;
+}
+
+.backgroundBlue {
+  width: 100%;
+  height: 980px;
+  background-color: #3FD0FF;
+}
+
+.backgroundGreen {
+  width: 100%;
+  height: 5438px;
+  background-color: #68A025;
+  z-index: 1;
+}
+
+.bridge-background {
+  width: 1920px;
+  height: 263.5px;
+  position: absolute;
+  top: 919px;
+  z-index: 2;
+}
+
+.cloud_left {
+  width: 848.5px;
+  height: 507px;
+  position: absolute;
+  top: 132px;
+  left: -507px;
+  animation: slideCloudLeft 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: left, opacity;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes slideCloudLeft {
+  0% {
+    left: 200px;
+    opacity: 0;
+  }
+  100% {
+    left: -507px;
+    opacity: 1;
+  }
+}
+
+.cloud_right {
+  width: 897.08px;
+  height: 593.37px;
+  position: absolute;
+  top: -12px;
+  left: 1577px;
+  animation: slideCloudRight 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: left, opacity;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes slideCloudRight {
+  0% {
+    left: 700px;
+    opacity: 0;
+  }
+  100% {
+    left: 1300px;
+    opacity: 1;
+  }
+}
+
+.bamboo_small_left {
+  width: 281.9px;
+  height: 1083.79px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  animation: slideBambooSmallLeft 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  will-change: left;
+  pointer-events: none;
+}
+
+@keyframes slideBambooSmallLeft {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.bamboo_small_right {
+  width: 284.01px;
+  height: 1081.84px;
+  position: absolute;
+  top: 14.95px;
+  left: 1640px;
+  z-index: 2;
+  animation: slideBambooSmallRight 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  will-change: left;
+  pointer-events: none;
+}
+
+@keyframes slideBambooSmallRight {
+  0% {
+    left: 1950px;
+    opacity: 0;
+  }
+  100% {
+    left: 1640px;
+    opacity: 1;
+  }
+}
+
+.bamboo_big_left_1 {
+  width: 490px;
+  height: 3000.51px;
+  position: absolute;
+  top: -30px;
+  z-index: 2;
+  animation: slideBambooBigLeft1 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  will-change: left;
+  pointer-events: none;
+}
+
+@keyframes slideBambooBigLeft1 {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: -30px;
+  }
+}
+
+.bamboo_big_right_1 {
+  width: 490px;
+  height: 3000.51px;
+  position: absolute;
+  top: -30px;
+  z-index: 2;
+  animation: slideBambooBigRight1 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  will-change: left;
+  pointer-events: none;
+}
+
+@keyframes slideBambooBigRight1 {
+  0% {
+    left: 2000px;
+  }
+  100% {
+    left: 1470px;
+  }
+}
+
+.bamboo_big_left_2 {
+  width: 1765.39px;
+  height: 6522.76px;
+  position: absolute;
+  top: 900px;
+  left: -860px;
+  transform: rotate(1deg);
+  transform-origin: center;
+  z-index: 2;
+}
+
+.bamboo_big_right_2 {
+  width: 1600.76px;
+  height: 6522.76px;
+  position: absolute;
+  left: 940px;
+  top: 1000.62px;
+  transform: rotate(0deg);
+  transform-origin: center;
+  z-index: 2;
+}
