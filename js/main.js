@@ -1,3 +1,4 @@
+// js/main.js
 import initializeLanguageSwitchers from './languageSwitchers.js';
 import handleScroll from './scrollHandler.js';
 
@@ -15,6 +16,29 @@ document.addEventListener('DOMContentLoaded', function() {
   cnLanguageImage.src = 'assets/languageSwitcher/cnSwitchOff.svg';
   p2eTextEng.classList.remove('hidden');
   p2eTextCn.classList.add('hidden');
+
+  // Определяем язык на основе предпочтений пользователя
+  const userLang = navigator.language || navigator.userLanguage;
+  console.log(`Detected language: ${userLang}`); 
+  let lang = 'en'; // По умолчанию английский
+
+  // Проверяем на наличие языков Юго-Восточной Азии
+  if (userLang.startsWith('zh')) {
+    lang = 'cn'; // Китайский
+  } else if (userLang.startsWith('vi')) {
+    lang = 'vi'; // Вьетнамский
+  } else if (userLang.startsWith('th')) {
+    lang = 'th'; // Тайский
+  } else if (userLang.startsWith('id')) {
+    lang = 'id'; // Индонезийский
+  } else if (userLang.startsWith('ms')) {
+    lang = 'ms'; // Малайский
+  } else if (userLang.startsWith('tl')) {
+    lang = 'tl'; // Тагальский (Филиппинский)
+  }
+
+  // Установка языкового атрибута для HTML
+  document.documentElement.lang = lang;
 });
 
 document.addEventListener('scroll', function() {

@@ -1,9 +1,9 @@
 /* css/styles.css */
 @import 'background.css';
-@import 'elements.css';
 @import 'text.css';
 @import 'characters.css';
 @import 'footer.css';
+@import 'buttons.css';
 
 /* Основные общие стили */
 html, body {

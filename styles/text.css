@@ -1,4 +1,29 @@
 /* Стили текстовых блоков */
+
+.duriano-header {
+  width: 893px;
+  height: 143.77px;
+  position: absolute;
+  top: 181px;
+  left: 550px;
+  transform: translate(0%, 0px);
+  animation: slideDurianoHeader 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  will-change: transform, opacity;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes slideDurianoHeader {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  100% {
+    top: 181.12px;
+    opacity: 1;
+  }
+}
+
 .p2eTextEng {
   width: 547px;
   height: 220px;
@@ -14,7 +39,7 @@
 
 @keyframes slideDownP2eTextEng {
   0% {
-    top: -200px;
+    top: 0px;
     opacity: 0;
   }
   100% {
@@ -37,7 +62,7 @@
 
 @keyframes slideDownP2eTextCn {
   0% {
-    top: -200px;
+    top: 0px;
     opacity: 0;
   }
   100% {

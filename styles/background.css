@@ -22,6 +22,33 @@
   z-index: 1;
 }
 
+.textureLeft {
+  width: 400px;
+  height: 5225px;
+  position: absolute;
+  left: -10px;
+  top: 1020px;
+  z-index: 1;
+}
+
+.textureMiddle {
+  width: 1897.94px;
+  height: 5400.85px;
+  position: absolute;
+  left: 11px;
+  top: 1000px;
+  z-index: 1;
+}
+
+.textureRight {
+  width: 400px;
+  height: 5225px;
+  position: absolute;
+  left: 1550px;
+  top: 1020px;
+  z-index: 1;
+}
+
 .bridge-background {
   width: 1920px;
   height: 263.5px;
@@ -183,3 +210,5 @@
   transform-origin: center;
   z-index: 2;
 }
+
+
