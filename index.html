@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duriano</title>
+    <!-- External CSS stylesheets -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- Favicon -->
     <link rel="icon" href="public/favicon.jpg" type="image/x-icon">
 </head>
 <body>
+    <!-- Main container with background -->
     <div class="background">
+        <!-- Language switcher buttons -->
         <button class="language-switcher" data-lang="eng">
             <img src="assets/languageSwitcher/engSwitchOn.svg" alt="English Switcher" class="engLanguage">
         </button>
@@ -17,32 +21,36 @@
             <img src="assets/languageSwitcher/cnSwitchOff.svg" alt="Chinese Switcher" class="cnLanguage">
         </button>
         
+        <!-- Blue background section -->
         <div class="backgroundBlue">
+            <!-- Header with Duriano logo -->
             <header>
                 <img src="assets/text/durianoHeader.svg" alt="Duriano Header" class="duriano-header">
             </header>
+            <!-- Cloud images -->
             <img src="assets/background/cloud_left.svg" alt="Cloud Left" class="cloud_left">
             <img src="assets/background/cloud_right.svg" alt="Cloud Right" class="cloud_right">
 
+            <!-- Text section with P2E (Play to Earn) text -->
             <div class="p2eText">
                 <img src="assets/text/p2eTextEng.svg" alt="P2E Text English" class="p2eTextEng">
                 <img src="assets/text/p2eTextCn.svg" alt="P2E Text Chinese" class="p2eTextCn hidden">
             </div>
 
+            <!-- Characters and buttons section -->
             <div>
                 <img src="assets/characters/character.svg" alt="Character" class="character">
                 <a href="https://t.me/duriano_bot" target="_blank">
                     <img src="assets/elements/buttons/playButton.svg" alt="Play Button" class="playButton">
                 </a>
-
                 <a id="telegramChannelLink" href="https://t.me/duriano_eng" target="_blank">
                     <img src="assets/elements/buttons/telegramChannelButton.svg" alt="Telegram Channel Button" class="telegramChannelButton">
                 </a>
-
                 <a href="https://x.com/duriano_ton" target="_blank">
                     <img src="assets/elements/buttons/xAccountButton.svg" alt="X Channel Button" class="xAccountButton">
                 </a>
                 
+                <!-- Section for "How To" instructions -->
                 <img src="assets/text/howToHeaderEng.svg" alt="How To Header English" class="howToHeaderEng">
                 <img src="assets/characters/startCharacter.svg" alt="Start Character" class="startCharacter">
                 <img src="assets/characters/smashCharacter.svg" alt="Smash Character" class="smashCharacter">
@@ -50,15 +58,37 @@
                 <img src="assets/arrows/arrowCharacters1.svg" alt="Arrow To Smash" class="arrowToSmash">
                 <img src="assets/arrows/arrowCharacters2.svg" alt="Arrow To Earn" class="arrowToEarn">
 
+                <!-- SVG для clip-path -->
+                <svg width="0" height="0" viewBox="0 0 1034 594" style="position:absolute; z-index: -1;">
+                    <defs>
+                        <clipPath id="videoClipPath">
+                            <path d="M60.1351 170.199L60.7491 166.945L59.2998 163.968L12.6387 68.1099L40.2109 47.8242H793.697H795.11L796.468 47.4324L924.315 10.5534L990.735 36.8117L1023.75 521.377L1006.96 541.199L912.922 527.108L911.846 526.946L910.76 527.02L82.37 583.47L22.5691 369.278L60.1351 170.199Z" fill="#324C0B" stroke="#496D20" stroke-width="20"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <!-- Trailer section with embedded YouTube video -->
+                <div class="trailerSection">
+                    <div class="videoWrapper">
+                        <iframe width="827.2" height="475.2" src="https://www.youtube.com/embed/JZQzAWzSsn4?si=1hbQQ37Z_SpYCe40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <img src="assets/text/trailerHeaderEng.svg" alt="Trailer Header English" class="trailerHeaderEng">
+                <img src="assets/elements/windowTrailerVideo.svg" alt="Window Trailer Video" class="windowTrailerVideo">
+                <img src="assets/elements/buttons/playVideoButton.svg" alt="Play Video Button" class="playVideoButton">
+
+                <!-- Roadmap section -->
                 <img src="assets/text/roadmapHeaderEng.svg" alt="Roadmap Header English" class="roadmapHeaderEng">
                 <img src="assets/characters/smashToEarnCharacter.svg" alt="Smash To Earn Character" class="smashToEarnCharacter">
                 <img src="assets/characters/ffffToEarn.svg" alt="Smash Character" class="ffffToEarn">
                 <img src="assets/characters/playToEarnCharacter.svg" alt="Play To Earn Character" class="playToEarnCharacter">
                 <img src="assets/arrows/arrowCharacters1.svg" alt="Arrow To Ffff To Earn" class="arrowToFfffToEarn">
                 <img src="assets/arrows/arrowCharacters2.svg" alt="Arrow To Play To Earn" class="arrowToPlayToEarn">
+                <!-- Quarter headers -->
                 <img src="assets/text/q3Header.svg" alt="Q3 Header" class="q3Header">
                 <img src="assets/text/q4Header.svg" alt="Q4 Header" class="q4Header">
                 <img src="assets/text/q1Header.svg" alt="Q1 Header" class="q1Header">
+                <!-- Roadmap texts for each quarter -->
                 <div class="roadMapQ3Text">
                     <img src="assets/text/roadMapQ3TextEng.svg" alt="Road Map Q3 Text English" class="roadMapQ3TextEng">
                     <img src="assets/text/roadMapQ3TextCn.svg" alt="Road Map Q3 Text Chinese" class="roadMapQ3TextCn hidden">
@@ -71,11 +101,8 @@
                     <img src="assets/text/roadMapQ1TextEng.svg" alt="Road Map Q1 Text English" class="roadMapQ1TextEng">
                     <img src="assets/text/roadMapQ1TextCn.svg" alt="Road Map Q1 Text Chinese" class="roadMapQ1TextCn hidden">
                 </div>
-
-                <img src="assets/text/trailerHeaderEng.svg" alt="Trailer Header English" class="trailerHeaderEng">
-                <img src="assets/elements/buttons/playVideoButton.svg" alt="Play Video Button" class="playVideoButton">
-                <img src="assets/elements/windowTrailerVideo.svg" alt="Window Trailer Video" class="windowTrailerVideo">                  
-
+ 
+                <!-- Arrows and play button links -->
                 <a href="https://t.me/duriano_bot" target="_blank">
                     <img src="assets/arrows/arrowPlayButton1.svg" alt="Arrow Play Button Top Middle" class="arrowPlayButtonTopMiddle">
                     <img src="assets/arrows/arrowPlayButton2.svg" alt="Arrow Play Button Top Left" class="arrowPlayButtonTopLeft">
@@ -85,6 +112,7 @@
                     <img src="assets/elements/buttons/playButton.svg" alt="Play Button Footer" class="playButtonFooter">
                 </a>
 
+                <!-- Additional background elements -->
                 <img src="assets/background/bridge_background.svg" alt="Bridge Background" class="bridge-background">
                 <img src="assets/background/textureLeft.svg" alt="Texture Left" class="textureLeft">
                 <img src="assets/background/textureMiddle.svg" alt="Texture Middle" class="textureMiddle">
@@ -92,6 +120,8 @@
                 <img src="assets/characters/shadow.svg" alt="Shadow" class="shadow">
             </div>
         </div>
+
+        <!-- Bamboo and footer images -->
         <img src="assets/background/bambooSmallLeft.svg" alt="Bamboo Small Left" class="bamboo_small_left">
         <img src="assets/background/bambooSmallRight.svg" alt="Bamboo Small Right" class="bamboo_small_right">
         <img src="assets/background/bambooBigLeft1.svg" alt="Bamboo Big Left 1" class="bamboo_big_left_1">
@@ -99,10 +129,14 @@
         <img src="assets/background/bambooBigRight1.svg" alt="Bamboo Big Right 1" class="bamboo_big_right_1">
         <img src="assets/background/bambooBigRight2.svg" alt="Bamboo Big Right 2" class="bamboo_big_right_2">
         <img src="assets/background/footer.svg" alt="Footer" class="footer">
+
+        <!-- Green background section -->
         <div class="backgroundGreen">
 
         </div>
     </div>
+
+    <!-- JavaScript file -->
     <script type="module" src="js/main.js"></script>
 </body>
 </html>

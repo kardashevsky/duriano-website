@@ -1,4 +1,5 @@
 /* Стили фона и фоновых блоков */
+
 .background {
   position: absolute;
   width: 1920px;
@@ -225,5 +226,15 @@
   z-index: 2;
   position: absolute;
   pointer-events: none;
+  transform-origin: center;
+}
+
+.videoWrapper {
+  width: 827.2px;
+  height: 475.2px;
+  left: 580px;
+  top: 2530px;
+  z-index: 5;
+  position: absolute;
   transform-origin: center;
 }

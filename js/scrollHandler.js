@@ -29,7 +29,7 @@ export default function handleScroll() {
   }
 
   // Логика для howToHeaderEng
-  const pixelThreshold1 = 600; // Укажите пороговое значение прокрутки в пикселях
+  const pixelThreshold1 = 500; // Укажите пороговое значение прокрутки в пикселях
   if (howToHeaderEng) {
     if (window.scrollY >= pixelThreshold1) {
       howToHeaderEng.classList.add('visible');
