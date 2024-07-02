@@ -90,6 +90,30 @@
   }
 }
 
+.playButtonFooter {
+  width: 378.98px;
+  height: 166.37px;
+  position: absolute;
+  left: 777px;
+  top: 5420px;
+  transform: scale(1);
+  transform-origin: center;
+  will-change: transform, opacity;
+  z-index: 4;
+  cursor: pointer;
+  transition: transform 0.3s ease-out, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.playButtonFooter.visible {
+  opacity: 1;
+  transform: scale(1.6);
+}
+
+.playButtonFooter:hover {
+  transform: scale(1.7);
+}
+
 .telegramChannelButton {
   width: 75.29px;
   height: 66.18px;
@@ -144,4 +168,21 @@
     top: 676.82px;
     opacity: 1;
   }
+}
+
+.playVideoButton {
+  width: 141.72px;
+  height: 126.89px;
+  position: absolute;
+  top: 2700px;
+  left: 900px;
+  transform: translate(0%, 0px);
+  will-change: transform, opacity;
+  z-index: 4;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.playVideoButton:hover {
+  transform: scale(1.1);
 }

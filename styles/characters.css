@@ -45,3 +45,142 @@
     transform: scale(1);
   }
 }
+
+.startCharacter {
+  width: 321.53px;
+  height: 369.76px;
+  position: absolute;
+  top: 1550px;
+  left: 443px;
+  animation: slideDownStartCharacter 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@keyframes slideDownStartCharacter {
+  0% {
+    top: 1300px;
+    opacity: 0;
+  }
+  100% {
+    top: 1520px;
+    opacity: 1;
+  }
+}
+
+.smashCharacter {
+  width: 296.7px;
+  height: 353.47px;
+  position: absolute;
+  left: 815px;
+  animation: slideDownSmashCharacter 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@keyframes slideDownSmashCharacter {
+  0% {
+    top: 1300px;
+    opacity: 0;
+  }
+  100% {
+    top: 1445px;
+    opacity: 1;
+  }
+}
+
+.earnCharacter {
+  width: 316.33px;
+  height: 376.69px;
+  position: absolute;
+  left: 1175px;
+  animation: slideDownEarnCharacter 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@keyframes slideDownEarnCharacter {
+  0% {
+    top: 1300px;
+    opacity: 0;
+  }
+  100% {
+    top: 1520px;
+    opacity: 1;
+  }
+}
+
+.smashToEarnCharacter {
+  width: 364.65px;
+  height: 356px;
+  position: absolute;
+  left: 430px;
+  animation: slideSmashToEarnCharacter 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@keyframes slideSmashToEarnCharacter {
+  0% {
+    top: 3450px;
+    opacity: 0;
+  }
+  100% {
+    top: 3579px;
+    opacity: 1;
+  }
+}
+
+.ffffToEarn {
+  width: 338.31px;
+  height: 356px;
+  position: absolute;
+  left: 750px;
+  animation: slideFfffToEarn 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@keyframes slideFfffToEarn {
+  0% {
+    top: 3500px;
+    opacity: 0;
+  }
+  100% {
+    top: 3999px;
+    opacity: 1;
+  }
+}
+
+.playToEarnCharacter {
+  width: 344.86px;
+  height: 356px;
+  position: absolute;
+  left: 429px;
+  animation: slidePlayToEarnCharacterr 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@keyframes slidePlayToEarnCharacterr {
+  0% {
+    top: 4300px;
+    opacity: 0;
+  }
+  100% {
+    top: 4419px;
+    opacity: 1;
+  }
+}

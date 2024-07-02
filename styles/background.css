@@ -25,49 +25,53 @@
 .textureLeft {
   width: 400px;
   height: 5225px;
-  position: absolute;
   left: -10px;
   top: 1020px;
   z-index: 1;
+  position: absolute;
+  pointer-events: none;
 }
 
 .textureMiddle {
   width: 1897.94px;
   height: 5400.85px;
-  position: absolute;
   left: 11px;
   top: 1000px;
   z-index: 1;
+  position: absolute;
+  pointer-events: none;
 }
 
 .textureRight {
   width: 400px;
   height: 5225px;
-  position: absolute;
   left: 1550px;
   top: 1020px;
   z-index: 1;
+  position: absolute;
+  pointer-events: none;
 }
 
 .bridge-background {
   width: 1920px;
   height: 263.5px;
-  position: absolute;
   top: 919px;
   z-index: 2;
+  position: absolute;
+  pointer-events: none;
 }
 
 .cloud_left {
   width: 848.5px;
   height: 507px;
-  position: absolute;
   top: 132px;
   left: -507px;
-  animation: slideCloudLeft 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   opacity: 0;
-  will-change: left, opacity;
-  pointer-events: none;
   z-index: 1;
+  position: absolute;
+  pointer-events: none;
+  will-change: left, opacity;
+  animation: slideCloudLeft 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 @keyframes slideCloudLeft {
@@ -84,14 +88,14 @@
 .cloud_right {
   width: 897.08px;
   height: 593.37px;
-  position: absolute;
   top: -12px;
   left: 1577px;
-  animation: slideCloudRight 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   opacity: 0;
-  will-change: left, opacity;
-  pointer-events: none;
   z-index: 1;
+  position: absolute;
+  pointer-events: none;
+  will-change: left, opacity;
+  animation: slideCloudRight 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 @keyframes slideCloudRight {
@@ -108,13 +112,13 @@
 .bamboo_small_left {
   width: 281.9px;
   height: 1083.79px;
-  position: absolute;
   top: 0px;
   left: 0px;
   z-index: 2;
-  animation: slideBambooSmallLeft 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   will-change: left;
+  position: absolute;
   pointer-events: none;
+  animation: slideBambooSmallLeft 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 @keyframes slideBambooSmallLeft {
@@ -133,9 +137,9 @@
   top: 14.95px;
   left: 1640px;
   z-index: 2;
-  animation: slideBambooSmallRight 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   will-change: left;
   pointer-events: none;
+  animation: slideBambooSmallRight 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 @keyframes slideBambooSmallRight {
@@ -152,12 +156,12 @@
 .bamboo_big_left_1 {
   width: 490px;
   height: 3000.51px;
-  position: absolute;
   top: -30px;
   z-index: 2;
-  animation: slideBambooBigLeft1 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   will-change: left;
+  position: absolute;
   pointer-events: none;
+  animation: slideBambooBigLeft1 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 @keyframes slideBambooBigLeft1 {
@@ -172,12 +176,12 @@
 .bamboo_big_right_1 {
   width: 490px;
   height: 3000.51px;
-  position: absolute;
   top: -30px;
   z-index: 2;
-  animation: slideBambooBigRight1 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   will-change: left;
+  position: absolute;
   pointer-events: none;
+  animation: slideBambooBigRight1 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 @keyframes slideBambooBigRight1 {
@@ -192,23 +196,34 @@
 .bamboo_big_left_2 {
   width: 1765.39px;
   height: 6522.76px;
-  position: absolute;
-  top: 900px;
+  top: 850px;
   left: -860px;
-  transform: rotate(1deg);
-  transform-origin: center;
   z-index: 2;
+  transform: rotate(1deg);
+  position: absolute;
+  pointer-events: none;
+  transform-origin: center;
 }
 
 .bamboo_big_right_2 {
-  width: 1600.76px;
+  width: 1700.76px;
   height: 6522.76px;
-  position: absolute;
-  left: 940px;
-  top: 1000.62px;
-  transform: rotate(0deg);
-  transform-origin: center;
+  left: 900px;
+  top: 800px;
   z-index: 2;
+  transform: rotate(0deg);
+  position: absolute;
+  pointer-events: none;
+  transform-origin: center;
 }
 
-
+.windowTrailerVideo {
+  width: 1034px;
+  height: 594px;
+  left: 443px;
+  top: 2467px;
+  z-index: 2;
+  position: absolute;
+  pointer-events: none;
+  transform-origin: center;
+}
