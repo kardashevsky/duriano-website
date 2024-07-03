@@ -14,6 +14,7 @@ html, body {
   display: flex;
   justify-content: center;
   position: relative;
+  transform: translateY(-18px);
 }
 
 .hidden {
