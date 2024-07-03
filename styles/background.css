@@ -1,65 +1,27 @@
 /* Стили фона и фоновых блоков */
-
 .background {
-  position: absolute;
+  position: relative;
   width: 1920px;
   height: 6333px;
-  left: 0;
-  top: 0;
-  transform: translateY(-50px);
   overflow: hidden;
 }
 
 .backgroundBlue {
   width: 100%;
   height: 980px;
+  top: 0px;
   background-color: #3FD0FF;
+  position: absolute;
+  left: 0;
+  z-index: 1;
 }
 
-.backgroundGreen {
+.cloud-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 5438px;
-  background-color: #68A025;
-  z-index: 1;
-}
-
-.textureLeft {
-  width: 400px;
-  height: 5225px;
-  left: -10px;
-  top: 1020px;
-  z-index: 1;
-  position: absolute;
-  pointer-events: none;
-}
-
-.textureMiddle {
-  width: 1897.94px;
-  height: 5400.85px;
-  left: 11px;
-  top: 1000px;
-  z-index: 1;
-  position: absolute;
-  pointer-events: none;
-}
-
-.textureRight {
-  width: 400px;
-  height: 5225px;
-  left: 1550px;
-  top: 1020px;
-  z-index: 1;
-  position: absolute;
-  pointer-events: none;
-}
-
-.bridge-background {
-  width: 1920px;
-  height: 263.5px;
-  top: 919px;
-  z-index: 2;
-  position: absolute;
-  pointer-events: none;
+  height: 100%;
 }
 
 .cloud_left {
@@ -154,6 +116,56 @@
   }
 }
 
+.bridge-background {
+  width: 1920px;
+  height: 263.5px;
+  top: 919px;
+  z-index: 2;
+  position: absolute;
+  pointer-events: none;
+}
+
+.backgroundGreen {
+  width: 100%;
+  height: 5353px;
+  top: 980px;
+  position: absolute;
+  left: 0;
+  background-color: #68A025;
+  z-index: 1;
+}
+
+.textureLeft {
+  width: 400px;
+  height: 5225px;
+  left: -10px;
+  top: 1020px;
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+}
+
+.textureMiddle {
+  width: 1897.94px;
+  height: 5400.85px;
+  left: 11px;
+  top: 1000px;
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+}
+
+.textureRight {
+  width: 400px;
+  height: 5225px;
+  left: 1550px;
+  top: 1020px;
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+}
+
+
 .bamboo_big_left_1 {
   width: 490px;
   height: 3000.51px;
@@ -229,12 +241,27 @@
   transform-origin: center;
 }
 
-.videoWrapper {
-  width: 827.2px;
-  height: 475.2px;
-  left: 580px;
-  top: 2530px;
-  z-index: 5;
+.footer {
+  width: 1920px;
+  height: 716.79px;
   position: absolute;
-  transform-origin: center;
+  top: 6333px;
+  z-index: 2;
+  will-change: top, left;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.footer.visible {
+  animation: footer 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 1;
+}
+
+@keyframes footer {
+  0% {
+    top: 6333px;
+  }
+  100% {
+    top: 5763px;
+  }
 }

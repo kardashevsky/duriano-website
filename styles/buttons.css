@@ -21,6 +21,9 @@
   }
 }
 
+.language-switcher {
+}
+
 .engLanguage {
   width: 60px;
   height: 37px;
@@ -32,6 +35,7 @@
   z-index: 1;
   cursor: pointer;
   transition: transform 0.3s ease;
+  display: inline-block;
 }
 
 .cnLanguage {
@@ -45,6 +49,7 @@
   z-index: 1;
   cursor: pointer;
   transition: transform 0.3s ease;
+  display: inline-block;
 }
 
 .engLanguage:hover, .cnLanguage:hover {

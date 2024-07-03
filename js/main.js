@@ -1,7 +1,6 @@
 // js/main.js
 import initializeLanguageSwitchers from './languageSwitchers.js';
 import handleScroll from './scrollHandler.js';
-import { loadYouTubePlayerAPI } from './youtubePlayer.js';
 
 document.addEventListener('DOMContentLoaded', function() {
   // Инициализируем переключатели языков
@@ -24,19 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log(`Detected language: ${userLang}`); 
   let lang = 'en'; // По умолчанию английский
 
-  // Проверяем на наличие языков Юго-Восточной Азии
+  // Проверяем на наличие Китайского языка
   if (userLang.startsWith('zh')) {
-    lang = 'cn'; // Китайский
-  } else if (userLang.startsWith('vi')) {
-    lang = 'vi'; // Вьетнамский
-  } else if (userLang.startsWith('th')) {
-    lang = 'th'; // Тайский
-  } else if (userLang.startsWith('id')) {
-    lang = 'id'; // Индонезийский
-  } else if (userLang.startsWith('ms')) {
-    lang = 'ms'; // Малайский
-  } else if (userLang.startsWith('tl')) {
-    lang = 'tl'; // Тагальский (Филиппинский)
+    lang = 'cn';
   }
 
   // Установка языкового атрибута для HTML
@@ -44,13 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Устанавливаем ссылку на телеграм-канал в зависимости от языка
   if (lang === 'cn') {
-    telegramChannelLink.href = 'https://t.me/duriano_cn';
+    telegramChannelLink.href = 'https://t.me/DurianoChina';
   } else {
-    telegramChannelLink.href = 'https://t.me/duriano_eng';
+    telegramChannelLink.href = 'https://t.me/DurianoTeam';
   }
   
-  // Загрузка YouTube Player API при загрузке страницы
-  loadYouTubePlayerAPI();
+  // Прокручиваем страницу наверх при загрузке
+  window.scrollTo(0, 0);
+
 });
 
 document.addEventListener('scroll', function() {

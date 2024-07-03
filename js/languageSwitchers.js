@@ -17,14 +17,14 @@ export default function initializeLanguageSwitchers() {
 
         p2eTextEng.classList.add('hidden');
         p2eTextCn.classList.remove('hidden');
-        telegramChannelLink.href = 'https://t.me/duriano_cn';
+        telegramChannelLink.href = 'https://t.me/DurianoChina';
       } else if (lang === 'eng') {
         cnLanguageImage.src = 'assets/languageSwitcher/cnSwitchOff.svg';
         engLanguageImage.src = 'assets/languageSwitcher/engSwitchOn.svg';
 
         p2eTextEng.classList.remove('hidden');
         p2eTextCn.classList.add('hidden');
-        telegramChannelLink.href = 'https://t.me/duriano_eng';
+        telegramChannelLink.href = 'https://t.me/DurianoTeam';
       }
     });
   });
