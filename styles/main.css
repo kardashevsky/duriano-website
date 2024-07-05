@@ -16,6 +16,35 @@ html, body {
   transform: translateY(-18px);
 }
 
+.background {
+  position: relative;
+  width: 1920px;
+  height: 6333px;
+  overflow: hidden; 
+}
+
+.backgroundBlue {
+  width: 1920px;
+  height: 980px;
+  top: 0px;
+  background-color: #3FD0FF;
+  position: absolute;
+  justify-content: center;
+  left: 0;
+  z-index: 1;
+}
+
+.backgroundGreen {
+  width: 1920px;
+  height: 5353px;
+  top: 980px;
+  position: absolute;
+  left: 0;
+  background-color: #68A025;
+  justify-content: center;
+  z-index: 1;
+}
+
 .hidden {
   display: none;
 }

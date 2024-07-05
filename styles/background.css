@@ -1,20 +1,5 @@
 /* Стили фона и фоновых блоков */
-.background {
-  position: relative;
-  width: 1920px;
-  height: 6333px;
-  overflow: hidden;
-}
 
-.backgroundBlue {
-  width: 100%;
-  height: 980px;
-  top: 0px;
-  background-color: #3FD0FF;
-  position: absolute;
-  left: 0;
-  z-index: 1;
-}
 
 .cloud-container {
   position: absolute;
@@ -25,9 +10,9 @@
 }
 
 .cloud_left {
-  width: 848.5px;
-  height: 507px;
-  top: 132px;
+  width: 950px;
+  height: 609.5px;
+  top: 72px;
   left: -507px;
   opacity: 0;
   z-index: 1;
@@ -49,9 +34,9 @@
 }
 
 .cloud_right {
-  width: 897.08px;
-  height: 593.37px;
-  top: -12px;
+  width: 945.58px;
+  height: 615px;
+  top: -14px;
   left: 1577px;
   opacity: 0;
   z-index: 1;
@@ -67,7 +52,7 @@
     opacity: 0;
   }
   100% {
-    left: 1300px;
+    left: 1528.5px;
     opacity: 1;
   }
 }
@@ -123,16 +108,6 @@
   z-index: 2;
   position: absolute;
   pointer-events: none;
-}
-
-.backgroundGreen {
-  width: 100%;
-  height: 5353px;
-  top: 980px;
-  position: absolute;
-  left: 0;
-  background-color: #68A025;
-  z-index: 1;
 }
 
 .textureLeft {
