@@ -175,15 +175,23 @@
   width: 141.72px;
   height: 126.89px;
   position: absolute;
-  top: 2700px;
+  top: 2900px;
   left: 900px;
   transform: translate(0%, 0px);
   will-change: transform, opacity;
   z-index: 6;
   cursor: pointer;
   transition: transform 0.3s ease;
+  opacity: 0;
+  will-change: top, opacity;
+  transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .playVideoButton:hover {
   transform: scale(1.1);
+}
+
+.playVideoButton.visible {
+  top: 2615px;
+  opacity: 1;
 }

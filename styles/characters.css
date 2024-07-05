@@ -97,7 +97,7 @@
   width: 316.33px;
   height: 376.69px;
   position: absolute;
-  left: 1175px;
+  left: 1170px;
   animation: slideDownEarnCharacter 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   opacity: 0;
   will-change: top, opacity;

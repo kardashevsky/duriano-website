@@ -95,10 +95,10 @@
   position: absolute;
   top: 2300px;
   left: 715px;
-  opacity: 0;
-  will-change: top, opacity;
   pointer-events: none;
   z-index: 1;
+  opacity: 0;
+  will-change: top, opacity;
   transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -111,7 +111,7 @@
   width: 601px;
   height: 147px;
   position: absolute;
-  top: 3368px;
+  top: 3380px;
   left: 665px;
   opacity: 0;
   will-change: top, opacity;
@@ -121,7 +121,7 @@
 }
 
 .roadmapHeaderEng.visible {
-  top: 3268px;
+  top: 3280px;
   opacity: 1;
 }
 

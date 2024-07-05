@@ -209,11 +209,19 @@
   width: 1034px;
   height: 594px;
   left: 443px;
-  top: 2467px;
+  top: 2667px;
   z-index: 2;
   position: absolute;
   pointer-events: none;
   transform-origin: center;
+  opacity: 0;
+  will-change: top, opacity;
+  transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.windowTrailerVideo.visible {
+  top: 2382px;
+  opacity: 1;
 }
 
 .footer {

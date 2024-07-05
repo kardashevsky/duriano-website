@@ -53,3 +53,20 @@ html, body {
   scrollbar-width: thin;
   scrollbar-color: #324C0B #68A025;
 }
+
+.smashToEarnCharacter,
+.ffffToEarn,
+.playToEarnCharacter,
+.q3Header,
+.q4Header,
+.q1Header,
+.arrowToFfffToEarn,
+.roadMapQ3TextEng,
+.roadMapQ3TextCn,
+.roadMapQ4TextEng,
+.roadMapQ4TextCn,
+.roadMapQ1TextEng,
+.roadMapQ1TextCn,
+.arrowToPlayToEarn {
+  margin-top: -100px;
+}
