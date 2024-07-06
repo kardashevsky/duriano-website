@@ -26,7 +26,7 @@
 
 .p2eTextEng {
   width: 547px;
-  height: 220px;
+  height: 221px;
   position: absolute;
   top: 357px;
   left: 896px;
@@ -39,7 +39,7 @@
 
 @keyframes slideDownP2eTextEng {
   0% {
-    top: 0px;
+    top: 157px;
     opacity: 0;
   }
   100% {
@@ -50,7 +50,7 @@
 
 .p2eTextCn {
   width: 499px;
-  height: 357px;
+  height: 221px;
   position: absolute;
   left: 896px;
   animation: slideDownP2eTextCn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
@@ -62,11 +62,11 @@
 
 @keyframes slideDownP2eTextCn {
   0% {
-    top: 0px;
+    top: 157px;
     opacity: 0;
   }
   100% {
-    top: 307px;
+    top: 357px;
     opacity: 1;
   }
 }
@@ -77,14 +77,32 @@
   position: absolute;
   left: 710px;
   top: 1300px;
-  opacity: 0;
-  will-change: top, opacity;
   pointer-events: none;
   z-index: 1;
+  opacity: 0;
+  will-change: top, opacity;
   transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .howToHeaderEng.visible {
+  top: 1200px;
+  opacity: 1;
+}
+
+.howToHeaderCn {
+  width: 384px;
+  height: 147px;
+  position: absolute;
+  left: 767px;
+  top: 1300px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  will-change: top, opacity;
+  transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.howToHeaderCn.visible {
   top: 1200px;
   opacity: 1;
 }
@@ -96,13 +114,31 @@
   top: 2300px;
   left: 715px;
   pointer-events: none;
-  z-index: 1;
+  z-index: 3;
   opacity: 0;
   will-change: top, opacity;
   transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .trailerHeaderEng.visible {
+  top: 2200px;
+  opacity: 1;
+}
+
+.trailerHeaderCn {
+  width: 384px;
+  height: 147px;
+  position: absolute;
+  top: 2300px;
+  left: 767px;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+  will-change: top, opacity;
+  transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.trailerHeaderCn.visible {
   top: 2200px;
   opacity: 1;
 }
@@ -116,11 +152,29 @@
   opacity: 0;
   will-change: top, opacity;
   pointer-events: none;
-  z-index: 1;
+  z-index: 3;
   transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .roadmapHeaderEng.visible {
+  top: 3280px;
+  opacity: 1;
+}
+
+.roadmapHeaderCn {
+  width: 384px;
+  height: 147px;
+  position: absolute;
+  top: 3380px;
+  left: 767px;
+  opacity: 0;
+  will-change: top, opacity;
+  pointer-events: none;
+  z-index: 3;
+  transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.roadmapHeaderCn.visible {
   top: 3280px;
   opacity: 1;
 }
@@ -130,22 +184,17 @@
   height: 87.5px;
   position: absolute;
   left: 739px;
-  animation: slideQ3Header 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  top: 3379px;
   opacity: 0;
+  transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   will-change: top, opacity;
   pointer-events: none;
   z-index: 1;
 }
 
-@keyframes slideQ3Header {
-  0% {
-    top: 3479px;
-    opacity: 0;
-  }
-  100% {
-    top: 3579px;
-    opacity: 1;
-  }
+.q3Header.visible {
+  top: 3579px;
+  opacity: 1;
 }
 
 .q4Header {
@@ -153,22 +202,17 @@
   height: 87.5px;
   position: absolute;
   left: 1076px;
-  animation: slideQ4Header 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  top: 4669px;
+  transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;
   will-change: top, opacity;
   pointer-events: none;
   z-index: 1;
 }
 
-@keyframes slideQ4Header {
-  0% {
-    top: 4168px;
-    opacity: 0;
-  }
-  100% {
-    top: 4268px;
-    opacity: 1;
-  }
+.q4Header.visible {
+  top: 4268px;
+  opacity: 1;
 }
 
 .q1Header {
@@ -176,158 +220,123 @@
   height: 87.5px;
   position: absolute;
   left: 767px;
-  animation: slideQ1Header 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  top: 5088px;
+  transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;
   will-change: top, opacity;
   pointer-events: none;
   z-index: 1;
 }
 
-@keyframes slideQ1Header {
-  0% {
-    top: 4587px;
-    opacity: 0;
-  }
-  100% {
-    top: 4687px;
-    opacity: 1;
-  }
+.q1Header.visible {
+  top: 4687px;
+  opacity: 1;
 }
 
 .roadMapQ3TextEng {
-  width: 650px;
-  height: 250px;
+  width: 502px;
+  height: 208px;
   position: absolute;
-  left: 850px;
-  animation: slideRoadMapQ3TextEng 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  left: 1850px;
+  top: 3680px;
+  transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;
-  will-change: top, opacity;
+  will-change: left, opacity;
   pointer-events: none;
   z-index: 1;
 }
 
-@keyframes slideRoadMapQ3TextEng {
-  0% {
-    top: 3500px;
-    opacity: 0;
-  }
-  100% {
-    top: 3680px;
-    opacity: 1;
-  }
+.roadMapQ3TextEng.visible {
+  left: 850px;
+  opacity: 1;
 }
 
 .roadMapQ3TextCn {
-  width: 499px;
-  height: 357px;
+  width: calc(round(446px * 1.1));
+  height: calc(round(153px * 1.1));  
   position: absolute;
-  left: 896px;
-  animation: slideRoadMapQ3TextCn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  left: 1870px;
+  top: 3700px;
+  transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;
-  will-change: top, opacity;
+  will-change: left, opacity;
   pointer-events: none;
   z-index: 1;
 }
 
-@keyframes slideRoadMapQ3TextCn {
-  0% {
-    top: 0px;
-    opacity: 0;
-  }
-  100% {
-    top: 307px;
-    opacity: 1;
-  }
+.roadMapQ3TextCn.visible {
+  left: 870px;
+  opacity: 1;
 }
 
 .roadMapQ4TextEng {
-  width: 420px;
-  height: 190px;
+  width: 387px;
+  height: 162px;
   position: absolute;
-  left: 1080px;
-  animation: slideRoadMapQ4TextEng 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  left: 2080px;
+  top: 4085px;
+  transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;
-  will-change: top, opacity;
+  will-change: left, opacity;
   pointer-events: none;
   z-index: 1;
 }
 
-@keyframes slideRoadMapQ4TextEng {
-  0% {
-    top: 4000px;
-    opacity: 0;
-  }
-  100% {
-    top: 4090px;
-    opacity: 1;
-  }
+.roadMapQ4TextEng.visible {
+  left: 1080px;
+  opacity: 1;
 }
 
 .roadMapQ4TextCn {
-  width: 499px;
-  height: 357px;
+  width: calc(round(300px * 1.1));
+  height: calc(round(157px * 1.1)); 
   position: absolute;
-  left: 896px;
-  animation: slideRoadMapQ4TextCn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  left: 2090px;
+  top: 4200px;
+  transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;
-  will-change: top, opacity;
+  will-change: left, opacity;
   pointer-events: none;
   z-index: 1;
 }
 
-@keyframes slideRoadMapQ4TextCn {
-  0% {
-    top: 0px;
-    opacity: 0;
-  }
-  100% {
-    top: 307px;
-    opacity: 1;
-  }
+.roadMapQ4TextCn.visible {
+  opacity: 1;
+  left: 1090px;
 }
 
 .roadMapQ1TextEng {
-  width: 600px;
-  height: 130px;
+  width: 591px;
+  height: 120px;
   position: absolute;
-  left: 800px;
-  animation: slideRoadMapQ1TextEng 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  top: 4437px;
+  left: 1800px;
+  transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;
-  will-change: top, opacity;
+  will-change: left, opacity;
   pointer-events: none;
   z-index: 1;
 }
 
-@keyframes slideRoadMapQ1TextEng {
-  0% {
-    top: 4437px;
-    opacity: 0;
-  }
-  100% {
-    top: 4537px;
-    opacity: 1;
-  }
+.roadMapQ1TextEng.visible {
+  left: 800px;
+  opacity: 1;
 }
 
 .roadMapQ1TextCn {
-  width: 499px;
-  height: 357px;
+  width: calc(round(320px * 1.1));
+  height: calc(round(1538px * 1.1)); 
   position: absolute;
-  left: 896px;
-  animation: slideRoadMapQ1TextCn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  left: 1810px;
+  top: 4530px;
+  transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;
-  will-change: top, opacity;
+  will-change: left, opacity;
   pointer-events: none;
   z-index: 1;
 }
 
-@keyframes slideRoadMapQ1TextCn {
-  0% {
-    top: 0px;
-    opacity: 0;
-  }
-  100% {
-    top: 307px;
-    opacity: 1;
-  }
+.roadMapQ1TextCn.visible {
+  opacity: 1;
+  left: 810px;
 }
