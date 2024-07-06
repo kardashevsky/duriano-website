@@ -292,7 +292,7 @@
   height: calc(round(157px * 1.1)); 
   position: absolute;
   left: 2090px;
-  top: 4200px;
+  top: 4080px;
   transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;
   will-change: left, opacity;
@@ -309,7 +309,7 @@
   width: 591px;
   height: 120px;
   position: absolute;
-  top: 4437px;
+  top: 4532px;
   left: 1800px;
   transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0;

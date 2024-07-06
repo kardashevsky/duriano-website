@@ -119,7 +119,7 @@ export default function handleScroll() {
   // Логика для roadMapQ3Text
   const roadMapQ3Text = {
     eng: document.querySelector('.roadMapQ3TextEng'),
-    cn: document.querySelector('.roadMapQ3TextEng')
+    cn: document.querySelector('.roadMapQ3TextCn')
   };
   const pixelThresholdRoadMapQ3Text = 2900;
   Object.values(roadMapQ3Text).forEach(header => {
@@ -172,7 +172,7 @@ export default function handleScroll() {
   // Логика для roadMapQ4Text
   const roadMapQ4Text = {
     eng: document.querySelector('.roadMapQ4TextEng'),
-    cn: document.querySelector('.roadMapQ4TextEng')
+    cn: document.querySelector('.roadMapQ4TextCn')
   };
   const pixelThresholdRoadMapQ4Text = 3300;
   Object.values(roadMapQ4Text).forEach(header => {
@@ -225,7 +225,7 @@ export default function handleScroll() {
   // Логика для roadMapQ1Text
   const roadMapQ1Text = {
     eng: document.querySelector('.roadMapQ1TextEng'),
-    cn: document.querySelector('.roadMapQ1TextEng')
+    cn: document.querySelector('.roadMapQ1TextCn')
   };
   const pixelThresholdRoadMapQ1Text = 3700;
   Object.values(roadMapQ1Text).forEach(header => {
