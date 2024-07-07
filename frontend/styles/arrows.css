@@ -25,7 +25,7 @@
 
 .arrowToSmash, .arrowToEarn {
   opacity: 0;
-  transform: scale(0);
+  transform: scale(1);
   transition: opacity 0.5s ease 1s, transform 0.5s ease;
   pointer-events: none;
 }
@@ -42,7 +42,7 @@
   left: 720px;
   position: absolute;
   opacity: 0;
-  transform: scale(0) rotate(65deg);
+  transform: scale(1) rotate(65deg);
   will-change: transform, opacity;
   z-index: 2;
   cursor: pointer;
@@ -61,7 +61,7 @@
   top: 4100px;
   left: 480px;
   position: absolute;
-  transform: scale(0) rotate(105deg);
+  transform: scale(1) rotate(105deg);
   will-change: transform, opacity;
   z-index: 2;
   cursor: pointer;
