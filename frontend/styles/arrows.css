@@ -1,6 +1,5 @@
 /* Стили всех стрелок */
 
-
 .arrowToSmash {
   width: 280px;
   height: 280px;
@@ -17,7 +16,7 @@
   height: 300px;
   top: 1730px;
   left: 970px;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   cursor: pointer;
   pointer-events: none;

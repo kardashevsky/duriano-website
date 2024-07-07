@@ -14,8 +14,6 @@ export default function handleScroll() {
     if (header) {
       if (window.scrollY >= pixelThresholdHowToHeaders) {
         header.classList.add('visible');
-      } else {
-        header.classList.remove('visible');
       }
     }
   });
@@ -28,8 +26,6 @@ export default function handleScroll() {
     if (character) {
       if (window.scrollY >= pixelThresholdCharacters) {
         character.classList.add('visible');
-      } else {
-        character.classList.remove('visible');
       }
     }
   });
@@ -42,8 +38,6 @@ export default function handleScroll() {
     if (arrow) {
       if (window.scrollY >= pixelThresholdArrows) {
         arrow.classList.add('visible');
-      } else {
-        arrow.classList.remove('visible');
       }
     }
   });
@@ -58,8 +52,6 @@ export default function handleScroll() {
     if (header) {
       if (window.scrollY >= pixelThresholdTrailerHeaders) {
         header.classList.add('visible');
-      } else {
-        header.classList.remove('visible');
       }
     }
   });
@@ -72,9 +64,6 @@ export default function handleScroll() {
     if (window.scrollY >= pixelThresholdVideo) {
       windowTrailerVideo.classList.add('visible');
       playVideoButton.classList.add('visible');
-    } else {
-      windowTrailerVideo.classList.remove('visible');
-      playVideoButton.classList.remove('visible');
     }
   }
 
@@ -88,8 +77,6 @@ export default function handleScroll() {
     if (header) {
       if (window.scrollY >= pixelThresholdRoadMapHeaders) {
         header.classList.add('visible');
-      } else {
-        header.classList.remove('visible');
       }
     }
   });
@@ -100,8 +87,6 @@ export default function handleScroll() {
   if (smashToEarnCharacter) {
     if (window.scrollY >= pixelThresholdSmashToEarnCharacter) {
       smashToEarnCharacter.classList.add('visible');
-    } else {
-      smashToEarnCharacter.classList.remove('visible');
     }
   }
 
@@ -111,8 +96,6 @@ export default function handleScroll() {
   if (q3Header) {
     if (window.scrollY >= pixelThresholdQ3Header) {
       q3Header.classList.add('visible');
-    } else {
-      q3Header.classList.remove('visible');
     }
   }
 
@@ -126,8 +109,6 @@ export default function handleScroll() {
     if (header) {
       if (window.scrollY >= pixelThresholdRoadMapQ3Text) {
         header.classList.add('visible');
-      } else {
-        header.classList.remove('visible');
       }
     }
   });
@@ -141,8 +122,6 @@ export default function handleScroll() {
     window.addEventListener('scroll', function() {
       if (window.scrollY >= pixelThresholdArrowToFfffToEarn) {
         arrowToFfffToEarn.classList.add('visible');
-      } else {
-        arrowToFfffToEarn.classList.remove('visible');
       }
     });
   }
@@ -153,8 +132,6 @@ export default function handleScroll() {
   if (ffffToEarnCharacter) {
     if (window.scrollY >= pixelThresholdFffffToEarnCharacter) {
       ffffToEarnCharacter.classList.add('visible');
-    } else {
-      ffffToEarnCharacter.classList.remove('visible');
     }
   }
 
@@ -164,8 +141,6 @@ export default function handleScroll() {
   if (q3Header) {
     if (window.scrollY >= pixelThresholdQ4Header) {
       q4Header.classList.add('visible');
-    } else {
-      q4Header.classList.remove('visible');
     }
   }
 
@@ -179,8 +154,6 @@ export default function handleScroll() {
     if (header) {
       if (window.scrollY >= pixelThresholdRoadMapQ4Text) {
         header.classList.add('visible');
-      } else {
-        header.classList.remove('visible');
       }
     }
   });
@@ -194,8 +167,6 @@ export default function handleScroll() {
     window.addEventListener('scroll', function() {
       if (window.scrollY >= pixelThresholdArrowToPlayToEarn) {
         arrowToPlayToEarn.classList.add('visible');
-      } else {
-        arrowToPlayToEarn.classList.remove('visible');
       }
     });
   }
@@ -206,8 +177,6 @@ export default function handleScroll() {
   if (playToEarnCharacter) {
     if (window.scrollY >= pixelThresholdPlayToEarnCharacter) {
       playToEarnCharacter.classList.add('visible');
-    } else {
-      playToEarnCharacter.classList.remove('visible');
     }
   }
 
@@ -217,8 +186,6 @@ export default function handleScroll() {
   if (q1Header) {
     if (window.scrollY >= pixelThresholdQ1Header) {
       q1Header.classList.add('visible');
-    } else {
-      q1Header.classList.remove('visible');
     }
   }
 
@@ -232,8 +199,6 @@ export default function handleScroll() {
     if (header) {
       if (window.scrollY >= pixelThresholdRoadMapQ1Text) {
         header.classList.add('visible');
-      } else {
-        header.classList.remove('visible');
       }
     }
   });
@@ -246,8 +211,6 @@ export default function handleScroll() {
 
     if (isVisible) {
       playButtonFooter.classList.add('visible');
-    } else {
-      playButtonFooter.classList.remove('visible');
     }
   }
 
@@ -255,8 +218,6 @@ export default function handleScroll() {
   const footer = document.querySelector('.footer');
   if (scrollPosition >= threshold) {
     footer.classList.add('visible');
-  } else {
-    footer.classList.remove('visible');
   }
 }
 

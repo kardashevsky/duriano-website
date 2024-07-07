@@ -11,7 +11,7 @@
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 3;
+    z-index: 5;
   }
 
   @keyframes slideDownCharacter {
@@ -59,7 +59,7 @@
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 3;
+    z-index: 5;
   }
 
   @keyframes slideDownCharacter {
