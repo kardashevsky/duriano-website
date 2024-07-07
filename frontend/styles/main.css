@@ -16,33 +16,66 @@ html, body {
   transform: translateY(-18px);
 }
 
-.background {
-  position: relative;
-  width: 1920px;
-  height: 6333px;
-  overflow: hidden; 
+@media screen and (min-width: 394px) {
+  .background {
+    width: 1920px;
+    height: 6333px;
+    overflow: hidden; 
+    position: relative;
+  }
+
+  .backgroundBlue {
+    width: 1920px;
+    height: 980px;
+    top: 0px;
+    background-color: #3FD0FF;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    z-index: 1;
+  }
+
+  .backgroundGreen {
+    width: 1920px;
+    height: 5353px;
+    top: 980px;
+    position: absolute;
+    left: 0;
+    background-color: #68A025;
+    justify-content: center;
+    z-index: 1;
+  }
 }
 
-.backgroundBlue {
-  width: 1920px;
-  height: 980px;
-  top: 0px;
-  background-color: #3FD0FF;
-  position: absolute;
-  justify-content: center;
-  left: 0;
-  z-index: 1;
-}
+@media screen and (max-width: 393px) {
+  .background {
+    width: 393px;
+    height: 3357px;
+    position: relative;
+    overflow: hidden;
+  }
 
-.backgroundGreen {
-  width: 1920px;
-  height: 5353px;
-  top: 980px;
-  position: absolute;
-  left: 0;
-  background-color: #68A025;
-  justify-content: center;
-  z-index: 1;
+  .backgroundBlue {
+    width: 393px;
+    height: 582px;
+    top: 0px;
+    background-color: #3FD0FF;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    z-index: 1;
+  }
+
+  .backgroundGreen {
+    width: 393px;
+    height: 2775px;
+    top: 582px;
+    position: absolute;
+    left: 0;
+    background-color: #68A025;
+    justify-content: center;
+    z-index: 1;
+  }
 }
 
 .hidden {

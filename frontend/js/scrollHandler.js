@@ -9,10 +9,10 @@ export default function handleScroll() {
     eng: document.querySelector('.howToHeaderEng'),
     cn: document.querySelector('.howToHeaderCn')
   };
-  const pixelThreshold1 = 500;
+  const pixelThresholdHowToHeaders = 500;
   Object.values(howToHeaders).forEach(header => {
     if (header) {
-      if (window.scrollY >= pixelThreshold1) {
+      if (window.scrollY >= pixelThresholdHowToHeaders) {
         header.classList.add('visible');
       } else {
         header.classList.remove('visible');
@@ -22,11 +22,11 @@ export default function handleScroll() {
 
   // Логика для startCharacter, smashCharacter, earnCharacter
   const characters = ['.startCharacter', '.smashCharacter', '.earnCharacter'];
-  const pixelThreshold2 = 700;
+  const pixelThresholdCharacters = 700;
   characters.forEach(selector => {
     const character = document.querySelector(selector);
     if (character) {
-      if (window.scrollY >= pixelThreshold2) {
+      if (window.scrollY >= pixelThresholdCharacters) {
         character.classList.add('visible');
       } else {
         character.classList.remove('visible');
@@ -36,11 +36,11 @@ export default function handleScroll() {
 
   // Логика для arrowToSmash, arrowToEarn
   const arrows = ['.arrowToSmash', '.arrowToEarn'];
-  const pixelThreshold3 = 700;
+  const pixelThresholdArrows = 700;
   arrows.forEach(selector => {
     const arrow = document.querySelector(selector);
     if (arrow) {
-      if (window.scrollY >= pixelThreshold3) {
+      if (window.scrollY >= pixelThresholdArrows) {
         arrow.classList.add('visible');
       } else {
         arrow.classList.remove('visible');
@@ -53,10 +53,10 @@ export default function handleScroll() {
     eng: document.querySelector('.trailerHeaderEng'),
     cn: document.querySelector('.trailerHeaderCn')
   };
-  const pixelThreshold4 = 1550;
+  const pixelThresholdTrailerHeaders = 1550;
   Object.values(trailerHeaders).forEach(header => {
     if (header) {
-      if (window.scrollY >= pixelThreshold4) {
+      if (window.scrollY >= pixelThresholdTrailerHeaders) {
         header.classList.add('visible');
       } else {
         header.classList.remove('visible');
@@ -67,9 +67,9 @@ export default function handleScroll() {
   // Логика для windowTrailerVideo и playVideoButton
   const windowTrailerVideo = document.querySelector('.windowTrailerVideo');
   const playVideoButton = document.querySelector('.playVideoButton');
-  const pixelThreshold5 = 1850;
+  const pixelThresholdVideo = 1850;
   if (windowTrailerVideo) {
-    if (window.scrollY >= pixelThreshold5) {
+    if (window.scrollY >= pixelThresholdVideo) {
       windowTrailerVideo.classList.add('visible');
       playVideoButton.classList.add('visible');
     } else {
@@ -83,10 +83,10 @@ export default function handleScroll() {
     eng: document.querySelector('.roadmapHeaderEng'),
     cn: document.querySelector('.roadmapHeaderCn')
   };
-  const pixelThreshold6 = 2600;
+  const pixelThresholdRoadMapHeaders = 2600;
   Object.values(roadmapHeaders).forEach(header => {
     if (header) {
-      if (window.scrollY >= pixelThreshold6) {
+      if (window.scrollY >= pixelThresholdRoadMapHeaders) {
         header.classList.add('visible');
       } else {
         header.classList.remove('visible');
