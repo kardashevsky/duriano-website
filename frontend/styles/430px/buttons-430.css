@@ -1,0 +1,179 @@
+@media screen  and (min-width: 394px) and (max-width: 430px) {
+  .engLanguage {
+    width: 30px;
+    height: 18px;
+    left: 173px;
+    z-index: 1;
+    position: absolute;
+    will-change: transform, opacity;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    animation: sliderLanguage 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  }
+
+  .divider {
+    height: 20px;
+    position: absolute;
+    opacity: 0;
+    left: 219px;
+    transform: translate(0%, 0px);
+    animation: slideDivider 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    will-change: transform, opacity;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  @keyframes slideDivider {
+    0% {
+      top: 0px;
+      opacity: 0;
+    }
+    100% {
+      top: 80px;
+      opacity: 1;
+    }
+  }
+
+  .cnLanguage {
+    width: 22px;
+    height: 18px;
+    z-index: 1;
+    left: 235px;
+    position: absolute;
+    transition: transform 0.3s ease;
+    will-change: transform, opacity;
+    cursor: pointer;
+    display: inline-block;
+    animation: sliderLanguage 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  }
+
+  .engLanguage:hover, .cnLanguage:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes sliderLanguage {
+    0% {
+      top: 0px;
+      opacity: 0;
+    }
+    100% {
+      top: 80px;
+      opacity: 1;
+    }
+  }
+
+  .playButton {
+    width: 225px;
+    height: 100px;
+    position: absolute;
+    left: 69px;
+    transform: translate(0%, 0px);
+    animation: sliderPlayButton 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    will-change: transform, opacity;
+    z-index: 4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  @keyframes sliderPlayButton {
+    0% {
+      top: 840px;
+      opacity: 0;
+    }
+    100% {
+      top: 740px;
+      opacity: 1;
+    }
+  }
+
+  .telegramChannelButton {
+    width: 50px;
+    height: 44px;
+    position: absolute;
+    left: 310.2px;
+    transform: translate(0%, 0px);
+    animation: sliderTelegramChannelButton 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    will-change: transform, opacity;
+    z-index: 4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  @keyframes sliderTelegramChannelButton {
+    0% {
+      top: 840px;
+      opacity: 0;
+    }
+    100% {
+      top: 740px;
+      opacity: 1;
+    }
+  }
+
+  .xAccountButton {
+    width: 46.81px;
+    height: 43.76px;
+    position: absolute;
+    left: 313px;
+    transform: translate(0%, 0px);
+    animation: sliderXAccountButton 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    will-change: transform, opacity;
+    z-index: 4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  @keyframes sliderXAccountButton {
+    0% {
+      top: 896px;
+      opacity: 0;
+    }
+    100% {
+      top: 796px;
+      opacity: 1;
+    }
+  }
+
+  .playVideoButton {
+    width: 141.72px;
+    height: 126.89px;
+    position: absolute;
+    top: 2900px;
+    left: 900px;
+    will-change: transform, opacity;
+    z-index: 6;
+    cursor: pointer;
+    opacity: 0;
+    transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.3s ease;
+  }
+
+  .playVideoButton:hover {
+    transform: scale(1.1);
+  }
+
+  .playVideoButton.visible {
+    top: 2615px;
+    opacity: 1;
+  }
+
+  .playButtonFooter {
+    width: 134.775px;
+    height: 54.075px;
+    position: absolute;
+    left: 147px;
+    top: 3363px;
+    transform: scale(1);
+    transform-origin: center;
+    will-change: transform, opacity;
+    z-index: 4;
+    cursor: pointer;
+    transition: transform 0.3s ease-out, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .playButtonFooter.visible {
+    opacity: 1;
+    transform: scale(1.6);
+  }
+}

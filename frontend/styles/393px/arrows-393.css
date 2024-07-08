@@ -1,0 +1,146 @@
+/* Стили всех стрелок */
+@media screen and (max-width: 393px) {
+  .arrowToSmash {
+    width: 65.51px;
+    height: 115.72px;
+    top: 1331px;
+    left: 282.2px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  .arrowToEarn {
+    width: 65.51px;
+    height: 115.72px;
+    top: 1101px;
+    left: 99.89px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  .arrowToSmash, .arrowToEarn {
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 0.5s ease 1s, transform 0.5s ease;
+    pointer-events: none;
+  }
+
+  .arrowToSmash.visible, .arrowToEarn.visible {
+    opacity: 1;
+    transform: scale(1) rotate(90deg);
+  }
+
+  .arrowToFfffToEarn {
+    width: 300px;
+    height: 300px;
+    top: 3680px;
+    left: 720px;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1) rotate(65deg);
+    will-change: transform, opacity;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity 0.5s ease 1s, transform 0.5s ease;
+    pointer-events: none;
+  }
+
+  .arrowToFfffToEarn.visible {
+    opacity: 1;
+    transform: scale(1) rotate(65deg);
+  }
+
+  .arrowToPlayToEarn {
+    width: 330px;
+    height: 300px;
+    top: 4100px;
+    left: 480px;
+    position: absolute;
+    transform: scale(1) rotate(105deg);
+    will-change: transform, opacity;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity 0.5s ease 1s, transform 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .arrowToPlayToEarn.visible {
+    opacity: 1;
+    transform: scale(1) rotate(105deg);
+  }
+
+  .arrowPlayButtonTopMiddle {
+    width: 90px;
+    height: 170px; 
+    top: 2890px;
+    left: 170px;
+    position: absolute;
+    transform: translate(0%, 0px) rotate(-2deg);
+    will-change: transform, opacity;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .arrowPlayButtonTopLeft {
+    width: 140px;
+    height: 250px; 
+    top: 2900px;
+    left: -30px;
+    position: absolute;
+    transform: translate(0%, 0px) rotate(180deg);
+    will-change: transform, opacity;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .arrowPlayButtonTopRight {
+    width: 90px;
+    height: 150px; 
+    top: 2930px;
+    left: 310px;
+    position: absolute;
+    transform: translate(0%, 0px) rotate(50deg);
+    will-change: transform, opacity;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .arrowPlayButtonDownLeft {
+    width: 90px;
+    height: 170px;
+    top: 3090px;
+    left: -10px;
+    position: absolute;
+    transform: translate(0%, 0px) rotate(230deg);
+    will-change: transform, opacity;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .arrowPlayButtonDownRight {
+    width: 137.34px;
+    height: 242.6px; 
+    top: 3040px;
+    left: 285px;
+    position: absolute;
+    transform: translate(0%, 0px);
+    will-change: transform, opacity;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,48 @@
+/* Стили персонажей и их анимаций */
+@media screen  and (min-width: 394px) and (max-width: 430px) {
+  .character {
+    width: 239px;
+    height: 386px;
+    position: absolute;
+    left: 95px;
+    animation: slideDownCharacter 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    opacity: 0;
+    will-change: top, opacity;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  @keyframes slideDownCharacter {
+    0% {
+      top: -200px;
+      opacity: 0;
+    }
+    100% {
+      top: 244px;
+      opacity: 1;
+    }
+  }
+
+  .shadow {
+    width: 189px;
+    height: 35px;
+    top: 610px;
+    position: absolute;
+    left: 120px;
+    transform: scale(1);
+    transform-origin: center;
+    animation: shadow 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    will-change: transform;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  @keyframes shadow {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

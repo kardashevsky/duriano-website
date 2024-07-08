@@ -4,221 +4,203 @@ export default function handleScroll() {
   const scrollPosition = window.scrollY + window.innerHeight;
   const threshold = document.documentElement.scrollHeight - window.innerHeight;
 
-  // Логика для howToHeader
-  const howToHeaders = {
-    eng: document.querySelector('.howToHeaderEng'),
-    cn: document.querySelector('.howToHeaderCn')
+  // Определение порогов для всех элементов
+  const thresholds = {
+    howToHeaders: { desktop: 500, mobile: 300 },
+    characters: { desktop: 700, mobile: 500 },
+    arrows: { desktop: 700, mobile: 500 },
+    trailerHeaders: { desktop: 1550, mobile: 900 },
+    windowTrailerVideo: { desktop: 1850, mobile: 1000 },
+    roadmapHeaders: { desktop: 2600, mobile: 1200 },
+    smashToEarnCharacter: { desktop: 2900, mobile: 1300 },
+    q3Header: { desktop: 2900, mobile: 2200 },
+    roadMapQ3Text: { desktop: 2900, mobile: 1300 },
+    arrowToFfffToEarn: { desktop: 2900, mobile: 1400 },
+    ffffToEarnCharacter: { desktop: 3300, mobile: 1400 },
+    q4Header: { desktop: 3300, mobile: 2600 },
+    roadMapQ4Text: { desktop: 3300, mobile: 1400 },
+    arrowToPlayToEarn: { desktop: 3300, mobile: 1600 },
+    playToEarnCharacter: { desktop: 3700, mobile: 1600 },
+    q1Header: { desktop: 3700, mobile: 3000 },
+    roadMapQ1Text: { desktop: 3700, mobile: 1600 }
   };
-  const pixelThresholdHowToHeaders = 500;
-  Object.values(howToHeaders).forEach(header => {
-    if (header) {
-      if (window.scrollY >= pixelThresholdHowToHeaders) {
+
+  // Функция для получения текущего порога в зависимости от ширины экрана
+  function getCurrentPixelThreshold(key) {
+    return window.innerWidth <= 430 ? thresholds[key].mobile : thresholds[key].desktop;
+  }
+
+  // Функция для проверки и добавления классов видимости
+  function checkAndSetVisibility() {
+    const howToHeaders = {
+      eng: document.querySelector('.howToHeaderEng'),
+      cn: document.querySelector('.howToHeaderCn')
+    };
+    const characters = ['.startCharacter', '.smashCharacter', '.earnCharacter'];
+    const arrows = ['.arrowToSmash', '.arrowToEarn'];
+    const trailerHeaders = {
+      eng: document.querySelector('.trailerHeaderEng'),
+      cn: document.querySelector('.trailerHeaderCn')
+    };
+    const windowTrailerVideo = document.querySelector('.windowTrailerVideo');
+    const playVideoButton = document.querySelector('.playVideoButton');
+    const roadmapHeaders = {
+      eng: document.querySelector('.roadmapHeaderEng'),
+      cn: document.querySelector('.roadmapHeaderCn')
+    };
+    const smashToEarnCharacter = document.querySelector('.smashToEarnCharacter');
+    const q3Header = document.querySelector('.q3Header');
+    const roadMapQ3Text = {
+      eng: document.querySelector('.roadMapQ3TextEng'),
+      cn: document.querySelector('.roadMapQ3TextCn'),
+      mobile: document.querySelector('.roadMapQ3TextMobileEng, .roadMapQ3TextMobileCn')
+    };
+    const arrowToFfffToEarn = document.querySelector('.arrowToFfffToEarn');
+    const ffffToEarnCharacter = document.querySelector('.ffffToEarnCharacter');
+    const q4Header = document.querySelector('.q4Header');
+    const roadMapQ4Text = {
+      eng: document.querySelector('.roadMapQ4TextEng'),
+      cn: document.querySelector('.roadMapQ4TextCn'),
+      mobile: document.querySelector('.roadMapQ4TextMobileEng, .roadMapQ4TextMobileCn')
+    };
+    const arrowToPlayToEarn = document.querySelector('.arrowToPlayToEarn');
+    const playToEarnCharacter = document.querySelector('.playToEarnCharacter');
+    const q1Header = document.querySelector('.q1Header');
+    const roadMapQ1Text = {
+      eng: document.querySelector('.roadMapQ1TextEng'),
+      cn: document.querySelector('.roadMapQ1TextCn'),
+      mobile: document.querySelector('.roadMapQ1TextMobileEng, .roadMapQ1TextMobileCn')
+    };
+    const playButtonFooter = document.querySelector('.playButtonFooter');
+    const footer = document.querySelector('.footer');
+    const footerMobile = document.querySelector('.footer-mobile');
+
+    // Проверка и добавление классов видимости для всех элементов
+    Object.values(howToHeaders).forEach(header => {
+      if (header && window.scrollY >= getCurrentPixelThreshold('howToHeaders')) {
         header.classList.add('visible');
       }
-    }
-  });
+    });
 
-  // Логика для startCharacter, smashCharacter, earnCharacter
-  const characters = ['.startCharacter', '.smashCharacter', '.earnCharacter'];
-  const pixelThresholdCharacters = 700;
-  characters.forEach(selector => {
-    const character = document.querySelector(selector);
-    if (character) {
-      if (window.scrollY >= pixelThresholdCharacters) {
+    characters.forEach(selector => {
+      const character = document.querySelector(selector);
+      if (character && window.scrollY >= getCurrentPixelThreshold('characters')) {
         character.classList.add('visible');
       }
-    }
-  });
+    });
 
-  // Логика для arrowToSmash, arrowToEarn
-  const arrows = ['.arrowToSmash', '.arrowToEarn'];
-  const pixelThresholdArrows = 700;
-  arrows.forEach(selector => {
-    const arrow = document.querySelector(selector);
-    if (arrow) {
-      if (window.scrollY >= pixelThresholdArrows) {
+    arrows.forEach(selector => {
+      const arrow = document.querySelector(selector);
+      if (arrow && window.scrollY >= getCurrentPixelThreshold('arrows')) {
         arrow.classList.add('visible');
       }
-    }
-  });
+    });
 
-  // Логика для trailerHeader
-  const trailerHeaders = {
-    eng: document.querySelector('.trailerHeaderEng'),
-    cn: document.querySelector('.trailerHeaderCn')
-  };
-  const pixelThresholdTrailerHeaders = 1550;
-  Object.values(trailerHeaders).forEach(header => {
-    if (header) {
-      if (window.scrollY >= pixelThresholdTrailerHeaders) {
+    Object.values(trailerHeaders).forEach(header => {
+      if (header && window.scrollY >= getCurrentPixelThreshold('trailerHeaders')) {
         header.classList.add('visible');
       }
-    }
-  });
+    });
 
-  // Логика для windowTrailerVideo и playVideoButton
-  const windowTrailerVideo = document.querySelector('.windowTrailerVideo');
-  const playVideoButton = document.querySelector('.playVideoButton');
-  const pixelThresholdVideo = 1850;
-  if (windowTrailerVideo) {
-    if (window.scrollY >= pixelThresholdVideo) {
+    if (windowTrailerVideo && window.scrollY >= getCurrentPixelThreshold('windowTrailerVideo')) {
       windowTrailerVideo.classList.add('visible');
       playVideoButton.classList.add('visible');
     }
-  }
 
-  // Логика для roadmapHeader
-  const roadmapHeaders = {
-    eng: document.querySelector('.roadmapHeaderEng'),
-    cn: document.querySelector('.roadmapHeaderCn')
-  };
-  const pixelThresholdRoadMapHeaders = 2600;
-  Object.values(roadmapHeaders).forEach(header => {
-    if (header) {
-      if (window.scrollY >= pixelThresholdRoadMapHeaders) {
+    Object.values(roadmapHeaders).forEach(header => {
+      if (header && window.scrollY >= getCurrentPixelThreshold('roadmapHeaders')) {
         header.classList.add('visible');
       }
-    }
-  });
+    });
 
-  // Логика для smashToEarnCharacter
-  const smashToEarnCharacter = document.querySelector('.smashToEarnCharacter');
-  const pixelThresholdSmashToEarnCharacter = 2900;
-  if (smashToEarnCharacter) {
-    if (window.scrollY >= pixelThresholdSmashToEarnCharacter) {
+    if (smashToEarnCharacter && window.scrollY >= getCurrentPixelThreshold('smashToEarnCharacter')) {
       smashToEarnCharacter.classList.add('visible');
     }
-  }
 
-  // Логика для q3Header
-  const q3Header = document.querySelector('.q3Header');
-  const pixelThresholdQ3Header = 2900;
-  if (q3Header) {
-    if (window.scrollY >= pixelThresholdQ3Header) {
+    if (q3Header && window.scrollY >= getCurrentPixelThreshold('q3Header')) {
       q3Header.classList.add('visible');
     }
-  }
 
-  // Логика для roadMapQ3Text
-  const roadMapQ3Text = {
-    eng: document.querySelector('.roadMapQ3TextEng'),
-    cn: document.querySelector('.roadMapQ3TextCn')
-  };
-  const pixelThresholdRoadMapQ3Text = 2900;
-  Object.values(roadMapQ3Text).forEach(header => {
-    if (header) {
-      if (window.scrollY >= pixelThresholdRoadMapQ3Text) {
+    if (window.innerWidth <= 430 && roadMapQ3Text.mobile && window.scrollY >= getCurrentPixelThreshold('roadMapQ3Text')) {
+      roadMapQ3Text.mobile.classList.add('visible');
+    } else if (roadMapQ3Text.eng && window.scrollY >= getCurrentPixelThreshold('roadMapQ3Text')) {
+      roadMapQ3Text.eng.classList.add('visible');
+    }
+
+    Object.values(roadMapQ3Text).forEach(header => {
+      if (header && window.scrollY >= getCurrentPixelThreshold('roadMapQ3Text')) {
         header.classList.add('visible');
       }
-    }
-  });
-
-  // Логика для arrowToFfffToEarn
-  const arrowToFfffToEarnSelector = '.arrowToFfffToEarn';
-  const pixelThresholdArrowToFfffToEarn = 2900;
-  const arrowToFfffToEarn = document.querySelector(arrowToFfffToEarnSelector);
-
-  if (arrowToFfffToEarn) {
-    window.addEventListener('scroll', function() {
-      if (window.scrollY >= pixelThresholdArrowToFfffToEarn) {
-        arrowToFfffToEarn.classList.add('visible');
-      }
     });
-  }
 
-  // Логика для ffffToEarnCharacter
-  const ffffToEarnCharacter = document.querySelector('.ffffToEarnCharacter');
-  const pixelThresholdFffffToEarnCharacter = 3300;
-  if (ffffToEarnCharacter) {
-    if (window.scrollY >= pixelThresholdFffffToEarnCharacter) {
+    if (arrowToFfffToEarn && window.scrollY >= getCurrentPixelThreshold('arrowToFfffToEarn')) {
+      arrowToFfffToEarn.classList.add('visible');
+    }
+
+    if (ffffToEarnCharacter && window.scrollY >= getCurrentPixelThreshold('ffffToEarnCharacter')) {
       ffffToEarnCharacter.classList.add('visible');
     }
-  }
 
-  // Логика для q4Header
-  const q4Header = document.querySelector('.q4Header');
-  const pixelThresholdQ4Header = 3300;
-  if (q3Header) {
-    if (window.scrollY >= pixelThresholdQ4Header) {
+    if (q4Header && window.scrollY >= getCurrentPixelThreshold('q4Header')) {
       q4Header.classList.add('visible');
     }
-  }
 
-  // Логика для roadMapQ4Text
-  const roadMapQ4Text = {
-    eng: document.querySelector('.roadMapQ4TextEng'),
-    cn: document.querySelector('.roadMapQ4TextCn')
-  };
-  const pixelThresholdRoadMapQ4Text = 3300;
-  Object.values(roadMapQ4Text).forEach(header => {
-    if (header) {
-      if (window.scrollY >= pixelThresholdRoadMapQ4Text) {
-        header.classList.add('visible');
-      }
+    if (window.innerWidth <= 430 && roadMapQ4Text.mobile && window.scrollY >= getCurrentPixelThreshold('roadMapQ4Text')) {
+      roadMapQ4Text.mobile.classList.add('visible');
+    } else if (roadMapQ4Text.eng && window.scrollY >= getCurrentPixelThreshold('roadMapQ4Text')) {
+      roadMapQ4Text.eng.classList.add('visible');
     }
-  });
 
-  // Логика для arrowToPlayToEarn
-  const arrowToPlayToEarnSelector = '.arrowToPlayToEarn';
-  const pixelThresholdArrowToPlayToEarn = 3300;
-  const arrowToPlayToEarn = document.querySelector(arrowToPlayToEarnSelector);
-
-  if (arrowToPlayToEarn) {
-    window.addEventListener('scroll', function() {
-      if (window.scrollY >= pixelThresholdArrowToPlayToEarn) {
-        arrowToPlayToEarn.classList.add('visible');
+    Object.values(roadMapQ4Text).forEach(header => {
+      if (header && window.scrollY >= getCurrentPixelThreshold('roadMapQ4Text')) {
+        header.classList.add('visible');
       }
     });
-  }
 
-  // Логика для playToEarnCharacter
-  const playToEarnCharacter = document.querySelector('.playToEarnCharacter');
-  const pixelThresholdPlayToEarnCharacter = 3700;
-  if (playToEarnCharacter) {
-    if (window.scrollY >= pixelThresholdPlayToEarnCharacter) {
+    if (arrowToPlayToEarn && window.scrollY >= getCurrentPixelThreshold('arrowToPlayToEarn')) {
+      arrowToPlayToEarn.classList.add('visible');
+    }
+
+    if (playToEarnCharacter && window.scrollY >= getCurrentPixelThreshold('playToEarnCharacter')) {
       playToEarnCharacter.classList.add('visible');
     }
-  }
 
-  // Логика для q1Header
-  const q1Header = document.querySelector('.q1Header');
-  const pixelThresholdQ1Header = 3700;
-  if (q1Header) {
-    if (window.scrollY >= pixelThresholdQ1Header) {
+    if (q1Header && window.scrollY >= getCurrentPixelThreshold('q1Header')) {
       q1Header.classList.add('visible');
     }
-  }
 
-  // Логика для roadMapQ1Text
-  const roadMapQ1Text = {
-    eng: document.querySelector('.roadMapQ1TextEng'),
-    cn: document.querySelector('.roadMapQ1TextCn')
-  };
-  const pixelThresholdRoadMapQ1Text = 3700;
-  Object.values(roadMapQ1Text).forEach(header => {
-    if (header) {
-      if (window.scrollY >= pixelThresholdRoadMapQ1Text) {
+    // Добавленные условия для мобильной версии
+    if (window.innerWidth <= 430 && roadMapQ1Text.mobile && window.scrollY >= getCurrentPixelThreshold('roadMapQ1Text')) {
+      roadMapQ1Text.mobile.classList.add('visible');
+    } else if (roadMapQ1Text.eng && window.scrollY >= getCurrentPixelThreshold('roadMapQ1Text')) {
+      roadMapQ1Text.eng.classList.add('visible');
+    }
+
+    Object.values(roadMapQ1Text).forEach(header => {
+      if (header && window.scrollY >= getCurrentPixelThreshold('roadMapQ1Text')) {
         header.classList.add('visible');
       }
+    });
+
+    if (playButtonFooter) {
+      const playButtonFooterRect = playButtonFooter.getBoundingClientRect();
+      const isVisible = playButtonFooterRect.top < window.innerHeight && playButtonFooterRect.bottom >= 0;
+      if (isVisible) {
+        playButtonFooter.classList.add('visible');
+      }
     }
-  });
 
-  // Логика для playButtonFooter
-  const playButtonFooter = document.querySelector('.playButtonFooter');
-  if (playButtonFooter) {
-    const playButtonFooterRect = playButtonFooter.getBoundingClientRect();
-    const isVisible = playButtonFooterRect.top < window.innerHeight && playButtonFooterRect.bottom >= 0;
-
-    if (isVisible) {
-      playButtonFooter.classList.add('visible');
+    if (scrollPosition >= threshold) {
+      footer.classList.add('visible');
+      footerMobile.classList.add('visible');
     }
   }
 
-  // Логика для footer
-  const footer = document.querySelector('.footer');
-  if (scrollPosition >= threshold) {
-    footer.classList.add('visible');
-  }
+  // Изначальная проверка при загрузке страницы
+  checkAndSetVisibility();
+
+  // Проверка при изменении размеров окна
+  window.addEventListener('resize', checkAndSetVisibility);
 }
 
 // Подключаем обработчик прокрутки
