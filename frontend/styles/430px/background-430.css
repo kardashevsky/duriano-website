@@ -19,7 +19,7 @@
 
   .background {
     width: 430px;
-    height: 3673px;
+    height: 3473px;
     position: relative;
     overflow: hidden;
   }
@@ -115,7 +115,7 @@
   .bamboo_small_left_mobile {
     width: 237.32px;
     height: 469.73px;
-    top: 100px;
+    top: 145px;
     z-index: 2;
     will-change: left;
     position: absolute;
@@ -133,10 +133,10 @@
   }
 
   .bamboo_small_right_mobile {
-    width: 125.71px;
+    width: 135.71px;
     height: 372.6px;
     position: absolute;
-    top: 189.86px;
+    top: 220px;
     z-index: 2;
     will-change: left;
     pointer-events: none;
@@ -216,7 +216,7 @@
     width: 278px;
     height: 159.7px;
     left: 72px;
-    top: 1837.09px;
+    top: 1857.09px;
     z-index: 2;
     position: absolute;
     pointer-events: none;
@@ -227,7 +227,7 @@
   }
 
   .windowTrailerVideo.visible {
-    top: 1737.09px;
+    top: 1757.09px;
     opacity: 1;
   }
 
@@ -249,10 +249,10 @@
 
   @keyframes footer-mobile {
     0% {
-      top: 3704px;
+      top: 3504px;
     }
     100% {
-      top: 3504px;
+      top: 3304px;
     }
   }
 }

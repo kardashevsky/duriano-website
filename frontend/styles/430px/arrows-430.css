@@ -10,8 +10,8 @@
   .arrowToSmashMobile {
     width: 110px;
     height: 250px;
-    top: 1030px;
-    left: 50px;
+    top: 1060px;
+    left: 65px;
     position: absolute;
     z-index: 2;
     cursor: pointer;
@@ -21,8 +21,8 @@
   .arrowToEarnMobile {
     width: 110px;
     height: 250px;
-    top: 1260px;
-    left: 240px;
+    top: 1290px;
+    left: 250px;
     position: absolute;
     z-index: 2;
     cursor: pointer;
@@ -44,8 +44,8 @@
   .arrowToFfffToEarnMobile {
     width: 120px;
     height: 300px;
-    top: 2150px;
-    left: 48px;
+    top: 2200px;
+    left: 68px;
     position: absolute;
     opacity: 0;
     transform: scale(1) rotate(65deg);
@@ -64,8 +64,8 @@
   .arrowToPlayToEarnMobile {
     width: 120px;
     height: 300px;
-    top: 2440px;
-    left: 220px;
+    top: 2490px;
+    left: 250px;
     position: absolute;
     transform: scale(1) rotate(105deg);
     will-change: transform, opacity;
@@ -84,8 +84,8 @@
   .arrowPlayButtonTopMiddle {
     width: 90px;
     height: 170px; 
-    top: 2890px;
-    left: 170px;
+    top: 2990px;
+    left: 185px;
     position: absolute;
     transform: translate(0%, 0px) rotate(-2deg);
     will-change: transform, opacity;
@@ -98,8 +98,8 @@
   .arrowPlayButtonTopLeft {
     width: 140px;
     height: 250px; 
-    top: 2900px;
-    left: -30px;
+    top: 3000px;
+    left: -15px;
     position: absolute;
     transform: translate(0%, 0px) rotate(180deg);
     will-change: transform, opacity;
@@ -112,8 +112,8 @@
   .arrowPlayButtonTopRight {
     width: 90px;
     height: 150px; 
-    top: 2930px;
-    left: 310px;
+    top: 3030px;
+    left: 325px;
     position: absolute;
     transform: translate(0%, 0px) rotate(50deg);
     will-change: transform, opacity;
@@ -126,8 +126,8 @@
   .arrowPlayButtonDownLeft {
     width: 90px;
     height: 170px;
-    top: 3090px;
-    left: -10px;
+    top: 3190px;
+    left: 5px;
     position: absolute;
     transform: translate(0%, 0px) rotate(230deg);
     will-change: transform, opacity;
@@ -140,8 +140,8 @@
   .arrowPlayButtonDownRight {
     width: 137.34px;
     height: 242.6px; 
-    top: 3040px;
-    left: 285px;
+    top: 3140px;
+    left: 300px;
     position: absolute;
     transform: translate(0%, 0px);
     will-change: transform, opacity;

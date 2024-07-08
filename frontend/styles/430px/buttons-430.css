@@ -139,8 +139,8 @@
     width: 89.35px;
     height: 80px;
     position: absolute;
-    top: 1855px;
-    left: 149px;
+    top: 1893px;
+    left: 163px;
     will-change: transform, opacity;
     z-index: 6;
     cursor: pointer;
@@ -153,16 +153,16 @@
   }
 
   .playVideoButton.visible {
-    top: 1755px;
+    top: 1793px;
     opacity: 1;
   }
 
   .playButtonFooter {
-    width: 123.175px;
-    height: 54.075px;
+    width: 134.375px;
+    height: 59.375px;
     position: absolute;
-    left: 135px;
-    top: 3066.55px;
+    left: 145px;
+    top: 3163px;
     transform: scale(1);
     transform-origin: center;
     will-change: transform, opacity;
