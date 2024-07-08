@@ -1,64 +1,71 @@
 /* Стили всех стрелок */
 @media screen  and (min-width: 394px) and (max-width: 430px) {
-  .arrowToSmash {
-    width: 280px;
-    height: 280px;
-    top: 1345px;
-    left: 545px;
-    position: absolute;
-    z-index: 2;
-    cursor: pointer;
-    pointer-events: none;
-  }
-
-  .arrowToEarn {
-    width: 330px;
-    height: 300px;
-    top: 1730px;
-    left: 970px;
-    position: absolute;
-    z-index: 2;
-    cursor: pointer;
-    pointer-events: none;
-  }
-
-  .arrowToSmash, .arrowToEarn {
-    opacity: 0;
-    transform: scale(1);
-    transition: opacity 0.5s ease 1s, transform 0.5s ease;
-    pointer-events: none;
-  }
-
-  .arrowToSmash.visible, .arrowToEarn.visible {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  .arrowToFfffToEarn {
-    width: 300px;
-    height: 300px;
-    top: 3680px;
-    left: 720px;
-    position: absolute;
-    opacity: 0;
-    transform: scale(1) rotate(65deg);
-    will-change: transform, opacity;
-    z-index: 2;
-    cursor: pointer;
-    transition: opacity 0.5s ease 1s, transform 0.5s ease;
-    pointer-events: none;
-  }
-
-  .arrowToFfffToEarn.visible {
-    opacity: 1;
-    transform: scale(1) rotate(65deg);
-  }
-
+  .arrowToSmash,
+  .arrowToEarn,
+  .arrowToFfffToEarn,
   .arrowToPlayToEarn {
-    width: 330px;
+    display: none;
+  }
+
+  .arrowToSmashMobile {
+    width: 110px;
+    height: 250px;
+    top: 1030px;
+    left: 50px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  .arrowToEarnMobile {
+    width: 110px;
+    height: 250px;
+    top: 1260px;
+    left: 240px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  .arrowToSmashMobile, .arrowToEarnMobile {
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 0.5s ease 1s, transform 0.5s ease;
+    pointer-events: none;
+  }
+
+  .arrowToSmashMobile.visible, .arrowToEarnMobile.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .arrowToFfffToEarnMobile {
+    width: 120px;
     height: 300px;
-    top: 4100px;
-    left: 480px;
+    top: 2150px;
+    left: 48px;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1) rotate(65deg);
+    will-change: transform, opacity;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity 0.5s ease 1s, transform 0.5s ease;
+    pointer-events: none;
+  }
+
+  .arrowToFfffToEarnMobile.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .arrowToPlayToEarnMobile {
+    width: 120px;
+    height: 300px;
+    top: 2440px;
+    left: 220px;
     position: absolute;
     transform: scale(1) rotate(105deg);
     will-change: transform, opacity;
@@ -69,16 +76,16 @@
     pointer-events: none;
   }
 
-  .arrowToPlayToEarn.visible {
+  .arrowToPlayToEarnMobile.visible {
     opacity: 1;
-    transform: scale(1) rotate(105deg);
+    transform: scale(1);
   }
 
   .arrowPlayButtonTopMiddle {
-    width: 280px;
-    height: 490px;
-    top: 4900px;
-    left: 875px;
+    width: 90px;
+    height: 170px; 
+    top: 2890px;
+    left: 170px;
     position: absolute;
     transform: translate(0%, 0px) rotate(-2deg);
     will-change: transform, opacity;
@@ -89,10 +96,10 @@
   }
 
   .arrowPlayButtonTopLeft {
-    width: 450px;
-    height: 550px;
-    top: 5060px;
-    left: 220px;
+    width: 140px;
+    height: 250px; 
+    top: 2900px;
+    left: -30px;
     position: absolute;
     transform: translate(0%, 0px) rotate(180deg);
     will-change: transform, opacity;
@@ -103,10 +110,10 @@
   }
 
   .arrowPlayButtonTopRight {
-    width: 250px;
-    height: 400px;
-    top: 5100px;
-    left: 1335px;
+    width: 90px;
+    height: 150px; 
+    top: 2930px;
+    left: 310px;
     position: absolute;
     transform: translate(0%, 0px) rotate(50deg);
     will-change: transform, opacity;
@@ -117,10 +124,10 @@
   }
 
   .arrowPlayButtonDownLeft {
-    width: 250px;
-    height: 400px;
-    top: 5550px;
-    left: 300px;
+    width: 90px;
+    height: 170px;
+    top: 3090px;
+    left: -10px;
     position: absolute;
     transform: translate(0%, 0px) rotate(230deg);
     will-change: transform, opacity;
@@ -131,10 +138,10 @@
   }
 
   .arrowPlayButtonDownRight {
-    width: 450px;
-    height: 550px;
-    top: 5450px;
-    left: 1270px;
+    width: 137.34px;
+    height: 242.6px; 
+    top: 3040px;
+    left: 285px;
     position: absolute;
     transform: translate(0%, 0px);
     will-change: transform, opacity;

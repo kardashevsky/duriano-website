@@ -1,5 +1,22 @@
 /* Стили фона и фоновых блоков для ширины экрана 393px*/
 @media screen and (max-width: 393px) {
+
+  .cloud_left,
+  .cloud_right,
+  .bamboo_small_left,
+  .bamboo_small_right,
+  .bamboo_big_left_1,
+  .bamboo_big_right_1,
+  .bamboo_big_left_2,
+  .bamboo_big_right_2,
+  .bridge-background,
+  .textureLeft,
+  .textureMiddle,
+  .textureRight,
+  .footer {
+      display: none;
+  }
+
   .background {
     width: 393px;
     height: 3357px;
@@ -40,10 +57,6 @@
     animation: slideCloudLeftMobile 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .cloud_left {
-    display: none;
-  }
-
   @keyframes slideCloudLeftMobile {
     0% {
       left: -637.5px;
@@ -64,10 +77,6 @@
     pointer-events: none;
     will-change: left, opacity;
     animation: slideCloudRightMobile 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  }
-
-  .cloud_right {
-    display: none;
   }
 
   @keyframes slideCloudRightMobile {
@@ -114,10 +123,6 @@
     animation: slideBambooSmallLeftMobile 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .bamboo_small_left {
-    display: none;
-  }
-
   @keyframes slideBambooSmallLeftMobile {
     0% {
       left: -219px;
@@ -136,10 +141,6 @@
     will-change: left;
     pointer-events: none;
     animation: slideBambooSmallRightMobile 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  }
-
-  .bamboo_right_left {
-    display: none;
   }
 
   @keyframes slideBambooSmallRightMobile {
@@ -193,13 +194,6 @@
     }
   }
 
-  .bamboo_big_left_1,
-  .bamboo_big_right_1,
-  .bamboo_big_left_2,
-  .bamboo_big_right_2 {
-      display: none;
-  }
-
   .bridge-background-mobile {
     width: 393px;
     height: 112px;
@@ -207,14 +201,6 @@
     z-index: 2;
     position: absolute;
     pointer-events: none;
-  }
-
-  .bridge-background {
-    display: none;
-  }
-
-  .textureLeft {
-    display: none;
   }
 
   .textureMiddleMobile {
@@ -225,11 +211,6 @@
     position: absolute;
     pointer-events: none;
   }
-
-  .textureMiddle,
-  .textureRight {
-      display: none;
-  }  
 
   .windowTrailerVideo {
     width: 278px;
