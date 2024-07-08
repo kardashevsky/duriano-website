@@ -1,5 +1,12 @@
 /* Стили всех стрелок */
 @media screen and (min-width: 1441px) {
+  .arrowToSmashMobile,
+  .arrowToEarnMobile,
+  .arrowToFfffToEarnMobile,
+  .arrowToPlayToEarnMobile {
+    display: none;
+  }
+
   .arrowToSmash {
     width: 280px;
     height: 280px;

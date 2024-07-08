@@ -19,7 +19,7 @@ export default function handleScroll() {
     ffffToEarnCharacter: { desktop: 3300, mobile: 1400 },
     q4Header: { desktop: 3300, mobile: 2600 },
     roadMapQ4Text: { desktop: 3300, mobile: 1400 },
-    arrowToPlayToEarn: { desktop: 3300, mobile: 1600 },
+    arrowToPlayToEarn: { desktop: 3300, mobile: 1400 },
     playToEarnCharacter: { desktop: 3700, mobile: 1600 },
     q1Header: { desktop: 3700, mobile: 3000 },
     roadMapQ1Text: { desktop: 3700, mobile: 1600 }
@@ -37,7 +37,7 @@ export default function handleScroll() {
       cn: document.querySelector('.howToHeaderCn')
     };
     const characters = ['.startCharacter', '.smashCharacter', '.earnCharacter'];
-    const arrows = ['.arrowToSmash', '.arrowToEarn'];
+    const arrows = ['.arrowToSmash', '.arrowToEarn', '.arrowToSmashMobile', '.arrowToEarnMobile'];
     const trailerHeaders = {
       eng: document.querySelector('.trailerHeaderEng'),
       cn: document.querySelector('.trailerHeaderCn')
@@ -56,6 +56,7 @@ export default function handleScroll() {
       mobile: document.querySelector('.roadMapQ3TextMobileEng, .roadMapQ3TextMobileCn')
     };
     const arrowToFfffToEarn = document.querySelector('.arrowToFfffToEarn');
+    const arrowToFfffToEarnMobile = document.querySelector('.arrowToFfffToEarnMobile');
     const ffffToEarnCharacter = document.querySelector('.ffffToEarnCharacter');
     const q4Header = document.querySelector('.q4Header');
     const roadMapQ4Text = {
@@ -64,6 +65,7 @@ export default function handleScroll() {
       mobile: document.querySelector('.roadMapQ4TextMobileEng, .roadMapQ4TextMobileCn')
     };
     const arrowToPlayToEarn = document.querySelector('.arrowToPlayToEarn');
+    const arrowToPlayToEarnMobile = document.querySelector('.arrowToPlayToEarnMobile');
     const playToEarnCharacter = document.querySelector('.playToEarnCharacter');
     const q1Header = document.querySelector('.q1Header');
     const roadMapQ1Text = {
@@ -137,6 +139,10 @@ export default function handleScroll() {
       arrowToFfffToEarn.classList.add('visible');
     }
 
+    if (arrowToFfffToEarnMobile && window.scrollY >= getCurrentPixelThreshold('arrowToFfffToEarn')) {
+      arrowToFfffToEarnMobile.classList.add('visible');
+    }
+
     if (ffffToEarnCharacter && window.scrollY >= getCurrentPixelThreshold('ffffToEarnCharacter')) {
       ffffToEarnCharacter.classList.add('visible');
     }
@@ -159,6 +165,10 @@ export default function handleScroll() {
 
     if (arrowToPlayToEarn && window.scrollY >= getCurrentPixelThreshold('arrowToPlayToEarn')) {
       arrowToPlayToEarn.classList.add('visible');
+    }
+
+    if (arrowToPlayToEarnMobile && window.scrollY >= getCurrentPixelThreshold('arrowToPlayToEarn')) {
+      arrowToPlayToEarnMobile.classList.add('visible');
     }
 
     if (playToEarnCharacter && window.scrollY >= getCurrentPixelThreshold('playToEarnCharacter')) {
