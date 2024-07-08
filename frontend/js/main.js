@@ -38,6 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
     telegramChannelLink.href = 'https://t.me/DurianoTeam';
   }
   
+  // Сброс состояния всех элементов
+  const visibleElements = document.querySelectorAll('.visible');
+  visibleElements.forEach(element => {
+    element.classList.remove('visible');
+  });
+
   // Прокручиваем страницу наверх при загрузке
   window.scrollTo(0, 0);
 
