@@ -188,11 +188,11 @@
   }
 
   .q3Header {
-    width: 162.5px;
-    height: 87.5px;
+    width: 74.29px;
+    height: 40px;
     position: absolute;
-    left: 739px;
-    top: 3379px;
+    left: 268px;
+    top: 2554px;
     opacity: 0;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: top, opacity;
@@ -201,16 +201,16 @@
   }
 
   .q3Header.visible {
-    top: 3579px;
+    top: 2354px;
     opacity: 1;
   }
 
   .q4Header {
-    width: 150.5px;
-    height: 87.5px;
+    width: 68.8px;
+    height: 40px;
     position: absolute;
-    left: 1076px;
-    top: 4669px;
+    left: 79px;
+    top: 2861px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: top, opacity;
@@ -219,16 +219,16 @@
   }
 
   .q4Header.visible {
-    top: 4268px;
+    top: 2661px;
     opacity: 1;
   }
 
   .q1Header {
-    width: 150.5px;
-    height: 87.5px;
+    width: 74.29px;
+    height: 40px;
     position: absolute;
-    left: 767px;
-    top: 5088px;
+    left: 268px;
+    top: 3140px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: top, opacity;
@@ -237,7 +237,7 @@
   }
 
   .q1Header.visible {
-    top: 4687px;
+    top: 2940px;
     opacity: 1;
   }
 
