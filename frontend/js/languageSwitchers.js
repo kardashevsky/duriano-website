@@ -5,7 +5,11 @@ export default function initializeLanguageSwitchers() {
   const elements = {
     p2eText: {
       eng: document.querySelector('.p2eTextEng'),
-      cn: document.querySelector('.p2eTextCn')
+      cn: document.querySelector('.p2eTextCn'),
+    },
+    p2eTextMobile: {
+      eng: document.querySelector('.p2eTextMobileEng'),
+      cn: document.querySelector('.p2eTextMobileCn'),
     },
     telegramChannelLink: document.getElementById('telegramChannelLink'),
     howToHeader: {
@@ -42,7 +46,7 @@ export default function initializeLanguageSwitchers() {
 
       // Общая функция для скрытия/отображения элементов
       function toggleVisibility(lang) {
-        const elementsToToggle = ['p2eText', 'howToHeader', 'trailerHeader', 'roadmapHeader', 'roadMapQ3Text', 'roadMapQ4Text', 'roadMapQ1Text'];
+        const elementsToToggle = ['p2eText', 'p2eTextMobile', 'howToHeader', 'trailerHeader', 'roadmapHeader', 'roadMapQ3Text', 'roadMapQ4Text', 'roadMapQ1Text'];
         elementsToToggle.forEach(element => {
           elements[element].eng.classList.toggle('hidden', lang !== 'eng');
           elements[element].cn.classList.toggle('hidden', lang !== 'cn');
