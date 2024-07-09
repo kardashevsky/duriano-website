@@ -27,12 +27,12 @@
   .shadow {
     width: 352px;
     height: 65px;
-    position: absolute;
     top: 985px;
+    position: absolute;
     left: 517px;
-    animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform;
     pointer-events: none;
+    animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     z-index: 2;
   }
 

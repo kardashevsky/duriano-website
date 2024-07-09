@@ -1,4 +1,6 @@
+/* Стили персонажей и их анимаций */
 @media screen and (max-width: 393px) {
+
   .character {
     width: 218.44px;
     height: 353px;
@@ -28,19 +30,19 @@
     top: 547px;
     position: absolute;
     left: 102px;
-    transform: scale(1);
-    transform-origin: center;
-    animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform;
     pointer-events: none;
+    animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     z-index: 2;
   }
 
   @keyframes shadow {
     0% {
+      will-change: transform;
       transform: scale(0);
     }
     100% {
+      will-change: transform;
       transform: scale(1);
     }
   }
