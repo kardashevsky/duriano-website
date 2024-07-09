@@ -1,16 +1,16 @@
 /* Стили кнопок */
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 431px) {
+
   .divider {
-  height: 53px;
-  position: absolute;
-  top: 0px;
-  opacity: 0;
-  left: 968px;
-  transform: translate(0%, 0px);
-  animation: slideDivider 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  will-change: transform, opacity;
-  pointer-events: none;
-  z-index: 1;
+    height: 53px;
+    position: absolute;
+    opacity: 0;
+    left: 968px;
+    transform: translate(0%, 0px);
+    animation: slideDivider 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    will-change: transform, opacity;
+    pointer-events: none;
+    z-index: 1;
   }
 
   @keyframes slideDivider {

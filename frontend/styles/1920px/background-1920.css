@@ -1,5 +1,19 @@
 /* Стили фона и фоновых блоков для компьютера*/
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 431px) {
+
+  .cloud_left_mobile,
+  .cloud_right_mobile,
+  .cloud_top_mobile,
+  .bamboo_small_left_mobile,
+  .bamboo_small_right_mobile,
+  .bridge-background-mobile,
+  .textureMiddleMobile,
+  .bamboo_big_left_mobile,
+  .bamboo_big_right_mobile,
+  .footer-mobile {
+    display: none;
+  }
+
   .background {
     width: 1920px;
     height: 6333px;
@@ -40,10 +54,6 @@
     animation: slideCloudLeft 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .cloud_left_mobile {
-    display: none;
-  }
-
   @keyframes slideCloudLeft {
     0% {
       left: 200px;
@@ -66,10 +76,6 @@
     animation: slideCloudRight 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .cloud_right_mobile {
-    display: none;
-  }
-
   @keyframes slideCloudRight {
     0% {
       left: 700px;
@@ -79,10 +85,6 @@
       left: 1528.5px;
       opacity: 1;
     }
-  }
-
-  .cloud_top_mobile {
-    display: none;
   }
 
   .bamboo_small_left {
@@ -95,10 +97,6 @@
     position: absolute;
     pointer-events: none;
     animation: slideBambooSmallLeft 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  }
-
-  .bamboo_small_left_mobile {
-    display: none;
   }
 
   @keyframes slideBambooSmallLeft {
@@ -122,10 +120,6 @@
     animation: slideBambooSmallRight 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .bamboo_small_right_mobile {
-    display: none;
-  }
-
   @keyframes slideBambooSmallRight {
     0% {
       left: 1950px;
@@ -146,10 +140,6 @@
     pointer-events: none;
   }
 
-  .bridge-background-mobile {
-    display: none;
-  }
-
   .textureLeft {
     width: 400px;
     height: 5225px;
@@ -168,10 +158,6 @@
     z-index: 1;
     position: absolute;
     pointer-events: none;
-  }
-
-  .textureMiddleMobile {
-    display: none;
   }
 
   .textureRight {
@@ -248,14 +234,6 @@
     transform-origin: center;
   }
 
-  .bamboo_big_left_mobile {
-    display: none;
-  }
-
-  .bamboo_big_right_mobile {
-    display: none;
-  }
-
   .windowTrailerVideo {
     width: 1034px;
     height: 594px;
@@ -289,10 +267,6 @@
   .footer.visible {
     animation: footer 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 1;
-  }
-
-  .footer-mobile {
-    display: none;
   }
 
   @keyframes footer {

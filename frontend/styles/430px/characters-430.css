@@ -1,5 +1,6 @@
 /* Стили персонажей и их анимаций */
-@media screen  and (min-width: 394px) and (max-width: 430px) {
+@media screen and (min-width: 394px) and (max-width: 430px) {
+
   .character {
     width: 239px;
     height: 386px;

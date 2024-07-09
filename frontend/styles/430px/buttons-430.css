@@ -1,16 +1,5 @@
-@media screen  and (min-width: 394px) and (max-width: 430px) {
-  .engLanguage {
-    width: 30px;
-    height: 18px;
-    left: 173px;
-    z-index: 1;
-    position: absolute;
-    will-change: transform, opacity;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    display: inline-block;
-    animation: sliderLanguage 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  }
+/* Стили кнопок */
+@media screen and (min-width: 394px) and (max-width: 430px) {
 
   .divider {
     height: 20px;
@@ -23,7 +12,7 @@
     pointer-events: none;
     z-index: 1;
   }
-  
+
   @keyframes slideDivider {
     0% {
       top: 0px;
@@ -33,6 +22,19 @@
       top: 80px;
       opacity: 1;
     }
+  }
+
+  .engLanguage {
+    width: 30px;
+    height: 18px;
+    left: 173px;
+    z-index: 1;
+    position: absolute;
+    will-change: transform, opacity;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    animation: sliderLanguage 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
   .cnLanguage {

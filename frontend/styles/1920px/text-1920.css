@@ -1,5 +1,5 @@
 /* Стили текстовых блоков */
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 431px) {
 
   .p2eTextMobileEng,
   .p2eTextMobileCn,
@@ -16,7 +16,6 @@
     width: 893px;
     height: 143.77px;
     position: absolute;
-    top: 181px;
     left: 550px;
     transform: translate(0%, 0px);
     animation: slideDurianoHeader 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;

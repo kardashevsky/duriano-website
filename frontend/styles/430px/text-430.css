@@ -1,13 +1,14 @@
+/* Стили текстовых блоков */
 @media screen and (min-width: 394px) and (max-width: 430px) {
 
+  .p2eTextEng,
+  .p2eTextCn,
   .roadMapQ3TextEng,
   .roadMapQ3TextCn,
   .roadMapQ4TextEng,
   .roadMapQ4TextCn,
   .roadMapQ1TextEng,
-  .roadMapQ1TextCn,
-  .p2eTextEng,
-  .p2eTextCn {
+  .roadMapQ1TextCn {
     display: none;
   }
 

@@ -1,5 +1,5 @@
 /* Стили фона и фоновых блоков для ширины экрана 393px*/
-@media screen  and (min-width: 394px) and (max-width: 430px) {
+@media screen and (min-width: 394px) and (max-width: 430px) {
 
   .cloud_left,
   .cloud_right,

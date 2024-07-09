@@ -1,5 +1,6 @@
 /* Стили всех стрелок */
-@media screen  and (min-width: 394px) and (max-width: 430px) {
+@media screen and (min-width: 394px) and (max-width: 430px) {
+
   .arrowToSmash,
   .arrowToEarn,
   .arrowToFfffToEarn,
