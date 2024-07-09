@@ -1,5 +1,5 @@
 /* Стили текстовых блоков */
-@media screen and (min-width: 376px) and (max-width: 393px) {
+@media screen and (max-width: 375px) {
 
   .roadMapQ3TextEng,
   .roadMapQ3TextCn,
@@ -16,7 +16,7 @@
     width: 325px;
     height: 52px;
     position: absolute;
-    left: 34px;
+    left: 28px;
     transform: translate(0%, 0px);
     animation: slideDurianoHeader 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform, opacity;
@@ -39,7 +39,7 @@
     width: 262px;
     height: 28px;
     position: absolute;
-    left: 65px;
+    left: 60px;
     animation: slideDownP2eTextMobileEng 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: top, opacity;
     pointer-events: none;

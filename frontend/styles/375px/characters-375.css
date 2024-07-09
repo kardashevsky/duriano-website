@@ -1,11 +1,11 @@
 /* Стили персонажей и их анимаций */
-@media screen and (min-width: 376px) and (max-width: 393px) {
+@media screen and (max-width: 375px) {
 
   .character {
     width: 218.44px;
     height: 353px;
     position: absolute;
-    left: 87.22px;
+    left: 84px;
     animation: slideDownCharacter 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 0;
     will-change: top, opacity;
@@ -29,7 +29,7 @@
     height: 35px;
     top: 547px;
     position: absolute;
-    left: 102px;
+    left: 95px;
     will-change: transform;
     pointer-events: none;
     animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
@@ -97,7 +97,7 @@
   }
 
   .earnCharacter.visible {
-    left: 130px;
+    left: 125px;
     opacity: 1;
   }
 
@@ -105,7 +105,7 @@
     width: 184.35px;
     height: 180px;
     position: absolute;
-    left: -104px;
+    left: -100px;
     top: 2148px;
     opacity: 0;
     will-change: transform, opacity;
@@ -115,7 +115,7 @@
   }
 
   .smashToEarnCharacter.visible {
-    left: 104px;
+    left: 100px;
     opacity: 1;
   }
 
@@ -123,7 +123,7 @@
     width: 171.05px;
     height: 180px;
     position: absolute;
-    left: 111px;
+    left: 110px;
     top: 2500px;
     opacity: 0;
     will-change: top, opacity;

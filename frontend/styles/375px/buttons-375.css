@@ -1,10 +1,10 @@
-/* Стили текстовых блоков */
-@media screen and (min-width: 376px) and (max-width: 393px) {
+/* Стили кнопок */
+@media screen and (max-width: 375px) {
 
   .engLanguage {
     width: 30px;
     height: 18px;
-    left: 154px;
+    left: 150px;
     z-index: 1;
     position: absolute;
     will-change: transform, opacity;
@@ -18,7 +18,7 @@
     height: 20px;
     position: absolute;
     opacity: 0;
-    left: 200px;
+    left: 190px;
     transform: translate(0%, 0px);
     animation: slideDivider 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform, opacity;
@@ -41,7 +41,7 @@
     width: 22px;
     height: 18px;
     z-index: 1;
-    left: 216px;
+    left: 205px;
     position: absolute;
     transition: transform 0.3s ease;
     will-change: transform, opacity;
@@ -163,7 +163,7 @@
     width: 123.175px;
     height: 54.075px;
     position: absolute;
-    left: 135px;
+    left: 132px;
     top: 3066.55px;
     transform: scale(1);
     transform-origin: center;

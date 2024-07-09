@@ -1,5 +1,5 @@
 /* Стили фона и фоновых блоков для ширины экрана 393px*/
-@media screen and (min-width: 376px) and (max-width: 393px) {
+@media screen and (max-width: 375px) {
 
   .cloud_left,
   .cloud_right,
@@ -59,11 +59,11 @@
 
   @keyframes slideCloudLeftMobile {
     0% {
-      left: -637.5px;
+      left: -640px;
       opacity: 0;
     }
     100% {
-      left: -437.5px;
+      left: -440px;
       opacity: 1;
     }
   }
@@ -81,11 +81,11 @@
 
   @keyframes slideCloudRightMobile {
     0% {
-      left: 468px;
+      left: 460px;
       opacity: 0;
     }
     100% {
-      left: 268px;
+      left: 260px;
       opacity: 1;
     }
   }
@@ -125,10 +125,10 @@
 
   @keyframes slideBambooSmallLeftMobile {
     0% {
-      left: -219px;
+      left: -230px;
     }
     100% {
-      left: -119px;
+      left: -130px;
     }
   }
   
@@ -167,10 +167,10 @@
 
   @keyframes slideBambooBigLeftMobile {
     0% {
-      left: -230px;
+      left: -245px;
     }
     100% {
-      left: -130px;
+      left: -145px;
     }
   }
 
@@ -235,7 +235,7 @@
     width: 393px;
     height: 153px;
     position: absolute;
-    left: 0px;
+    left: -10px;
     z-index: 2;
     will-change: top;
     pointer-events: none;

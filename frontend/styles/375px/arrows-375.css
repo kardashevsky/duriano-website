@@ -1,5 +1,6 @@
 /* Стили всех стрелок */
-@media screen and (min-width: 376px) and (max-width: 393px) {
+@media screen and (max-width: 375px) {
+
   .arrowToSmash,
   .arrowToEarn,
   .arrowToFfffToEarn,
@@ -112,8 +113,8 @@
   .arrowPlayButtonTopRight {
     width: 90px;
     height: 150px; 
-    top: 2930px;
-    left: 310px;
+    top: 2935px;
+    left: 305px;
     position: absolute;
     transform: translate(0%, 0px) rotate(50deg);
     will-change: transform, opacity;
@@ -141,7 +142,7 @@
     width: 137.34px;
     height: 242.6px; 
     top: 3040px;
-    left: 285px;
+    left: 280px;
     position: absolute;
     transform: translate(0%, 0px);
     will-change: transform, opacity;
