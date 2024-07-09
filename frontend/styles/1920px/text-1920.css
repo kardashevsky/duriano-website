@@ -1,5 +1,17 @@
 /* Стили текстовых блоков */
 @media screen and (min-width: 1441px) {
+
+  .p2eTextMobileEng,
+  .p2eTextMobileCn,
+  .roadMapQ3TextMobileEng,
+  .roadMapQ3TextMobileCn,
+  .roadMapQ1TextMobileCn,
+  .roadMapQ1TextMobileEng,
+  .roadMapQ4TextMobileCn,
+  .roadMapQ4TextMobileEng {
+    display: none;
+  }
+
   .duriano-header {
     width: 893px;
     height: 143.77px;
@@ -48,10 +60,6 @@
     }
   }
 
-  .p2eTextMobileEng {
-    display: none;
-  } 
-
   .p2eTextCn {
     width: 499px;
     height: 221px;
@@ -74,10 +82,6 @@
       opacity: 1;
     }
   }
-
-  .p2eTextMobileCn {
-    display: none;
-  } 
 
   .howToHeaderEng {
     width: 501px;
@@ -259,10 +263,6 @@
     opacity: 1;
   }
 
-  .roadMapQ3TextMobileEng {
-    display: none;
-  }
-
   .roadMapQ3TextCn {
     width: calc(round(446px * 1.1));
     height: calc(round(153px * 1.1));  
@@ -279,10 +279,6 @@
   .roadMapQ3TextCn.visible {
     left: 870px;
     opacity: 1;
-  }
-
-  .roadMapQ3TextMobileCn {
-    display: none;
   }
 
   .roadMapQ4TextEng {
@@ -303,10 +299,6 @@
     opacity: 1;
   }
 
-  .roadMapQ4TextMobileEng {
-    display: none;
-  }
-
   .roadMapQ4TextCn {
     width: calc(round(300px * 1.1));
     height: calc(round(157px * 1.1)); 
@@ -323,10 +315,6 @@
   .roadMapQ4TextCn.visible {
     opacity: 1;
     left: 1090px;
-  }
-
-  .roadMapQ4TextMobileCn {
-    display: none;
   }
 
   .roadMapQ1TextEng {
@@ -347,10 +335,6 @@
     opacity: 1;
   }
 
-  .roadMapQ1TextMobileEng {
-    display: none;
-  }
-
   .roadMapQ1TextCn {
     width: calc(round(320px * 1.1));
     height: calc(round(1538px * 1.1)); 
@@ -367,9 +351,5 @@
   .roadMapQ1TextCn.visible {
     opacity: 1;
     left: 810px;
-  }
-
-  .roadMapQ1TextMobileCn {
-    display: none;
   }
 }
