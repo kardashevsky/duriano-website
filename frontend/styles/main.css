@@ -25,6 +25,12 @@
 @import '393px/arrows-393.css';
 
 
+@font-face {
+  font-family: 'durianoFont';
+  src: url('/frontend/public/durianoFont.ttf') format('truetype');
+  color: #ffffff;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -38,6 +44,11 @@ html, body {
 
 .hidden {
   display: none;
+}
+
+::selection {
+  background-color: #68A025;
+  color: #ffffff;
 }
 
 * {
