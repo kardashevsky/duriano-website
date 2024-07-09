@@ -6,7 +6,7 @@
     height: 703px;
     position: absolute;
     left: 476px;
-    animation: slideDownCharacter 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    animation: slideDownCharacter 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
@@ -30,9 +30,7 @@
     position: absolute;
     top: 985px;
     left: 517px;
-    transform: scale(1);
-    transform-origin: center;
-    animation: shadow 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform;
     pointer-events: none;
     z-index: 2;
@@ -40,9 +38,11 @@
 
   @keyframes shadow {
     0% {
+      will-change: transform;
       transform: scale(0);
     }
     100% {
+      will-change: transform;
       transform: scale(1);
     }
   }

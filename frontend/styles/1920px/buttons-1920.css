@@ -51,7 +51,8 @@
   }
 
   .engLanguage:hover, .cnLanguage:hover {
-    transform: scale(1.1);
+    will-change: transform;
+    transform: scale(1.11);
   }
 
   @keyframes sliderLanguage {
@@ -79,7 +80,7 @@
   }
 
   .playButton:hover {
-    transform: scale(1.1);
+    transform: scale(1.11);
   }
 
   @keyframes sliderPlayButton {
@@ -110,11 +111,11 @@
 
   .playButtonFooter.visible {
     opacity: 1;
-    transform: scale(1.6);
+    transform: scale(1.61);
   }
 
   .playButtonFooter:hover {
-    transform: scale(1.7);
+    transform: scale(1.71);
   }
 
   .telegramChannelButton {
@@ -131,7 +132,7 @@
   }
 
   .telegramChannelButton:hover {
-    transform: scale(1.1);
+    transform: scale(1.11);
   }
 
   @keyframes sliderTelegramChannelButton {
@@ -159,7 +160,7 @@
   }
 
   .xAccountButton:hover {
-    transform: scale(1.1);
+    transform: scale(1.11);
   }
 
   @keyframes sliderXAccountButton {
@@ -187,7 +188,7 @@
   }
 
   .playVideoButton:hover {
-    transform: scale(1.1);
+    transform: scale(1.11);
   }
 
   .playVideoButton.visible {
