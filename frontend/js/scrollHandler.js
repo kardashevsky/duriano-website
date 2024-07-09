@@ -6,22 +6,22 @@ export default function handleScroll() {
 
   // Определение порогов для всех элементов
   const thresholds = {
-    howToHeaders: { desktop: 500, mobile: 300 },
-    characters: { desktop: 700, mobile: 500 },
-    arrows: { desktop: 700, mobile: 500 },
-    trailerHeaders: { desktop: 1550, mobile: 900 },
-    windowTrailerVideo: { desktop: 1850, mobile: 1000 },
-    roadmapHeaders: { desktop: 2600, mobile: 1200 },
-    smashToEarnCharacter: { desktop: 2900, mobile: 1300 },
-    q3Header: { desktop: 2900, mobile: 2200 },
-    roadMapQ3Text: { desktop: 2900, mobile: 1300 },
-    arrowToFfffToEarn: { desktop: 2900, mobile: 1400 },
-    ffffToEarnCharacter: { desktop: 3300, mobile: 1400 },
-    q4Header: { desktop: 3300, mobile: 2600 },
-    roadMapQ4Text: { desktop: 3300, mobile: 1400 },
-    arrowToPlayToEarn: { desktop: 3300, mobile: 1400 },
+    howToHeaders: { desktop: 500, mobile: 280 },
+    characters: { desktop: 700, mobile: 550 },
+    arrows: { desktop: 700, mobile: 550 },
+    trailerHeaders: { desktop: 1550, mobile: 910 },
+    windowTrailerVideo: { desktop: 1850, mobile: 1120 },
+    roadmapHeaders: { desktop: 2600, mobile: 1250 },
+    smashToEarnCharacter: { desktop: 2900, mobile: 1400 },
+    q3Header: { desktop: 2900, mobile: 1400 },
+    roadMapQ3Text: { desktop: 2900, mobile: 1400 },
+    arrowToFfffToEarn: { desktop: 2900, mobile: 1420 },
+    ffffToEarnCharacter: { desktop: 3300, mobile: 1500 },
+    q4Header: { desktop: 3300, mobile: 1500 },
+    roadMapQ4Text: { desktop: 3300, mobile: 1500 },
+    arrowToPlayToEarn: { desktop: 3300, mobile: 1520 },
     playToEarnCharacter: { desktop: 3700, mobile: 1600 },
-    q1Header: { desktop: 3700, mobile: 3000 },
+    q1Header: { desktop: 3700, mobile: 1600 },
     roadMapQ1Text: { desktop: 3700, mobile: 1600 }
   };
 

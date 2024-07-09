@@ -1,4 +1,16 @@
 @media screen and (max-width: 393px) {
+
+  .roadMapQ3TextEng,
+  .roadMapQ3TextCn,
+  .roadMapQ4TextEng,
+  .roadMapQ4TextCn,
+  .roadMapQ1TextEng,
+  .roadMapQ1TextCn,
+  .p2eTextEng,
+  .p2eTextCn {
+    display: none;
+  }
+
   .duriano-header {
     width: 325px;
     height: 52px;
@@ -44,10 +56,6 @@
     }
   }
 
-  .p2eTextEng {
-    display: none;
-  }
-
   .p2eTextMobileCn {
     width: 499px;
     height: 221px;
@@ -69,10 +77,6 @@
       top: 357px;
       opacity: 1;
     }
-  }
-
-  .p2eTextCn {
-    display: none;
   }
 
   .howToHeaderEng {
@@ -184,11 +188,11 @@
   }
 
   .q3Header {
-    width: 162.5px;
-    height: 87.5px;
+    width: 74.29px;
+    height: 40px;
     position: absolute;
-    left: 739px;
-    top: 3379px;
+    left: 253px;
+    top: 2304px;
     opacity: 0;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: top, opacity;
@@ -197,16 +201,16 @@
   }
 
   .q3Header.visible {
-    top: 3579px;
+    top: 2304px;
     opacity: 1;
   }
 
   .q4Header {
-    width: 150.5px;
-    height: 87.5px;
+    width: 68.8px;
+    height: 40px;
     position: absolute;
-    left: 1076px;
-    top: 4669px;
+    left: 64px;
+    top: 2811px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: top, opacity;
@@ -215,16 +219,16 @@
   }
 
   .q4Header.visible {
-    top: 4268px;
+    top: 2611px;
     opacity: 1;
   }
 
   .q1Header {
-    width: 150.5px;
-    height: 87.5px;
+    width: 74.29px;
+    height: 40px;
     position: absolute;
-    left: 767px;
-    top: 5088px;
+    left: 253px;
+    top: 3090px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: top, opacity;
@@ -233,17 +237,8 @@
   }
 
   .q1Header.visible {
-    top: 4687px;
+    top: 2890px;
     opacity: 1;
-  }
-
-  .roadMapQ3TextEng,
-  .roadMapQ3TextCn,
-  .roadMapQ4TextEng,
-  .roadMapQ4TextCn,
-  .roadMapQ1TextEng,
-  .roadMapQ1TextCn  {
-    display: none;
   }
 
   .roadMapQ3TextMobileEng {
