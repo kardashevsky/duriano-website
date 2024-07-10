@@ -6,28 +6,34 @@ export default function handleScroll() {
 
   // Определение порогов для всех элементов
   const thresholds = {
-    howToHeaders: { desktop: 500, mobile: 280 },
-    characters: { desktop: 700, mobile: 550 },
-    arrows: { desktop: 700, mobile: 550 },
-    trailerHeaders: { desktop: 1550, mobile: 910 },
-    windowTrailerVideo: { desktop: 1850, mobile: 1120 },
-    roadmapHeaders: { desktop: 2600, mobile: 1250 },
-    smashToEarnCharacter: { desktop: 2900, mobile: 1400 },
-    q3Header: { desktop: 2900, mobile: 1400 },
-    roadMapQ3Text: { desktop: 2900, mobile: 1400 },
-    arrowToFfffToEarn: { desktop: 2900, mobile: 1420 },
-    ffffToEarnCharacter: { desktop: 3300, mobile: 1500 },
-    q4Header: { desktop: 3300, mobile: 1500 },
-    roadMapQ4Text: { desktop: 3300, mobile: 1500 },
-    arrowToPlayToEarn: { desktop: 3300, mobile: 1520 },
-    playToEarnCharacter: { desktop: 3700, mobile: 1600 },
-    q1Header: { desktop: 3700, mobile: 1600 },
-    roadMapQ1Text: { desktop: 3700, mobile: 1600 }
+    howToHeaders: { desktop: 500, mobile: 280, desk1440: 500 },
+    characters: { desktop: 700, mobile: 550, desk1440: 600 },
+    arrows: { desktop: 700, mobile: 550, desk1440: 600 },
+    trailerHeaders: { desktop: 1550, mobile: 910, desk1440: 1300 },
+    windowTrailerVideo: { desktop: 1850, mobile: 1120, desk1440: 1480 },
+    roadmapHeaders: { desktop: 2600, mobile: 1250, desk1440: 1950 },
+    smashToEarnCharacter: { desktop: 2900, mobile: 1400, desk1440: 2150 },
+    q3Header: { desktop: 2900, mobile: 1400, desk1440: 2150 },
+    roadMapQ3Text: { desktop: 2900, mobile: 1400, desk1440: 2150 },
+    arrowToFfffToEarn: { desktop: 2900, mobile: 1420, desk1440: 2290 },
+    ffffToEarnCharacter: { desktop: 3300, mobile: 1500, desk1440: 2500 },
+    q4Header: { desktop: 3300, mobile: 1500, desk1440: 2500 },
+    roadMapQ4Text: { desktop: 3300, mobile: 1500, desk1440: 2500 },
+    arrowToPlayToEarn: { desktop: 3300, mobile: 1520, desk1440: 2700 },
+    playToEarnCharacter: { desktop: 3700, mobile: 1600, desk1440: 2800 },
+    q1Header: { desktop: 3700, mobile: 1600, desk1440: 2800 },
+    roadMapQ1Text: { desktop: 3700, mobile: 1600, desk1440: 2800 }
   };
 
   // Функция для получения текущего порога в зависимости от ширины экрана
   function getCurrentPixelThreshold(key) {
-    return window.innerWidth <= 430 ? thresholds[key].mobile : thresholds[key].desktop;
+    if (window.innerWidth <= 430) {
+      return thresholds[key].mobile;
+    } else if (window.innerWidth <= 1440) {
+      return thresholds[key].desk1440;
+    } else if (window.innerWidth <= 1920) {
+      return thresholds[key].desktop;
+    }
   }
 
   // Функция для проверки и добавления классов видимости

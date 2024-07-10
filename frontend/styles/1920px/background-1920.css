@@ -1,5 +1,5 @@
 /* Стили фона и фоновых блоков для компьютера*/
-@media screen and (min-width: 431px) {
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
 
   .cloud_left_mobile,
   .cloud_right_mobile,

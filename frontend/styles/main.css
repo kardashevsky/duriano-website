@@ -1,25 +1,30 @@
 /* styles/main.css */
 @import '1920px/background-1920.css';
+@import '1440px/background-1440.css';
 @import '430px/background-430.css';
 @import '393px/background-393.css';
 @import '375px/background-375.css';
 
 @import '1920px/characters-1920.css';
+@import '1440px/characters-1440.css';
 @import '430px/characters-430.css';
 @import '393px/characters-393.css';
 @import '375px/characters-375.css';
 
 @import '1920px/text-1920.css';
+@import '1440px/text-1440.css';
 @import '430px/text-430.css';
 @import '393px/text-393.css';
 @import '375px/text-375.css';
 
 @import '1920px/buttons-1920.css';
+@import '1440px/buttons-1440.css';
 @import '430px/buttons-430.css';
 @import '393px/buttons-393.css';
 @import '375px/buttons-375.css';
 
 @import '1920px/arrows-1920.css';
+@import '1440px/arrows-1440.css';
 @import '430px/arrows-430.css';
 @import '393px/arrows-393.css';
 @import '375px/arrows-375.css';
