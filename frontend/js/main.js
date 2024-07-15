@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Определяем язык на основе предпочтений пользователя
   const userLang = navigator.language || navigator.userLanguage;
-  console.log(`Detected language: ${userLang}`); 
+  console.log(`Detected language: ${userLang}`);
   let lang = 'en'; // По умолчанию английский
 
   // Проверяем на наличие Китайского языка

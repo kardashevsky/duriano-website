@@ -58,10 +58,10 @@
   }
 
   .p2eTextMobileCn {
-    width: 499px;
-    height: 221px;
+    width: 216px;
+    height: 28px;
     position: absolute;
-    left: 896px;
+    left: 89px;
     animation: slideDownP2eTextMobileCn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 0;
     will-change: top, opacity;
@@ -71,11 +71,11 @@
 
   @keyframes slideDownP2eTextMobileCn {
     0% {
-      top: 157px;
+      top: 70px;
       opacity: 0;
     }
     100% {
-      top: 357px;
+      top: 170px;
       opacity: 1;
     }
   }

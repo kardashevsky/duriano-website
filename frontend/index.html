@@ -23,6 +23,17 @@
     <meta name="twitter:description" content="Join Duriano to earn rewards while playing!">
     <meta name="twitter:image" content="public/favicon.svg">
     <meta name="twitter:url" content="https://duriano.io">
+
+    <!-- Кэширование на 1 день
+    <meta http-equiv="Cache-Control" content="max-age=900, must-revalidate">
+    <meta http-equiv="Pragma" content="cache">
+    <meta http-equiv="Expires" content="900"> -->
+
+    <!-- Отключение кэширования -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
 </head>
 <body>
     <div class="background">
@@ -60,7 +71,7 @@
             <img src="assets/buttons/xAccountButton.svg" alt="X Channel Button" class="xAccountButton" loading="lazy">
         </a>
 
-        <!-- Clouds -->ы
+        <!-- Clouds -->
         <div class="cloud-container">
             <img src="assets/background/cloud_left.svg" alt="Cloud Left" class="cloud_left" loading="lazy">
             <img src="assets/background/cloud_left_mobile.svg" alt="Cloud Left Mobile" class="cloud_left_mobile" loading="lazy">
@@ -149,7 +160,7 @@
 
         <!-- Additional background elements -->
         <img src="assets/background/bridge_background.svg" class="bridge-background" loading="lazy">
-        <img src="assets/background/bridge_background_mobile.svg" class="bridge-background-mobile" loading="eager">
+        <img src="assets/background/bridge_background_mobile.svg" class="bridge-background-mobile" loading="lazy">
         <img src="assets/background/textureLeft.svg" class="textureLeft" loading="lazy">
         <img src="assets/background/textureMiddle.svg"class="textureMiddle" loading="lazy">
         <img src="assets/background/textureMiddleMobile.svg"class="textureMiddleMobile" loading="lazy">
