@@ -14,15 +14,22 @@
     display: none;
   }
 
-  .background {
+  .background-container1920 {
     width: 1920px;
+    height: 6333px;
+    left: 320px;
+    position: relative;
+  }
+
+  .background {
+    width: 2560px;
     height: 6333px;
     overflow: hidden; 
     position: relative;
   }
 
   .backgroundBlue {
-    width: 1920px;
+    width: 2560px;
     height: 980px;
     top: 0px;
     background-color: #3FD0FF;
@@ -33,7 +40,7 @@
   }
 
   .backgroundGreen {
-    width: 1920px;
+    width: 2560px;
     height: 5353px;
     top: 980px;
     position: absolute;
@@ -132,12 +139,17 @@
   }
 
   .bridge-background {
-    width: 1920px;
-    height: 263.5px;
-    top: 919px;
+    display: none;
+  }
+
+  .bridge-backgroundUltraWide {
+    width: 21728.5px;
+    height: 905.5px;
+    top: 817px;
     z-index: 2;
     position: absolute;
     pointer-events: none;
+    display: block;
   }
 
   .textureLeft {

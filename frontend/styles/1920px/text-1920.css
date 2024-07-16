@@ -12,6 +12,12 @@
     display: none;
   }
 
+  .p2eText {
+    font-family: 'durianoFont';
+    src: url('/frontend/public/durianoFont.ttf') format('truetype');
+    color: #ffffff;
+  }
+
   .duriano-header {
     width: 893px;
     height: 143.77px;
