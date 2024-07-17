@@ -1,4 +1,3 @@
-/* Стили фона и фоновых блоков для ширины экрана 393px*/
 @media screen and (min-width: 376px) and (max-width: 393px) {
 
   .cloud_left,
@@ -14,6 +13,10 @@
   .textureMiddle,
   .textureRight,
   .bridge-backgroundUltraWide,
+  .textureRightUltra,
+  .textureLeftUltra,
+  .bamboo_big_left_1_ultra,
+  .bamboo_big_right_1_ultra,
   .footer {
       display: none;
   }

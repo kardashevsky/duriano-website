@@ -1,4 +1,3 @@
-// js/languageSwitchers.js
 export default function initializeLanguageSwitchers() {
   const languageSwitchers = document.querySelectorAll('.language-switcher');
   
@@ -44,7 +43,6 @@ export default function initializeLanguageSwitchers() {
     switcher.addEventListener('click', function() {
       const lang = switcher.getAttribute('data-lang');
 
-      // Общая функция для скрытия/отображения элементов
       function toggleVisibility(lang) {
         const elementsToToggle = ['p2eText', 'p2eTextMobile', 'howToHeader', 'trailerHeader', 'roadmapHeader', 'roadMapQ3Text', 'roadMapQ4Text', 'roadMapQ1Text'];
         elementsToToggle.forEach(element => {

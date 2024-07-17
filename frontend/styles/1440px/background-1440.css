@@ -1,4 +1,4 @@
-/* Стили фона и фоновых блоков для компьютера*/
+/* Стили фона и фоновых блоков для компьютера */
 @media screen and (min-width: 431px) and (max-width: 1440px) {
 
   .cloud_left_mobile,
@@ -11,20 +11,24 @@
   .bamboo_big_left_mobile,
   .bamboo_big_right_mobile,
   .bridge-backgroundUltraWide,
+  .textureRightUltra,
+  .textureLeftUltra,
+  .bamboo_big_left_1_ultra,
+  .bamboo_big_right_1_ultra,
   .footer-mobile {
     display: none;
   }
 
   .background {
-    width: 1440px; /* 75% от оригинала 1920px */
-    height: 4749.75px; /* 75% от оригинала 6333px */
+    width: 1440px;
+    height: 4749.75px;
     overflow: hidden;
     position: relative;
   }
 
   .backgroundBlue {
-    width: 1440px; /* 75% от оригинала 1920px */
-    height: 735px; /* 75% от оригинала 980px */
+    width: 1440px;
+    height: 735px;
     top: 0px;
     background-color: #3FD0FF;
     position: absolute;
@@ -34,9 +38,9 @@
   }
 
   .backgroundGreen {
-    width: 1440px; /* 75% от оригинала 1920px */
-    height: 4014.75px; /* 75% от оригинала 5353px */
-    top: 735px; /* 75% от оригинала 980px */
+    width: 1440px;
+    height: 4014.75px;
+    top: 735px;
     position: absolute;
     left: 0;
     background-color: #68A025;
@@ -45,9 +49,9 @@
   }
 
   .cloud_left {
-    width: 712.5px; /* 75% от оригинала 950px */
-    height: 457.125px; /* 75% от оригинала 609.5px */
-    top: 54px; /* 75% от оригинала 72px */
+    width: 712.5px;
+    height: 457.125px;
+    top: 54px;
     z-index: 1;
     position: absolute;
     pointer-events: none;
@@ -57,19 +61,19 @@
 
   @keyframes slideCloudLeft {
     0% {
-      left: 150px; /* 75% от оригинала 200px */
+      left: 150px;
       opacity: 0;
     }
     100% {
-      left: -380.25px; /* 75% от оригинала -507px */
+      left: -380.25px;
       opacity: 1;
     }
   }
 
   .cloud_right {
-    width: 709.185px; /* 75% от оригинала 945.58px */
-    height: 461.25px; /* 75% от оригинала 615px */
-    top: -10.5px; /* 75% от оригинала -14px */
+    width: 709.185px;
+    height: 461.25px;
+    top: -10.5px;
     z-index: 1;
     position: absolute;
     pointer-events: none;
@@ -79,18 +83,18 @@
 
   @keyframes slideCloudRight {
     0% {
-      left: 525px; /* 75% от оригинала 700px */
+      left: 525px;
       opacity: 0;
     }
     100% {
-      left: 1146.375px; /* 75% от оригинала 1528.5px */
+      left: 1146.375px;
       opacity: 1;
     }
   }
 
   .bamboo_small_left {
-    width: 211.425px; /* 75% от оригинала 281.9px */
-    height: 812.8425px; /* 75% от оригинала 1083.79px */
+    width: 211.425px;
+    height: 812.8425px;
     top: 0px;
     left: 0px;
     z-index: 2;
@@ -102,7 +106,7 @@
 
   @keyframes slideBambooSmallLeft {
     0% {
-      left: -225px; /* 75% от оригинала -300px */
+      left: -225px;
     }
     100% {
       left: 0px;
@@ -110,11 +114,11 @@
   }
 
   .bamboo_small_right {
-    width: 213.0075px; /* 75% от оригинала 284.01px */
-    height: 811.38px; /* 75% от оригинала 1081.84px */
+    width: 213.0075px;
+    height: 811.38px;
     position: absolute;
-    top: 11.2125px; /* 75% от оригинала 14.95px */
-    left: 1230px; /* 75% от оригинала 1640px */
+    top: 11.2125px;
+    left: 1230px;
     z-index: 2;
     will-change: left;
     pointer-events: none;
@@ -123,58 +127,58 @@
 
   @keyframes slideBambooSmallRight {
     0% {
-      left: 1462.5px; /* 75% от оригинала 1950px */
+      left: 1462.5px;
       opacity: 0;
     }
     100% {
-      left: 1230px; /* 75% от оригинала 1640px */
+      left: 1230px;
       opacity: 1;
     }
   }
 
   .bridge-background {
-    width: 1440px; /* 75% от оригинала 1920px */
-    height: 197.625px; /* 75% от оригинала 263.5px */
-    top: 689.25px; /* 75% от оригинала 919px */
+    width: 1440px;
+    height: 197.625px;
+    top: 689.25px;
     z-index: 2;
     position: absolute;
     pointer-events: none;
   }
 
   .textureLeft {
-    width: 300px; /* 75% от оригинала 400px */
-    height: 3918.75px; /* 75% от оригинала 5225px */
-    left: -7.5px; /* 75% от оригинала -10px */
-    top: 765px; /* 75% от оригинала 1020px */
+    width: 300px;
+    height: 3918.75px;
+    left: -7.5px;
+    top: 765px;
     z-index: 1;
     position: absolute;
     pointer-events: none;
   }
 
   .textureMiddle {
-    width: 1423.455px; /* 75% от оригинала 1897.94px */
-    height: 4050.6375px; /* 75% от оригинала 5400.85px */
-    left: 8.25px; /* 75% от оригинала 11px */
-    top: 750px; /* 75% от оригинала 1000px */
+    width: 1423.455px;
+    height: 4050.6375px;
+    left: 8.25px;
+    top: 750px;
     z-index: 1;
     position: absolute;
     pointer-events: none;
   }
 
   .textureRight {
-    width: 300px; /* 75% от оригинала 400px */
-    height: 3918.75px; /* 75% от оригинала 5225px */
-    left: 1162.5px; /* 75% от оригинала 1550px */
-    top: 765px; /* 75% от оригинала 1020px */
+    width: 300px;
+    height: 3918.75px;
+    left: 1162.5px;
+    top: 765px;
     z-index: 1;
     position: absolute;
     pointer-events: none;
   }
 
   .bamboo_big_left_1 {
-    width: 367.5px; /* 75% от оригинала 490px */
-    height: 2250.3825px; /* 75% от оригинала 3000.51px */
-    top: -22.5px; /* 75% от оригинала -30px */
+    width: 367.5px;
+    height: 2250.3825px;
+    top: -22.5px;
     z-index: 2;
     will-change: left;
     position: absolute;
@@ -184,17 +188,17 @@
 
   @keyframes slideBambooBigLeft1 {
     0% {
-      left: -375px; /* 75% от оригинала -500px */
+      left: -375px;
     }
     100% {
-      left: -22.5px; /* 75% от оригинала -30px */
+      left: -22.5px;
     }
   }
 
   .bamboo_big_right_1 {
-    width: 367.5px; /* 75% от оригинала 490px */
-    height: 2250.3825px; /* 75% от оригинала 3000.51px */
-    top: -22.5px; /* 75% от оригинала -30px */
+    width: 367.5px;
+    height: 2250.3825px;
+    top: -22.5px;
     z-index: 2;
     will-change: left;
     position: absolute;
@@ -204,18 +208,18 @@
 
   @keyframes slideBambooBigRight1 {
     0% {
-      left: 1500px; /* 75% от оригинала 2000px */
+      left: 1500px;
     }
     100% {
-      left: 1102.5px; /* 75% от оригинала 1470px */
+      left: 1102.5px;
     }
   }
 
   .bamboo_big_left_2 {
-    width: 1324.0425px; /* 75% от оригинала 1765.39px */
-    height: 4892.07px; /* 75% от оригинала 6522.76px */
-    top: 637.5px; /* 75% от оригинала 850px */
-    left: -645px; /* 75% от оригинала -860px */
+    width: 1324.0425px;
+    height: 4892.07px;
+    top: 637.5px;
+    left: -645px;
     z-index: 2;
     transform: rotate(1deg);
     position: absolute;
@@ -224,10 +228,10 @@
   }
 
   .bamboo_big_right_2 {
-    width: 1275.57px; /* 75% от оригинала 1700.76px */
-    height: 4892.07px; /* 75% от оригинала 6522.76px */
-    left: 675px; /* 75% от оригинала 900px */
-    top: 600px; /* 75% от оригинала 800px */
+    width: 1275.57px;
+    height: 4892.07px;
+    left: 675px;
+    top: 600px;
     z-index: 2;
     transform: rotate(0deg);
     position: absolute;
@@ -236,10 +240,10 @@
   }
 
   .windowTrailerVideo {
-    width: 775.5px; /* 75% от оригинала 1034px */
-    height: 445.5px; /* 75% от оригинала 594px */
-    left: 332.25px; /* 75% от оригинала 443px */
-    top: 2000.25px; /* 75% от оригинала 2667px */
+    width: 775.5px;
+    height: 445.5px;
+    left: 332.25px;
+    top: 2000.25px;
     z-index: 2;
     position: absolute;
     pointer-events: none;
@@ -250,15 +254,15 @@
   }
 
   .windowTrailerVideo.visible {
-    top: 1786.5px; /* 75% от оригинала 2382px */
+    top: 1786.5px;
     opacity: 1;
   }
 
   .footer {
-    width: 1440px; /* 75% от оригинала 1920px */
-    height: 537.5925px; /* 75% от оригинала 716.79px */
+    width: 1440px;
+    height: 537.5925px;
     position: absolute;
-    top: 4749.75px; /* 75% от оригинала 6333px */
+    top: 4749.75px;
     z-index: 2;
     will-change: top, left;
     pointer-events: none;
@@ -272,10 +276,10 @@
 
   @keyframes footer {
     0% {
-      top: 4749.75px; /* 75% от оригинала 6333px */
+      top: 4749.75px;
     }
     100% {
-      top: 4322.25px; /* 75% от оригинала 5763px */
+      top: 4322.25px;
     }
   }
 }

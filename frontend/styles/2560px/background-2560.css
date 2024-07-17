@@ -10,6 +10,10 @@
   .textureMiddleMobile,
   .bamboo_big_left_mobile,
   .bamboo_big_right_mobile,
+  .textureLeft,
+  .textureRigh,
+  .bamboo_big_left_1,
+  .bamboo_big_right_1,
   .footer-mobile {
     display: none;
   }
@@ -17,19 +21,22 @@
   .background-container1920 {
     width: 1920px;
     height: 6333px;
-    left: 320px;
+    left: 0px;
     position: relative;
   }
 
   .background {
-    width: 2560px;
+    width: 100%;
     height: 6333px;
     overflow: hidden; 
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .backgroundBlue {
-    width: 2560px;
+    width: 100%;
     height: 980px;
     top: 0px;
     background-color: #3FD0FF;
@@ -40,7 +47,7 @@
   }
 
   .backgroundGreen {
-    width: 2560px;
+    width: 100%;
     height: 5353px;
     top: 980px;
     position: absolute;
@@ -152,14 +159,15 @@
     display: block;
   }
 
-  .textureLeft {
-    width: 400px;
+  .textureLeftUltra {
+    width: 1027px;
     height: 5225px;
-    left: -10px;
+    left: -600px;
     top: 1020px;
     z-index: 1;
     position: absolute;
     pointer-events: none;
+    display: block;
   }
 
   .textureMiddle {
@@ -167,58 +175,61 @@
     height: 5400.85px;
     left: 11px;
     top: 1000px;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     pointer-events: none;
   }
 
-  .textureRight {
-    width: 400px;
+  .textureRightUltra {
+    width: 978.5px;
     height: 5225px;
-    left: 1550px;
-    top: 1020px;
+    left: 1500px;
+    top: 1040px;
     z-index: 1;
     position: absolute;
     pointer-events: none;
+    display: block;
   }
 
-  .bamboo_big_left_1 {
-    width: 490px;
-    height: 3000.51px;
+  .bamboo_big_left_1_ultra {
+    width: 690px;
+    height: 3291.01px;
     top: -30px;
     z-index: 2;
     will-change: left;
     position: absolute;
     pointer-events: none;
-    animation: slideBambooBigLeft1 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    animation: slideBambooBigLeft1Ultra 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    display: block;
   }
 
-  @keyframes slideBambooBigLeft1 {
+  @keyframes slideBambooBigLeft1Ultra {
     0% {
-      left: -500px;
+      left: -1000px;
     }
     100% {
-      left: -30px;
+      left: -200px;
     }
   }
 
-  .bamboo_big_right_1 {
-    width: 490px;
-    height: 3000.51px;
+  .bamboo_big_right_1_ultra {
+    width: 690px;
+    height: 3251.88px;
     top: -30px;
     z-index: 2;
     will-change: left;
     position: absolute;
     pointer-events: none;
-    animation: slideBambooBigRight1 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    animation: slideBambooBigRight1Ultra 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    display: block;
   }
 
-  @keyframes slideBambooBigRight1 {
+  @keyframes slideBambooBigRight1Ultra {
     0% {
-      left: 2000px;
+      left: 2250px;
     }
     100% {
-      left: 1470px;
+      left: 1450px;
     }
   }
 
@@ -270,6 +281,7 @@
     height: 716.79px;
     position: absolute;
     top: 6333px;
+    left: 0px;
     z-index: 2;
     will-change: top, left;
     pointer-events: none;

@@ -1,4 +1,3 @@
-/* Стили текстовых блоков */
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
 
   .p2eTextMobileEng,
@@ -10,12 +9,6 @@
   .roadMapQ4TextMobileCn,
   .roadMapQ4TextMobileEng {
     display: none;
-  }
-
-  .p2eText {
-    font-family: 'durianoFont';
-    src: url('/frontend/public/durianoFont.ttf') format('truetype');
-    color: #ffffff;
   }
 
   .duriano-header {

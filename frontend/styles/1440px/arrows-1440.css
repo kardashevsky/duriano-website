@@ -1,4 +1,3 @@
-/* Стили всех стрелок */
 @media screen and (min-width: 431px) and (max-width: 1440px) {
 
   .arrowToSmashMobile,
@@ -9,10 +8,10 @@
   }
 
   .arrowToSmash {
-    width: 210px; /* 75% от оригинала 280px */
-    height: 210px; /* 75% от оригинала 280px */
-    top: 1008.75px; /* 75% от оригинала 1345px */
-    left: 408.75px; /* 75% от оригинала 545px */
+    width: 210px;
+    height: 210px;
+    top: 1008.75px;
+    left: 408.75px;
     position: absolute;
     z-index: 2;
     cursor: pointer;
@@ -20,10 +19,10 @@
   }
 
   .arrowToEarn {
-    width: 247.5px; /* 75% от оригинала 330px */
-    height: 225px; /* 75% от оригинала 300px */
-    top: 1297.5px; /* 75% от оригинала 1730px */
-    left: 727.5px; /* 75% от оригинала 970px */
+    width: 247.5px;
+    height: 225px;
+    top: 1297.5px;
+    left: 727.5px;
     position: absolute;
     z-index: 2;
     cursor: pointer;
@@ -63,10 +62,10 @@
   }
 
   .arrowToPlayToEarn {
-    width: 247.5px; /* 75% от оригинала 330px */
-    height: 225px; /* 75% от оригинала 300px */
-    top: 3160px; /* 75% от оригинала 4100px */
-    left: 450px; /* 75% от оригинала 480px */
+    width: 247.5px;
+    height: 225px;
+    top: 3160px;
+    left: 450px;
     position: absolute;
     transform: scale(1) rotate(105deg);
     will-change: transform, opacity;
@@ -83,10 +82,10 @@
   }
 
   .arrowPlayButtonTopMiddle {
-    width: 210px; /* 75% от оригинала 280px */
-    height: 367.5px; /* 75% от оригинала 490px */
-    top: 3675px; /* 75% от оригинала 4900px */
-    left: 656.25px; /* 75% от оригинала 875px */
+    width: 210px;
+    height: 367.5px;
+    top: 3675px;
+    left: 656.25px;
     position: absolute;
     transform: translate(0%, 0px) rotate(-2deg);
     will-change: transform, opacity;
@@ -97,10 +96,10 @@
   }
 
   .arrowPlayButtonTopLeft {
-    width: 337.5px; /* 75% от оригинала 450px */
-    height: 412.5px; /* 75% от оригинала 550px */
-    top: 3795px; /* 75% от оригинала 5060px */
-    left: 165px; /* 75% от оригинала 220px */
+    width: 337.5px;
+    height: 412.5px;
+    top: 3795px;
+    left: 165px;
     position: absolute;
     transform: translate(0%, 0px) rotate(180deg);
     will-change: transform, opacity;
@@ -111,10 +110,10 @@
   }
 
   .arrowPlayButtonTopRight {
-    width: 187.5px; /* 75% от оригинала 250px */
-    height: 300px; /* 75% от оригинала 400px */
-    top: 3825px; /* 75% от оригинала 5100px */
-    left: 1001.25px; /* 75% от оригинала 1335px */
+    width: 187.5px;
+    height: 300px;
+    top: 3825px;
+    left: 1001.25px;
     position: absolute;
     transform: translate(0%, 0px) rotate(50deg);
     will-change: transform, opacity;
@@ -125,10 +124,10 @@
   }
 
   .arrowPlayButtonDownLeft {
-    width: 187.5px; /* 75% от оригинала 250px */
-    height: 300px; /* 75% от оригинала 400px */
-    top: 4162.5px; /* 75% от оригинала 5550px */
-    left: 225px; /* 75% от оригинала 300px */
+    width: 187.5px;
+    height: 300px;
+    top: 4162.5px;
+    left: 225px;
     position: absolute;
     transform: translate(0%, 0px) rotate(230deg);
     will-change: transform, opacity;
@@ -139,10 +138,10 @@
   }
 
   .arrowPlayButtonDownRight {
-    width: 337.5px; /* 75% от оригинала 450px */
-    height: 412.5px; /* 75% от оригинала 550px */
-    top: 4087.5px; /* 75% от оригинала 5450px */
-    left: 952.5px; /* 75% от оригинала 1270px */
+    width: 337.5px;
+    height: 412.5px;
+    top: 4087.5px;
+    left: 952.5px;
     position: absolute;
     transform: translate(0%, 0px);
     will-change: transform, opacity;

@@ -1,5 +1,3 @@
-// js/scrollHandler.js
-
 export default function handleScroll() {
   const scrollY = window.scrollY;
   const windowHeight = window.innerHeight;
@@ -128,9 +126,7 @@ function debounce(func, wait = 20, immediate = true) {
   };
 }
 
-// Изначальная проверка при загрузке страницы
 handleScroll();
 
-// Проверка при изменении размеров окна и прокрутке с дебаунсом
 window.addEventListener('resize', debounce(handleScroll));
 window.addEventListener('scroll', debounce(handleScroll));

@@ -1,11 +1,10 @@
-/* Стили кнопок */
 @media screen and (min-width: 431px) and (max-width: 1440px) {
 
   .divider {
-    height: 40px; /* Уменьшаем высоту */
+    height: 40px;
     position: absolute;
     opacity: 0;
-    left: 726px; /* Уменьшаем смещение на 25% */
+    left: 726px;
     transform: translate(0%, 0px);
     animation: slideDivider 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform, opacity;
@@ -19,15 +18,15 @@
       opacity: 0;
     }
     100% {
-      top: 60px; /* Уменьшаем высоту */
+      top: 60px;
       opacity: 1;
     }
   }
 
   .engLanguage {
-    width: 45px; /* Уменьшаем ширину */
-    height: 28px; /* Уменьшаем высоту */
-    left: 669px; /* Уменьшаем смещение на 25% */
+    width: 45px;
+    height: 28px;
+    left: 669px;
     z-index: 1;
     position: absolute;
     will-change: transform, opacity;
@@ -38,10 +37,10 @@
   }
 
   .cnLanguage {
-    width: 33px; /* Уменьшаем ширину */
-    height: 28px; /* Уменьшаем высоту */
+    width: 33px;
+    height: 28px;
     z-index: 1;
-    left: 743px; /* Уменьшаем смещение на 25% */
+    left: 743px;
     position: absolute;
     transition: transform 0.3s ease;
     will-change: transform, opacity;
@@ -61,17 +60,17 @@
       opacity: 0;
     }
     100% {
-      top: 67px; /* Уменьшаем высоту */
+      top: 67px;
       opacity: 1;
     }
   }
 
   .playButton {
-    width: 256.26px; /* Уменьшаем ширину */
-    height: 112.5px; /* Уменьшаем высоту */
+    width: 256.26px;
+    height: 112.5px;
     position: absolute;
-    left: 702px; /* Уменьшаем смещение на 25% */
-    top: 443px; /* Уменьшаем смещение на 25% */
+    left: 702px;
+    top: 443px;
     transform: translate(0%, 0px);
     animation: sliderPlayButton 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform, opacity;
@@ -87,21 +86,21 @@
 
   @keyframes sliderPlayButton {
     0% {
-      top: 650px; /* Уменьшаем высоту */
+      top: 650px;
       opacity: 0;
     }
     100% {
-      top: 481px; /* Уменьшаем высоту */
+      top: 481px;
       opacity: 1;
     }
   }
 
   .playButtonFooter {
-    width: 284.24px; /* Уменьшаем ширину */
-    height: 124.96px; /* Уменьшаем высоту */
+    width: 284.24px;
+    height: 124.96px;
     position: absolute;
-    left: 583px; /* Уменьшаем смещение на 25% */
-    top: 4065px; /* Уменьшаем высоту */
+    left: 583px;
+    top: 4065px;
     transform: scale(1);
     transform-origin: center;
     will-change: transform, opacity;
@@ -121,10 +120,10 @@
   }
 
   .telegramChannelButton {
-    width: 56.47px; /* Уменьшаем ширину */
-    height: 49.63px; /* Уменьшаем высоту */
+    width: 56.47px;
+    height: 49.63px;
     position: absolute;
-    left: 976.43px; /* Уменьшаем смещение на 25% */
+    left: 976.43px;
     transform: translate(0%, 0px);
     animation: sliderTelegramChannelButton 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform, opacity;
@@ -139,20 +138,20 @@
 
   @keyframes sliderTelegramChannelButton {
     0% {
-      top: 645px; /* Уменьшаем высоту */
+      top: 645px;
       opacity: 0;
     }
     100% {
-      top: 476px; /* Уменьшаем высоту */
+      top: 476px;
       opacity: 1;
     }
   }
 
   .xAccountButton {
-    width: 53.09px; /* Уменьшаем ширину */
-    height: 49.63px; /* Уменьшаем высоту */
+    width: 53.09px;
+    height: 49.63px;
     position: absolute;
-    left: 979.71px; /* Уменьшаем смещение на 25% */
+    left: 979.71px;
     transform: translate(0%, 0px);
     animation: sliderXAccountButton 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform, opacity;
@@ -167,21 +166,21 @@
 
   @keyframes sliderXAccountButton {
     0% {
-      top: 697.86px; /* Уменьшаем высоту */
+      top: 697.86px;
       opacity: 0;
     }
     100% {
-      top: 535.61px; /* Уменьшаем высоту */
+      top: 535.61px;
       opacity: 1;
     }
   }
 
   .playVideoButton {
-    width: 106.29px; /* Уменьшаем ширину */
-    height: 95.92px; /* Уменьшаем высоту */
+    width: 106.29px;
+    height: 95.92px;
     position: absolute;
-    top: 2175px; /* Уменьшаем высоту */
-    left: 675px; /* Уменьшаем смещение на 25% */
+    top: 2175px;
+    left: 675px;
     will-change: transform, opacity;
     z-index: 6;
     cursor: pointer;
@@ -194,7 +193,7 @@
   }
 
   .playVideoButton.visible {
-    top: 1961px; /* Уменьшаем высоту */
+    top: 1961px;
     opacity: 1;
   }
 }
