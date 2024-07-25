@@ -1,39 +1,39 @@
 /* Стили персонажей и их анимаций */
-@media screen and (min-width: 1921px) {
+@media screen and (min-width: 431px) and (max-width: 1440px) {
 
   .character {
-    width: 435px;
-    height: 703px;
-    position: absolute;
-    left: 476px;
+    width: 326.25px; /* 75% от оригинала 435px */
+    height: 527.25px; /* 75% от оригинала 703px */
+    left: 345px; /* 75% от оригинала 476px */
     animation: slideDownCharacter 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
     z-index: 5;
+    position: absolute;
   }
 
   @keyframes slideDownCharacter {
     0% {
-      top: -200px;
+      top: -150px; /* 75% от оригинала -200px */
       opacity: 0;
     }
     100% {
-      top: 316px;
+      top: 237px; /* 75% от оригинала 316px */
       opacity: 1;
     }
   }
 
   .shadow {
-    width: 352px;
-    height: 65px;
-    top: 985px;
-    position: absolute;
-    left: 517px;
+    width: 264px; /* 75% от оригинала 352px */
+    height: 48.75px; /* 75% от оригинала 65px */
+    top: 738.75px; /* 75% от оригинала 985px */
+    left: 387.75px; /* 75% от оригинала 517px */
     will-change: transform;
     pointer-events: none;
     animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     z-index: 2;
+    position: absolute;
   }
 
   @keyframes shadow {
@@ -48,110 +48,110 @@
   }
 
   .startCharacter {
-    width: 321.53px;
-    height: 369.76px;
-    position: absolute;
-    top: 1920px;
-    left: 443px;
+    width: 241.15px; /* 75% от оригинала 321.53px */
+    height: 277.32px; /* 75% от оригинала 369.76px */
+    top: 1440px; /* 75% от оригинала 1920px */
+    left: 332.25px; /* 75% от оригинала 443px */
     pointer-events: none;
     z-index: 1;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+    position: absolute;
   }
 
   .startCharacter.visible {
-    top: 1520px;
+    top: 1140px; /* 75% от оригинала 1520px */
     opacity: 1;
   }
 
   .smashCharacter {
-    width: 296.7px;
-    height: 353.47px;
-    position: absolute;
-    left: 815px;
-    top: 1845px;
+    width: 222.53px; /* 75% от оригинала 296.7px */
+    height: 265.1px; /* 75% от оригинала 353.47px */
+    top: 1383.75px; /* 75% от оригинала 1845px */
+    left: 611.25px; /* 75% от оригинала 815px */
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
     z-index: 1;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
+    position: absolute;
   }
 
   .smashCharacter.visible {
-    top: 1445px;
+    top: 1083.75px; /* 75% от оригинала 1445px */
     opacity: 1;
   }
 
   .earnCharacter {
-    width: 316.33px;
-    height: 376.69px;
-    position: absolute;
-    left: 1170px;
-    top: 1920px;
+    width: 237.25px; /* 75% от оригинала 316.33px */
+    height: 282.52px; /* 75% от оригинала 376.69px */
+    top: 1440px; /* 75% от оригинала 1920px */
+    left: 877.5px; /* 75% от оригинала 1170px */
     pointer-events: none;
     z-index: 1;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
+    position: absolute;
   }
 
   .earnCharacter.visible {
-    top: 1520px;
+    top: 1140px; /* 75% от оригинала 1520px */
     opacity: 1;
   }
 
   .smashToEarnCharacter {
-    width: 575.77px;
-    height: 356px;
-    position: absolute;
-    left: -300px;
-    top: 3630px;
+    width: 273.49px;
+    height: 267px;
+    top: 2770px;
+    left: -100px;
     opacity: 0;
     will-change: transform, opacity;
     pointer-events: none;
     z-index: 1;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
+    position: absolute;
   }
 
   .smashToEarnCharacter.visible {
-    left: 450px;
+    left: 390px;
     opacity: 1;
   }
 
   .ffffToEarnCharacter {
-    width: 579.95px;
-    height: 378.94px;
-    position: absolute;
-    left: 878px;
-    top: 4300px;
+    width: 253.73px;
+    height: 267px;
+    top: 3200px;
+    left: 640px;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
     z-index: 1;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
+    position: absolute;
   }
 
   .ffffToEarnCharacter.visible {
-    top: 3975px;
+    top: 3000px;
     opacity: 1;
   }
 
   .playToEarnCharacter {
-    width: 565.8px;
-    height: 292.73px;
-    position: absolute;
-    left: -300px;
-    top: 4679px;
+    width: 258.65px; /* 75% от оригинала 344.86px */
+    height: 267px; /* 75% от оригинала 356px */
+    top: 3400px; /* 75% от оригинала 4419px */
+    left: -100px; /* 75% от оригинала -300px */
     opacity: 0;
     will-change: transform, opacity;
     pointer-events: none;
     z-index: 1;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
+    position: absolute;
   }
 
   .playToEarnCharacter.visible {
-    left: 450px;
+    left: 380px; /* 75% от оригинала 429px */
     opacity: 1;
   }
 }

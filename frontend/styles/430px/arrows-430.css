@@ -44,7 +44,7 @@
   .arrowToFfffToEarnMobile {
     width: 120px;
     height: 300px;
-    top: 2200px;
+    top: 2210px;
     left: 68px;
     position: absolute;
     opacity: 0;
@@ -64,7 +64,7 @@
   .arrowToPlayToEarnMobile {
     width: 120px;
     height: 300px;
-    top: 2490px;
+    top: 2500px;
     left: 250px;
     position: absolute;
     transform: scale(1) rotate(105deg);

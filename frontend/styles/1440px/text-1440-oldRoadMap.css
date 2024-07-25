@@ -202,10 +202,10 @@
 
   /* Стили для .q3Header */
   .q3Header {
-    width: 143.5px;
-    height: 119px;
+    width: 121.88px;
+    height: 65.63px;
     position: absolute;
-    left: 320px;
+    left: 590px;
     top: 2550px;
     opacity: 0;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -215,16 +215,16 @@
   }
 
   .q3Header.visible {
-    top: 2760px;
+    top: 2750px;
     opacity: 1;
   }
 
   /* Стили для .q4Header */
   .q4Header {
-    width: 137.9px;
-    height: 108.5px;
+    width: 113.13px;
+    height: 65.63px;
     position: absolute;
-    left: 1000px;
+    left: 870px;
     top: 3600px;
     opacity: 0;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -234,16 +234,16 @@
   }
 
   .q4Header.visible {
-    top: 3020px;
+    top: 3300px;
     opacity: 1;
   }
 
   /* Стили для .q1Header */
   .q1Header {
-    width: 152.6px;
-    height: 100.1px;
+    width: 113.13px;
+    height: 65.63px;
     position: absolute;
-    left: 320px;
+    left: 620px;
     top: 3910px;
     opacity: 0;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -253,14 +253,14 @@
   }
 
   .q1Header.visible {
-    top: 3380px;
+    top: 3600px;
     opacity: 1;
   }
 
   /* Стили для .roadMapQ3TextEng */
   .roadMapQ3TextEng {
-    width: 315px; /* 350px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 376.5px; /* Уменьшаем на 25% от исходной ширины 502px */
+    height: 156px; /* Уменьшаем на 25% от исходной высоты 208px */
     position: absolute;
     left: 1290px; /* Смещаем влево на 25% от текущего значения 1700px */
     top: 2860px; /* Смещаем вверх на 25% от текущего значения 3680px */
@@ -270,56 +270,56 @@
     pointer-events: none;
     z-index: 1;
   }
-  
+
   .roadMapQ3TextEng.visible {
-    left: 800px;
+    left: 715px; /* Смещаем влево на 25% от текущего значения 850px */
     opacity: 1;
   }
-  
+
   /* Стили для .roadMapQ3TextCn */
   .roadMapQ3TextCn {
-    width: 315px; /* 350px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 450px; /* Уменьшаем на 25% от исходной ширины 474px */
+    height: 250px; /* Уменьшаем на 25% от исходной высоты 224px */
     position: absolute;
-    left: 1290px; /* Смещаем влево на 25% от текущего значения 1700px */
-    top: 2860px; /* Смещаем вверх на 25% от текущего значения 3680px */
+    left: 1380px; /* Смещаем влево на 25% от текущего значения 1700px */
+    top: 2800px; /* Смещаем вверх на 25% от текущего значения 3680px */
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-  
+
   .roadMapQ3TextCn.visible {
-    left: 800px;
+    left: 720px; /* Смещаем влево на 25% от текущего значения 850px */
     opacity: 1;
   }
-  
+
   /* Стили для .roadMapQ4TextEng */
   .roadMapQ4TextEng {
-    width: 373.5px; /* 415px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 295px; /* Уменьшаем на 25% от исходной ширины 387px */
+    height: 130px; /* Уменьшаем на 25% от исходной высоты 162px */
     position: absolute;
-    left: 0px; /* Смещаем влево на 25% от текущего значения 2080px */
-    top: 3150px; /* Смещаем вверх на 25% от текущего значения 4800px */
+    left: 1300px; /* Смещаем влево на 25% от текущего значения 2080px */
+    top: 3160px; /* Смещаем вверх на 25% от текущего значения 4800px */
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-  
+
   .roadMapQ4TextEng.visible {
-    left: 270px; /* Смещаем влево на 25% от текущего значения 1307px */
+    left: 890px; /* Смещаем влево на 25% от текущего значения 1307px */
     opacity: 1;
   }
-  
+
   /* Стили для .roadMapQ4TextCn */
   .roadMapQ4TextCn {
-    width: 373.5px; /* 415px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 325px; /* Уменьшаем на 25% от исходной ширины 474px */
+    height: 155px; /* Уменьшаем на 25% от исходной высоты 224px */
     position: absolute;
-    left: 0px; /* Смещаем влево на 25% от текущего значения 2080px */
+    left: 1280px; /* Смещаем влево на 25% от текущего значения 2080px */
     top: 3150px; /* Смещаем вверх на 25% от текущего значения 4800px */
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
@@ -327,47 +327,48 @@
     pointer-events: none;
     z-index: 1;
   }
-  
+
   .roadMapQ4TextCn.visible {
-    left: 250px; /* Смещаем влево на 25% от текущего значения 1307px */
+    left: 880px; /* Смещаем влево на 25% от текущего значения 1307px */
     opacity: 1;
   }
-  
+
   /* Стили для .roadMapQ1TextEng */
   .roadMapQ1TextEng {
-    width: 305.1px; /* 339px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 425px; /* Уменьшаем на 25% от исходной ширины 502px */
+    height: 200px; /* Уменьшаем на 25% от исходной высоты 208px */
     position: absolute;
-    left: 1000px;
-    top: 3500px;
+    left: 900px; /* Смещаем влево на 25% от текущего значения 2080px */
+    top: 3420px; /* Смещаем вверх на 25% от текущего значения 5873px */
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-  
+
   .roadMapQ1TextEng.visible {
-    left: 800px;
+    left: 670px; /* Смещаем влево на 25% от текущего значения 850px */
     opacity: 1;
   }
-  
+
   /* Стили для .roadMapQ1TextCn */
   .roadMapQ1TextCn {
-    width: 305.1px; /* 339px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 350px; /* Уменьшаем на 25% от исходной ширины 474px */
+    height: 148.3px; /* Уменьшаем на 25% от исходной высоты 224px */
     position: absolute;
-    left: 1000px;
-    top: 3500px;
+    left: 1000px; /* Смещаем влево на 25% от текущего значения 2080px */
+    top: 3440px; /* Смещаем вверх на 25% от текущего значения 5873px */
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-  
+
   .roadMapQ1TextCn.visible {
-    left: 800px;
+    left: 670px;
     opacity: 1;
-  }  
+  }
+
 }

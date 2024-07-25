@@ -190,11 +190,11 @@
   }
   
   .q3Header {
-    width: 162.5px;
-    height: 87.5px;
+    width: 205px;
+    height: 170px;
     position: absolute;
-    left: 739px;
-    top: 3379px;
+    left: 439px;
+    top: 3300px;
     opacity: 0;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: top, opacity;
@@ -203,16 +203,16 @@
   }
   
   .q3Header.visible {
-    top: 3579px;
+    top: 3600px;
     opacity: 1;
   }
   
   .q4Header {
-    width: 150.5px;
-    height: 87.5px;
+    width: 197px;
+    height: 155px;
     position: absolute;
-    left: 1076px;
-    top: 4669px;
+    left: 1276px;
+    top: 3975px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: top, opacity;
@@ -221,15 +221,15 @@
   }
   
   .q4Header.visible {
-    top: 4268px;
+    top: 4075px;
     opacity: 1;
   }
   
   .q1Header {
-    width: 150.5px;
-    height: 87.5px;
+    width: 218px;
+    height: 143px;
     position: absolute;
-    left: 767px;
+    left: 443px;
     top: 5088px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
@@ -239,16 +239,16 @@
   }
   
   .q1Header.visible {
-    top: 4687px;
+    top: 4610px;
     opacity: 1;
   }
   
   .roadMapQ3TextEng {
-    width: 502px;
-    height: 208px;
+    width: 350px;
+    height: 50px;
     position: absolute;
     left: 1850px;
-    top: 3680px;
+    top: 3750px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -257,16 +257,16 @@
   }
   
   .roadMapQ3TextEng.visible {
-    left: 850px;
+    left: 1080px;
     opacity: 1;
   }
 
   .roadMapQ3TextCn {
-    width: calc(round(446px * 1.1));
-    height: calc(round(153px * 1.1));  
+    width: 350px;
+    height: 50px;
     position: absolute;
-    left: 1870px;
-    top: 3700px;
+    left: 1850px;
+    top: 3750px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -275,16 +275,16 @@
   }
   
   .roadMapQ3TextCn.visible {
-    left: 870px;
+    left: 1080px;
     opacity: 1;
   }
 
   .roadMapQ4TextEng {
-    width: 387px;
-    height: 162px;
+    width: 415px;
+    height: 50px;
     position: absolute;
-    left: 2080px;
-    top: 4085px;
+    left: -100px;
+    top: 4240px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -293,16 +293,16 @@
   }
   
   .roadMapQ4TextEng.visible {
-    left: 1080px;
+    left: 400px;
     opacity: 1;
   }
 
   .roadMapQ4TextCn {
-    width: calc(round(300px * 1.1));
-    height: calc(round(157px * 1.1)); 
+    width: 415px;
+    height: 50px;
     position: absolute;
-    left: 2090px;
-    top: 4080px;
+    left: -100px;
+    top: 4240px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -311,16 +311,16 @@
   }
   
   .roadMapQ4TextCn.visible {
+    left: 400px;
     opacity: 1;
-    left: 1090px;
   }
 
   .roadMapQ1TextEng {
-    width: 591px;
-    height: 120px;
+    width: 339px;
+    height: 50px;
     position: absolute;
-    top: 4532px;
-    left: 1800px;
+    top: 4770px;
+    left: 2080px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -329,16 +329,16 @@
   }
   
   .roadMapQ1TextEng.visible {
-    left: 800px;
+    left: 1080px;
     opacity: 1;
   }
 
   .roadMapQ1TextCn {
-    width: calc(round(320px * 1.1));
-    height: calc(round(1538px * 1.1)); 
+    width: 339px;
+    height: 50px;
     position: absolute;
-    left: 1810px;
-    top: 4530px;
+    top: 4770px;
+    left: 2080px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -347,7 +347,7 @@
   }
   
   .roadMapQ1TextCn.visible {
+    left: 1080px;
     opacity: 1;
-    left: 810px;
   }
 }

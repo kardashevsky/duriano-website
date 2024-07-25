@@ -42,10 +42,10 @@
   }
 
   .arrowToFfffToEarnMobile {
-    width: 120px;
-    height: 300px;
-    top: 2150px;
-    left: 48px;
+    width: 110px;
+    height: 280px;
+    top: 2130px;
+    left: 45px;
     position: absolute;
     opacity: 0;
     transform: scale(1) rotate(65deg);
@@ -62,9 +62,9 @@
   }
 
   .arrowToPlayToEarnMobile {
-    width: 120px;
-    height: 300px;
-    top: 2440px;
+    width: 110px;
+    height: 280px;
+    top: 2400px;
     left: 220px;
     position: absolute;
     transform: scale(1) rotate(105deg);

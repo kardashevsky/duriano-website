@@ -102,9 +102,9 @@
   }
 
   .smashToEarnCharacter {
-    width: 273.49px;
-    height: 267px;
-    top: 2770px;
+    width: 490px;
+    height: 240px;
+    top: 2790px;
     left: -100px;
     opacity: 0;
     will-change: transform, opacity;
@@ -115,15 +115,15 @@
   }
 
   .smashToEarnCharacter.visible {
-    left: 390px;
+    left: 300px;
     opacity: 1;
   }
 
   .ffffToEarnCharacter {
-    width: 253.73px;
-    height: 267px;
+    width: 510px;
+    height: 290px;
     top: 3200px;
-    left: 640px;
+    left: 660px;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
@@ -133,14 +133,14 @@
   }
 
   .ffffToEarnCharacter.visible {
-    top: 3000px;
+    top: 2920px;
     opacity: 1;
   }
 
   .playToEarnCharacter {
-    width: 258.65px; /* 75% от оригинала 344.86px */
-    height: 267px; /* 75% от оригинала 356px */
-    top: 3400px; /* 75% от оригинала 4419px */
+    width: 490px;
+    height: 240px;
+    top: 3420px; /* 75% от оригинала 4419px */
     left: -100px; /* 75% от оригинала -300px */
     opacity: 0;
     will-change: transform, opacity;
@@ -151,7 +151,7 @@
   }
 
   .playToEarnCharacter.visible {
-    left: 380px; /* 75% от оригинала 429px */
+    left: 300px; /* 75% от оригинала 429px */
     opacity: 1;
   }
 }

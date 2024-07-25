@@ -1,11 +1,10 @@
-/* Стили персонажей и их анимаций */
-@media screen and (min-width: 1921px) {
+@media screen and (min-width: 376px) and (max-width: 393px) {
 
   .character {
-    width: 435px;
-    height: 703px;
+    width: 218.44px;
+    height: 353px;
     position: absolute;
-    left: 476px;
+    left: 87.22px;
     animation: slideDownCharacter 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 0;
     will-change: top, opacity;
@@ -19,17 +18,17 @@
       opacity: 0;
     }
     100% {
-      top: 316px;
+      top: 214px;
       opacity: 1;
     }
   }
 
   .shadow {
-    width: 352px;
-    height: 65px;
-    top: 985px;
+    width: 189px;
+    height: 35px;
+    top: 547px;
     position: absolute;
-    left: 517px;
+    left: 102px;
     will-change: transform;
     pointer-events: none;
     animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
@@ -48,65 +47,65 @@
   }
 
   .startCharacter {
-    width: 321.53px;
-    height: 369.76px;
+    width: 156.52px;
+    height: 180px;
     position: absolute;
-    top: 1920px;
-    left: 443px;
+    top: 979px;
+    left: 0px;
     pointer-events: none;
     z-index: 1;
     opacity: 0;
-    will-change: top, opacity;
-    transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+    will-change: left, opacity;
+    transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
   .startCharacter.visible {
-    top: 1520px;
+    left: 110px;
     opacity: 1;
   }
 
   .smashCharacter {
-    width: 296.7px;
-    height: 353.47px;
+    width: 151.09px;
+    height: 182.02px;
     position: absolute;
-    left: 815px;
-    top: 1845px;
+    left: 300px;
+    top: 1179px;
     opacity: 0;
-    will-change: top, opacity;
+    will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
-    transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
+    transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
   }
 
   .smashCharacter.visible {
-    top: 1445px;
+    left: 120px;
     opacity: 1;
   }
 
   .earnCharacter {
-    width: 316.33px;
-    height: 376.69px;
+    width: 148.13px;
+    height: 180px;
     position: absolute;
-    left: 1170px;
-    top: 1920px;
+    left: 0px;
+    top: 1379px;
     pointer-events: none;
     z-index: 1;
     opacity: 0;
-    will-change: top, opacity;
-    transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
+    will-change: left, opacity;
+    transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
   }
 
   .earnCharacter.visible {
-    top: 1520px;
+    left: 130px;
     opacity: 1;
   }
 
   .smashToEarnCharacter {
-    width: 575.77px;
-    height: 356px;
+    width: 184.35px;
+    height: 180px;
     position: absolute;
-    left: -300px;
-    top: 3630px;
+    left: -104px;
+    top: 2148px;
     opacity: 0;
     will-change: transform, opacity;
     pointer-events: none;
@@ -115,16 +114,16 @@
   }
 
   .smashToEarnCharacter.visible {
-    left: 450px;
+    left: 104px;
     opacity: 1;
   }
 
   .ffffToEarnCharacter {
-    width: 579.95px;
-    height: 378.94px;
+    width: 171.05px;
+    height: 180px;
     position: absolute;
-    left: 878px;
-    top: 4300px;
+    left: 111px;
+    top: 2500px;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
@@ -133,16 +132,16 @@
   }
 
   .ffffToEarnCharacter.visible {
-    top: 3975px;
+    top: 2355px;
     opacity: 1;
   }
 
   .playToEarnCharacter {
-    width: 565.8px;
-    height: 292.73px;
+    width: 173.46px;
+    height: 180px;
     position: absolute;
-    left: -300px;
-    top: 4679px;
+    left: 110px;
+    top: 2748px;
     opacity: 0;
     will-change: transform, opacity;
     pointer-events: none;
@@ -151,7 +150,7 @@
   }
 
   .playToEarnCharacter.visible {
-    left: 450px;
+    left: 110px;
     opacity: 1;
   }
 }

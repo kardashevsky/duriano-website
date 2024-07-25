@@ -1,351 +1,353 @@
-@media screen and (min-width: 376px) and (max-width: 393px) {
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
 
-  .roadMapQ3TextEng,
-  .roadMapQ3TextCn,
-  .roadMapQ4TextEng,
-  .roadMapQ4TextCn,
-  .roadMapQ1TextEng,
-  .roadMapQ1TextCn,
-  .p2eTextEng,
-  .p2eTextCn {
+  .p2eTextMobileEng,
+  .p2eTextMobileCn,
+  .roadMapQ3TextMobileEng,
+  .roadMapQ3TextMobileCn,
+  .roadMapQ1TextMobileCn,
+  .roadMapQ1TextMobileEng,
+  .roadMapQ4TextMobileCn,
+  .roadMapQ4TextMobileEng {
     display: none;
   }
 
   .duriano-header {
-    width: 325px;
-    height: 52px;
+    width: 893px;
+    height: 143.77px;
     position: absolute;
-    left: 34px;
+    left: 550px;
     transform: translate(0%, 0px);
     animation: slideDurianoHeader 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform, opacity;
     pointer-events: none;
     z-index: 4;
   }
-
+  
   @keyframes slideDurianoHeader {
     0% {
       top: 0px;
       opacity: 0;
     }
     100% {
-      top: 110px;
+      top: 181.12px;
       opacity: 1;
     }
   }
 
-  .p2eTextMobileEng {
-    width: 262px;
-    height: 28px;
+  .p2eTextEng {
+    width: 547px;
+    height: 221px;
     position: absolute;
-    left: 65px;
-    animation: slideDownP2eTextMobileEng 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    top: 357px;
+    left: 896px;
+    animation: slideDownP2eTextEng 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
-  @keyframes slideDownP2eTextMobileEng {
+  
+  @keyframes slideDownP2eTextEng {
     0% {
-      top: 0px;
+      top: 157px;
       opacity: 0;
     }
     100% {
-      top: 170px;
+      top: 357px;
       opacity: 1;
     }
   }
 
-  .p2eTextMobileCn {
-    width: 216px;
-    height: 28px;
+  .p2eTextCn {
+    width: 499px;
+    height: 221px;
     position: absolute;
-    left: 89px;
-    animation: slideDownP2eTextMobileCn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    left: 896px;
+    animation: slideDownP2eTextCn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
     z-index: 1;
   }
 
-  @keyframes slideDownP2eTextMobileCn {
+  @keyframes slideDownP2eTextCn {
     0% {
-      top: 70px;
+      top: 157px;
       opacity: 0;
     }
     100% {
-      top: 170px;
+      top: 357px;
       opacity: 1;
     }
   }
 
   .howToHeaderEng {
-    width: 188px;
-    height: 55px;
+    width: 501px;
+    height: 147px;
     position: absolute;
-    left: 102px;
-    top: 983px;
+    left: 710px;
+    top: 1300px;
     pointer-events: none;
     z-index: 1;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-
+  
   .howToHeaderEng.visible {
-    top: 883px;
+    top: 1200px;
     opacity: 1;
   }
-
+  
   .howToHeaderCn {
-    width: 188px;
-    height: 55px;
+    width: 384px;
+    height: 147px;
     position: absolute;
-    left: 102px;
-    top: 983px;
+    left: 767px;
+    top: 1300px;
     pointer-events: none;
     z-index: 1;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-
+  
   .howToHeaderCn.visible {
-    top: 883px;
+    top: 1200px;
     opacity: 1;
   }
-
+  
   .trailerHeaderEng {
-    width: 184px;
-    height: 55px;
+    width: 490px;
+    height: 147px;
     position: absolute;
-    top: 1730px;
-    left: 104px;
+    top: 2300px;
+    left: 715px;
     pointer-events: none;
     z-index: 3;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-
+  
   .trailerHeaderEng.visible {
-    top: 1630px;
+    top: 2200px;
     opacity: 1;
   }
-
+  
   .trailerHeaderCn {
-    width: 184px;
-    height: 55px;
+    width: 384px;
+    height: 147px;
     position: absolute;
-    top: 1730px;
-    left: 104px;
+    top: 2300px;
+    left: 767px;
     pointer-events: none;
     z-index: 3;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-
+  
   .trailerHeaderCn.visible {
-    top: 1630px;
+    top: 2200px;
     opacity: 1;
   }
-
+  
   .roadmapHeaderEng {
-    width: 226px;
-    height: 55px;
+    width: 601px;
+    height: 147px;
     position: absolute;
-    top: 2061px;
-    left: 83px;
+    top: 3380px;
+    left: 665px;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
     z-index: 3;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-
+  
   .roadmapHeaderEng.visible {
-    top: 1961px;
+    top: 3280px;
     opacity: 1;
   }
-
+  
   .roadmapHeaderCn {
-    width: 226px;
-    height: 55px;
+    width: 384px;
+    height: 147px;
     position: absolute;
-    top: 2061px;
-    left: 83px;
+    top: 3380px;
+    left: 767px;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
     z-index: 3;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-
+  
   .roadmapHeaderCn.visible {
-    top: 1961px;
+    top: 3280px;
     opacity: 1;
   }
-
+  
   .q3Header {
-    width: 71px;
-    height: 60px;
+    width: 162.5px;
+    height: 87.5px;
     position: absolute;
-    left: 92px;
-    top: 2304px;
+    left: 739px;
+    top: 3379px;
     opacity: 0;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: top, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
+  
   .q3Header.visible {
-    top: 2160px;
+    top: 3579px;
     opacity: 1;
   }
-
+  
   .q4Header {
-    width: 75px;
-    height: 64px;
+    width: 150.5px;
+    height: 87.5px;
     position: absolute;
-    left: 230px;
-    top: 2811px;
+    left: 1076px;
+    top: 4669px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
+  
   .q4Header.visible {
-    top: 2425px;
+    top: 4268px;
     opacity: 1;
   }
-
+  
   .q1Header {
-    width: 80px;
-    height: 54px;
+    width: 150.5px;
+    height: 87.5px;
     position: absolute;
-    left: 95px;
-    top: 3090px;
+    left: 767px;
+    top: 5088px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
+  
   .q1Header.visible {
-    top: 2700px;
+    top: 4687px;
     opacity: 1;
   }
-
-  .roadMapQ3TextMobileEng {
-    width: 103px;
-    height: 74px;
+  
+  .roadMapQ3TextEng {
+    width: 502px;
+    height: 208px;
     position: absolute;
-    left: 323px;
-    top: 2215px;
+    left: 1850px;
+    top: 3680px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
-  .roadMapQ3TextMobileEng.visible {
-    left: 148px;
+  
+  .roadMapQ3TextEng.visible {
+    left: 850px;
     opacity: 1;
   }
 
-  .roadMapQ3TextMobileCn {
-    width: 103px;
-    height: 74px;
+  .roadMapQ3TextCn {
+    width: calc(round(446px * 1.1));
+    height: calc(round(153px * 1.1));  
     position: absolute;
-    left: 323px;
-    top: 2215px;
+    left: 1870px;
+    top: 3700px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
-  .roadMapQ3TextMobileCn.visible {
-    left: 148px;
+  
+  .roadMapQ3TextCn.visible {
+    left: 870px;
     opacity: 1;
   }
 
-  .roadMapQ4TextMobileEng {
-    width: 103px;
-    height: 74px;  
+  .roadMapQ4TextEng {
+    width: 387px;
+    height: 162px;
     position: absolute;
-    left: 0px;
-    top: 2485px;
+    left: 2080px;
+    top: 4085px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
-  .roadMapQ4TextMobileEng.visible {
-    left: 145px;
+  
+  .roadMapQ4TextEng.visible {
+    left: 1080px;
     opacity: 1;
   }
 
-  .roadMapQ4TextMobileCn {
-    width: 103px;
-    height: 74px;  
+  .roadMapQ4TextCn {
+    width: calc(round(300px * 1.1));
+    height: calc(round(157px * 1.1)); 
     position: absolute;
-    left: 0px;
-    top: 2485px;
+    left: 2090px;
+    top: 4080px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
-  .roadMapQ4TextMobileCn.visible {
-    left: 145px;
+  
+  .roadMapQ4TextCn.visible {
     opacity: 1;
+    left: 1090px;
   }
 
-  .roadMapQ1TextMobileEng {
-    width: 118px;
-    height: 74px;
+  .roadMapQ1TextEng {
+    width: 591px;
+    height: 120px;
     position: absolute;
-    top: 2760px;
-    left: 0px;
+    top: 4532px;
+    left: 1800px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
-  .roadMapQ1TextMobileEng.visible {
-    left: 140px;
+  
+  .roadMapQ1TextEng.visible {
+    left: 800px;
     opacity: 1;
   }
 
-  .roadMapQ1TextMobileCn {
-    width: 118px;
-    height: 74px;
+  .roadMapQ1TextCn {
+    width: calc(round(320px * 1.1));
+    height: calc(round(1538px * 1.1)); 
     position: absolute;
-    top: 2760px;
-    left: 0px;
+    left: 1810px;
+    top: 4530px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
   }
-
-  .roadMapQ1TextMobileCn.visible {
-    left: 140px;
+  
+  .roadMapQ1TextCn.visible {
     opacity: 1;
+    left: 810px;
   }
 }

@@ -188,10 +188,10 @@
   }
 
   .q3Header {
-    width: 71px;
-    height: 60px;
+    width: 74.29px;
+    height: 40px;
     position: absolute;
-    left: 92px;
+    left: 253px;
     top: 2304px;
     opacity: 0;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -201,15 +201,15 @@
   }
 
   .q3Header.visible {
-    top: 2160px;
+    top: 2304px;
     opacity: 1;
   }
 
   .q4Header {
-    width: 75px;
-    height: 64px;
+    width: 68.8px;
+    height: 40px;
     position: absolute;
-    left: 230px;
+    left: 64px;
     top: 2811px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
@@ -219,15 +219,15 @@
   }
 
   .q4Header.visible {
-    top: 2425px;
+    top: 2611px;
     opacity: 1;
   }
 
   .q1Header {
-    width: 80px;
-    height: 54px;
+    width: 74.29px;
+    height: 40px;
     position: absolute;
-    left: 95px;
+    left: 253px;
     top: 3090px;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
@@ -237,16 +237,16 @@
   }
 
   .q1Header.visible {
-    top: 2700px;
+    top: 2890px;
     opacity: 1;
   }
 
   .roadMapQ3TextMobileEng {
-    width: 103px;
-    height: 74px;
+    width: 146px;
+    height: 79px;
     position: absolute;
     left: 323px;
-    top: 2215px;
+    top: 2244px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -255,16 +255,16 @@
   }
 
   .roadMapQ3TextMobileEng.visible {
-    left: 148px;
+    left: 123px;
     opacity: 1;
   }
 
   .roadMapQ3TextMobileCn {
-    width: 103px;
-    height: 74px;
+    width: 197px;
+    height: 65px;  
     position: absolute;
-    left: 323px;
-    top: 2215px;
+    left: 0px;
+    top: 2551px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -273,16 +273,16 @@
   }
 
   .roadMapQ3TextMobileCn.visible {
-    left: 148px;
+    left: 98px;
     opacity: 1;
   }
 
   .roadMapQ4TextMobileEng {
-    width: 103px;
-    height: 74px;  
+    width: 197px;
+    height: 65px;  
     position: absolute;
     left: 0px;
-    top: 2485px;
+    top: 2551px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -291,16 +291,16 @@
   }
 
   .roadMapQ4TextMobileEng.visible {
-    left: 145px;
+    left: 98px;
     opacity: 1;
   }
 
   .roadMapQ4TextMobileCn {
-    width: 103px;
-    height: 74px;  
+    width: calc(round(300px * 1.1));
+    height: calc(round(157px * 1.1)); 
     position: absolute;
-    left: 0px;
-    top: 2485px;
+    left: 2090px;
+    top: 4080px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -309,15 +309,15 @@
   }
 
   .roadMapQ4TextMobileCn.visible {
-    left: 145px;
     opacity: 1;
+    left: 1090px;
   }
 
   .roadMapQ1TextMobileEng {
-    width: 118px;
-    height: 74px;
+    width: 237px;
+    height: 47px;
     position: absolute;
-    top: 2760px;
+    top: 2844px;
     left: 0px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
@@ -327,16 +327,16 @@
   }
 
   .roadMapQ1TextMobileEng.visible {
-    left: 140px;
+    left: 78px;
     opacity: 1;
   }
 
   .roadMapQ1TextMobileCn {
-    width: 118px;
-    height: 74px;
+    width: calc(round(320px * 1.1));
+    height: calc(round(1538px * 1.1)); 
     position: absolute;
-    top: 2760px;
-    left: 0px;
+    left: 1810px;
+    top: 4530px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
@@ -345,7 +345,7 @@
   }
 
   .roadMapQ1TextMobileCn.visible {
-    left: 140px;
     opacity: 1;
+    left: 810px;
   }
 }

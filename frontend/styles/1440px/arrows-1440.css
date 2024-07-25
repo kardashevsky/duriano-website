@@ -42,13 +42,13 @@
   }
 
   .arrowToFfffToEarn {
-    width: 240px;
-    height: 250px;
-    top: 2840px;
-    left: 610px;
+    width: 192px;
+    height: 200px;
+    top: 2900px;
+    left: 760px;
     position: absolute;
     opacity: 0;
-    transform: scale(1) rotate(65deg);
+    transform: scale(1) rotate(55deg);
     will-change: transform, opacity;
     z-index: 2;
     cursor: pointer;
@@ -58,16 +58,16 @@
 
   .arrowToFfffToEarn.visible {
     opacity: 1;
-    transform: scale(1) rotate(65deg);
+    transform: scale(1) rotate(55deg);
   }
 
   .arrowToPlayToEarn {
-    width: 247.5px;
-    height: 225px;
-    top: 3160px;
-    left: 450px;
+    width: 220px;
+    height: 250px;
+    top: 3170px;
+    left: 420px;
     position: absolute;
-    transform: scale(1) rotate(105deg);
+    transform: scale(1) rotate(135deg);
     will-change: transform, opacity;
     z-index: 2;
     cursor: pointer;
@@ -78,7 +78,7 @@
 
   .arrowToPlayToEarn.visible {
     opacity: 1;
-    transform: scale(1) rotate(105deg);
+    transform: scale(1) rotate(135deg);
   }
 
   .arrowPlayButtonTopMiddle {
