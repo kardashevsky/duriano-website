@@ -117,12 +117,12 @@
     height: 43.76px;
     position: absolute;
     left: 313px;
-    transform: translate(0%, 0px);
+    top: 896px;
     animation: sliderXAccountButton 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-    will-change: transform, opacity;
+    will-change: top, opacity;
     z-index: 4;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: top 0.3s ease;
   }
 
   @keyframes sliderXAccountButton {

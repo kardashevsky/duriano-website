@@ -108,7 +108,7 @@
     left: -300px;
     top: 3630px;
     opacity: 0;
-    will-change: transform, opacity;
+    will-change: left, opacity;
     pointer-events: none;
     z-index: 1;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
