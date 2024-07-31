@@ -3,9 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   entry: './js/main.js',
   output: {
     filename: 'bundle.[contenthash].js',
@@ -17,7 +18,14 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader'
+        ],
+        include: resolve(__dirname, 'styles'), // Указываем папку styles
+        sideEffects: true,
+        exclude: /node_modules/,
       },
       {
         test: /\.js$/,
@@ -40,6 +48,20 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[hash][ext][query]',
+        },
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[hash][ext][query]',
+        },
+      }
     ],
   },
   optimization: {
@@ -56,14 +78,29 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'styles.[contenthash].css',
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'assets', to: 'assets' },
+      ],
+    }),
   ],
   devtool: 'source-map',
+  devServer: {
+    static: {
+      directory: resolve(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 9000,
+    open: true,
+    hot: true,
+    historyApiFallback: true,
+  },
   resolve: {
     alias: {
-      '@assets': resolve(__dirname, 'frontend/assets/'),
-      '@public': resolve(__dirname, 'frontend/public/'),
-      '@styles': resolve(__dirname, 'frontend/styles/'),
-      '@js': resolve(__dirname, 'frontend/js/'),
+      '@assets': resolve(__dirname, 'assets/'),
+      '@public': resolve(__dirname, 'public/'),
+      '@styles': resolve(__dirname, 'styles/'),
+      '@js': resolve(__dirname, 'js/'),
     },
   },
 };

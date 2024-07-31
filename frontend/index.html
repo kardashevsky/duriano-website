@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Duriano</title>
-    <link rel="stylesheet" href="styles/main.css?v=1.0.2">
-    <link rel="icon" href="public/favicon.svg?v=1.0.2" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="public/favicon.svg" type="image/x-icon">
     <style> img {font-size: 0;} </style>
 
     <meta property="og:title" content="Duriano - P2E GAME IN TELEGRAM">
     <meta property="og:description" content="Join Duriano to earn rewards while playing!">
-    <meta property="og:image" content="public/favicon.svg?v=1.0.2">
+    <meta property="og:image" content="public/favicon.svg">
     <meta property="og:url" content="https://duriano.io">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Duriano" />
@@ -19,73 +19,114 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Duriano - P2E GAME IN TELEGRAM">
     <meta name="twitter:description" content="Join Duriano to earn rewards while playing!">
-    <meta name="twitter:image" content="public/favicon.svg?v=1.0.2">
+    <meta name="twitter:image" content="public/favicon.svg">
     <meta name="twitter:url" content="https://duriano.io">
 
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
+    <!-- Предварительная загрузка критических ресурсов -->
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="preload" href="assets/languageSwitcher/engSwitchOn.svg" as="image">
+    <link rel="preload" href="assets/languageSwitcher/divider.svg" as="image">
+    <link rel="preload" href="assets/languageSwitcher/cnSwitchOff.svg" as="image">
+    <link rel="preload" href="assets/text/durianoHeader.svg" as="image">
+    <link rel="preload" href="assets/text/p2eTextEng.svg" as="image">
+    <link rel="preload" href="assets/text/p2eTextCn.svg" as="image">
+    <link rel="preload" href="assets/text/p2eTextMobileEng.svg" as="image">
+    <link rel="preload" href="assets/text/p2eTextMobileCn.svg" as="image">
+    <link rel="preload" href="assets/characters/character.svg" as="image">
+    <link rel="preload" href="assets/buttons/playButton.svg" as="image">
+    <link rel="preload" href="assets/buttons/telegramChannelButton.svg" as="image">
+    <link rel="preload" href="assets/buttons/xAccountButton.svg" as="image">
+    <link rel="preload" href="assets/background/cloud_left.svg" as="image">
+    <link rel="preload" href="assets/background/cloud_left_mobile.svg" as="image">
+    <link rel="preload" href="assets/background/cloud_right.svg" as="image">
+    <link rel="preload" href="assets/background/cloud_right_mobile.svg" as="image">
+    <link rel="preload" href="assets/background/cloud_top_mobile.svg" as="image">
+    <link rel="preload" href="assets/background/bridge_background.svg" as="image">
+    <link rel="preload" href="assets/background/bridge_background_mobile.svg" as="image">
+    <link rel="preload" href="assets/background/textureMiddle.svg" as="image">
+    <link rel="preload" href="assets/background/textureLeft.svg" as="image">
+    <link rel="preload" href="assets/background/textureRight.svg" as="image">
+    <link rel="preload" href="assets/background/textureLeftUltra.svg" as="image">
+    <link rel="preload" href="assets/background/textureRightUltra.svg" as="image">
+    <link rel="preload" href="assets/background/textureMiddleMobile.svg" as="image">
+    <link rel="preload" href="assets/characters/shadow.svg" as="image">
+    <link rel="preload" href="assets/background/bambooSmallLeft.svg" as="image">
+    <link rel="preload" href="assets/background/bambooSmallRight.svg" as="image">
+    <link rel="preload" href="assets/background/bambooSmallLeftMobile.svg" as="image">
+    <link rel="preload" href="assets/background/bambooSmallRightMobile.svg" as="image">
+    <link rel="preload" href="assets/background/bambooBigLeft1.svg" as="image">
+    <link rel="preload" href="assets/background/bambooBigLeft1Ultra.svg" as="image">
+    <link rel="preload" href="assets/background/bambooBigLeft2.svg" as="image">
+    <link rel="preload" href="assets/background/bambooBigRight1.svg" as="image">
+    <link rel="preload" href="assets/background/bambooBigRight1Ultra.svg" as="image">
+    <link rel="preload" href="assets/background/bambooBigRight2.svg" as="image">
+    <link rel="preload" href="assets/background/footer.svg" as="image">
+    <link rel="preload" href="assets/background/footer_mobile.svg" as="image">
 </head>
 <body>
-    <img src="assets/background/bridge_background_ultraWide.svg?v=1.0.2" class="bridge-backgroundUltraWide" loading="lazy">
+    <img src="assets/background/bridge_background_ultraWide.svg" class="bridge-backgroundUltraWide" loading="lazy">
     <div class="background">
         <div class="backgroundBlue"></div>
         <div class="backgroundGreen"></div>
         <div class="background-container1920">
-            <img src="assets/languageSwitcher/engSwitchOn.svg?v=1.0.2" data-lang="eng" alt="English Switcher" class="engLanguage language-switcher" loading="lazy">
-            <img src="assets/languageSwitcher/divider.svg?v=1.0.2" alt="Divider" class="divider" loading="lazy">
-            <img src="assets/languageSwitcher/cnSwitchOff.svg?v=1.0.2" data-lang="cn" alt="Chinese Switcher" class="cnLanguage language-switcher" loading="lazy">
+            <img src="assets/languageSwitcher/engSwitchOn.svg" data-lang="eng" alt="English Switcher" class="engLanguage language-switcher" loading="lazy">
+            <img src="assets/languageSwitcher/divider.svg" alt="Divider" class="divider" loading="lazy">
+            <img src="assets/languageSwitcher/cnSwitchOff.svg" data-lang="cn" alt="Chinese Switcher" class="cnLanguage language-switcher" loading="lazy">
 
             <header>
-                <img src="assets/text/durianoHeader.svg?v=1.0.2" alt="Duriano Header" class="duriano-header" loading="lazy">
+                <img src="assets/text/durianoHeader.svg" alt="Duriano Header" class="duriano-header" loading="lazy">
             </header>
 
             <div class="p2eText">
-                <img src="assets/text/p2eTextEng.svg?v=1.0.2" alt="P2E Text English" class="p2eTextEng" loading="lazy">
-                <img src="assets/text/p2eTextCn.svg?v=1.0.2" alt="P2E Text Chinese" class="p2eTextCn hidden" loading="lazy">
-                <img src="assets/text/p2eTextMobileEng.svg?v=1.0.2" alt="P2E Text English Mobile" class="p2eTextMobileEng" loading="lazy">
-                <img src="assets/text/p2eTextMobileCn.svg?v=1.0.2" alt="P2E Text Chinese" class="p2eTextMobileCn hidden" loading="lazy">
+                <img src="assets/text/p2eTextEng.svg" alt="P2E Text English" class="p2eTextEng" loading="lazy">
+                <img src="assets/text/p2eTextCn.svg" alt="P2E Text Chinese" class="p2eTextCn hidden" loading="lazy">
+                <img src="assets/text/p2eTextMobileEng.svg" alt="P2E Text English Mobile" class="p2eTextMobileEng" loading="lazy">
+                <img src="assets/text/p2eTextMobileCn.svg" alt="P2E Text Chinese" class="p2eTextMobileCn hidden" loading="lazy">
             </div>
 
-            <img src="assets/characters/character.svg?v=1.0.2" alt="Character" class="character" loading="lazy">
+            <img src="assets/characters/character.svg" alt="Character" class="character" loading="lazy">
 
             <a href="https://t.me/DurianoBot" target="_blank">
-                <img src="assets/buttons/playButton.svg?v=1.0.2" alt="Play Button" class="playButton" loading="lazy">
+                <img src="assets/buttons/playButton.svg" alt="Play Button" class="playButton" loading="lazy">
             </a>
             <a id="telegramChannelLink" href="https://t.me/DurianoTeam" target="_blank">
-                <img src="assets/buttons/telegramChannelButton.svg?v=1.0.2" alt="Telegram Channel Button" class="telegramChannelButton" loading="lazy">
+                <img src="assets/buttons/telegramChannelButton.svg" alt="Telegram Channel Button" class="telegramChannelButton" loading="lazy">
             </a>
             <a href="https://x.com/DurianoTeam" target="_blank">
-                <img src="assets/buttons/xAccountButton.svg?v=1.0.3" alt="X Channel Button" class="xAccountButton" loading="lazy">
+                <img src="assets/buttons/xAccountButton.svg" alt="X Channel Button" class="xAccountButton" loading="lazy">
             </a>
 
             <div class="cloud-container">
-                <img src="assets/background/cloud_left.svg?v=1.0.2" alt="Cloud Left" class="cloud_left" loading="lazy">
-                <img src="assets/background/cloud_left_mobile.svg?v=1.0.2" alt="Cloud Left Mobile" class="cloud_left_mobile" loading="lazy">
-                <img src="assets/background/cloud_right.svg?v=1.0.2" alt="Cloud Right" class="cloud_right" loading="lazy">
-                <img src="assets/background/cloud_right_mobile.svg?v=1.0.2" alt="Cloud Right" class="cloud_right_mobile" loading="lazy">
-                <img src="assets/background/cloud_top_mobile.svg?v=1.0.2" alt="Cloud Right" class="cloud_top_mobile" loading="lazy">
+                <img src="assets/background/cloud_left.svg" alt="Cloud Left" class="cloud_left" loading="lazy">
+                <img src="assets/background/cloud_left_mobile.svg" alt="Cloud Left Mobile" class="cloud_left_mobile" loading="lazy">
+                <img src="assets/background/cloud_right.svg" alt="Cloud Right" class="cloud_right" loading="lazy">
+                <img src="assets/background/cloud_right_mobile.svg" alt="Cloud Right" class="cloud_right_mobile" loading="lazy">
+                <img src="assets/background/cloud_top_mobile.svg" alt="Cloud Right" class="cloud_top_mobile" loading="lazy">
             </div>
 
             <div class="howToText">
-                <img src="assets/text/howToHeaderEng.svg?v=1.0.2" alt="How To Header English" class="howToHeaderEng" loading="lazy">
-                <img src="assets/text/howToHeaderCn.svg?v=1.0.2" alt="How To Header Chinese" class="howToHeaderCn hidden" loading="lazy">
+                <img src="assets/text/howToHeaderEng.svg" alt="How To Header English" class="howToHeaderEng" loading="lazy">
+                <img src="assets/text/howToHeaderCn.svg" alt="How To Header Chinese" class="howToHeaderCn hidden" loading="lazy">
             </div>
-            <img src="assets/characters/startCharacter.svg?v=1.0.2" alt="Start Character" class="startCharacter" loading="lazy">
-            <img src="assets/characters/smashCharacter.svg?v=1.0.2" alt="Smash Character" class="smashCharacter" loading="lazy">
-            <img src="assets/characters/earnCharacter.svg?v=1.0.2" alt="Earn Character" class="earnCharacter" loading="lazy">
-            <img src="assets/arrows/arrowCharacters1.svg?v=1.0.2" alt="Arrow To Smash" class="arrowToSmash" loading="lazy">
-            <img src="assets/arrows/arrowCharacters2.svg?v=1.0.2" alt="Arrow To Earn" class="arrowToEarn" loading="lazy">
-            <img src="assets/arrows/arrowToSmashMobile.svg?v=1.0.2" alt="Arrow To Smash Mobile" class="arrowToSmashMobile" loading="lazy">
-            <img src="assets/arrows/arrowToEarnMobile.svg?v=1.0.2" alt="Arrow To Earn Mobile" class="arrowToEarnMobile" loading="lazy">
+            <img src="assets/characters/startCharacter.svg" alt="Start Character" class="startCharacter" loading="lazy">
+            <img src="assets/characters/smashCharacter.svg" alt="Smash Character" class="smashCharacter" loading="lazy">
+            <img src="assets/characters/earnCharacter.svg" alt="Earn Character" class="earnCharacter" loading="lazy">
+            <img src="assets/arrows/arrowCharacters1.svg" alt="Arrow To Smash" class="arrowToSmash" loading="lazy">
+            <img src="assets/arrows/arrowCharacters2.svg" alt="Arrow To Earn" class="arrowToEarn" loading="lazy">
+            <img src="assets/arrows/arrowToSmashMobile.svg" alt="Arrow To Smash Mobile" class="arrowToSmashMobile" loading="lazy">
+            <img src="assets/arrows/arrowToEarnMobile.svg" alt="Arrow To Earn Mobile" class="arrowToEarnMobile" loading="lazy">
 
             <div class="trailerHeader">
-                <img src="assets/text/trailerHeaderEng.svg?v=1.0.2" alt="Trailer Header English" class="trailerHeaderEng" loading="lazy">
-                <img src="assets/text/trailerHeaderCn.svg?v=1.0.2" alt="Trailer Header Chinese" class="trailerHeaderCn hidden" loading="lazy">
+                <img src="assets/text/trailerHeaderEng.svg" alt="Trailer Header English" class="trailerHeaderEng" loading="lazy">
+                <img src="assets/text/trailerHeaderCn.svg" alt="Trailer Header Chinese" class="trailerHeaderCn hidden" loading="lazy">
             </div>
-            <img src="assets/background/windowTrailerVideo.svg?v=1.0.2" alt="Window Trailer Video" class="windowTrailerVideo" loading="lazy">
-            <img src="assets/buttons/playVideoButton.svg?v=1.0.2" alt="Play Video Button" class="playVideoButton" loading="lazy">
+            <img src="assets/background/windowTrailerVideo.svg" alt="Window Trailer Video" class="windowTrailerVideo" loading="lazy">
+            <img src="assets/buttons/playVideoButton.svg" alt="Play Video Button" class="playVideoButton" loading="lazy">
 
             <svg width="0" height="0" viewBox="0 0 1034 594" style="position:absolute; z-index: -1;">
                 <defs>
@@ -96,76 +137,76 @@
             </svg>
 
             <div class="trailerHeader">
-                <img src="assets/text/roadmapHeaderEng.svg?v=1.0.2" alt="Roadmap Header English" class="roadmapHeaderEng" loading="lazy">
-                <img src="assets/text/roadmapHeaderCn.svg?v=1.0.2" alt="Roadmap Header Chinese" class="roadmapHeaderCn hidden" loading="lazy">
+                <img src="assets/text/roadmapHeaderEng.svg" alt="Roadmap Header English" class="roadmapHeaderEng" loading="lazy">
+                <img src="assets/text/roadmapHeaderCn.svg" alt="Roadmap Header Chinese" class="roadmapHeaderCn hidden" loading="lazy">
             </div>
-            <img src="assets/characters/lada2105.svg?v=1.0.3" alt="Smash To Earn Character" class="smashToEarnCharacter" loading="lazy">
-            <img src="assets/characters/ladaVesta.svg?v=1.0.2" alt="Smash Character" class="ffffToEarnCharacter" loading="lazy">
-            <img src="assets/characters/havalH3.svg?v=1.0.2" alt="Play To Earn Character" class="playToEarnCharacter" loading="lazy">
-            <img src="assets/arrows/arrowCharacters1.svg?v=1.0.2" alt="Arrow To Ffff To Earn" class="arrowToFfffToEarn" loading="lazy">
-            <img src="assets/arrows/arrowToFfffToEarnMobile.svg?v=1.0.2" alt="Arrow To Ffff To Earn Mobile" class="arrowToFfffToEarnMobile" loading="lazy">
-            <img src="assets/arrows/arrowCharacters2.svg?v=1.0.2" alt="Arrow To Play To Earn" class="arrowToPlayToEarn" loading="lazy">
-            <img src="assets/arrows/arrowToPlayToEarnMobile.svg?v=1.0.2" alt="Arrow To Play To Earn Mobile" class="arrowToPlayToEarnMobile" loading="lazy">
+            <img src="assets/characters/lada2105.svg" alt="Smash To Earn Character" class="smashToEarnCharacter" loading="lazy">
+            <img src="assets/characters/ladaVesta.svg" alt="Smash Character" class="ffffToEarnCharacter" loading="lazy">
+            <img src="assets/characters/havalH3.svg" alt="Play To Earn Character" class="playToEarnCharacter" loading="lazy">
+            <img src="assets/arrows/arrowCharacters1.svg" alt="Arrow To Ffff To Earn" class="arrowToFfffToEarn" loading="lazy">
+            <img src="assets/arrows/arrowToFfffToEarnMobile.svg" alt="Arrow To Ffff To Earn Mobile" class="arrowToFfffToEarnMobile" loading="lazy">
+            <img src="assets/arrows/arrowCharacters2.svg" alt="Arrow To Play To Earn" class="arrowToPlayToEarn" loading="lazy">
+            <img src="assets/arrows/arrowToPlayToEarnMobile.svg" alt="Arrow To Play To Earn Mobile" class="arrowToPlayToEarnMobile" loading="lazy">
 
-            <img src="assets/text/q3HeaderLada.svg?v=1.0.2" alt="Q3 Header" class="q3Header" loading="lazy">
-            <img src="assets/text/q4HeaderLada.svg?v=1.0.2" alt="Q4 Header" class="q4Header" loading="lazy">
-            <img src="assets/text/q1HeaderHaval.svg?v=1.0.2" alt="Q1 Header" class="q1Header" loading="lazy">
+            <img src="assets/text/q3HeaderLada.svg" alt="Q3 Header" class="q3Header" loading="lazy">
+            <img src="assets/text/q4HeaderLada.svg" alt="Q4 Header" class="q4Header" loading="lazy">
+            <img src="assets/text/q1HeaderHaval.svg" alt="Q1 Header" class="q1Header" loading="lazy">
 
             <div class="roadMapQ3Text">
-                <img src="assets/text/lada2105TextDesktop.svg?v=1.0.2" alt="Road Map Q3 Text English" class="roadMapQ3TextEng" loading="lazy">
-                <img src="assets/text/lada2105TextDesktop.svg?v=1.0.2" alt="Road Map Q3 Text Chinese" class="roadMapQ3TextCn hidden" loading="lazy">
-                <img src="assets/text/lada2105TextMobile.svg?v=1.0.2" alt="Road Map Q3 Text English Mobile" class="roadMapQ3TextMobileEng" loading="lazy">
-                <img src="assets/text/lada2105TextMobile.svg?v=1.0.2" alt="Road Map Q3 Text Chinese Mobile" class="roadMapQ3TextMobileCn hidden" loading="lazy">
+                <img src="assets/text/lada2105TextDesktop.svg" alt="Road Map Q3 Text English" class="roadMapQ3TextEng" loading="lazy">
+                <img src="assets/text/lada2105TextDesktop.svg" alt="Road Map Q3 Text Chinese" class="roadMapQ3TextCn hidden" loading="lazy">
+                <img src="assets/text/lada2105TextMobile.svg" alt="Road Map Q3 Text English Mobile" class="roadMapQ3TextMobileEng" loading="lazy">
+                <img src="assets/text/lada2105TextMobile.svg" alt="Road Map Q3 Text Chinese Mobile" class="roadMapQ3TextMobileCn hidden" loading="lazy">
             </div>
             <div class="roadMapQ4Text">
-                <img src="assets/text/ladaVestaTextDesktop.svg?v=1.0.2" alt="Road Map Q4 Text English" class="roadMapQ4TextEng" loading="lazy">
-                <img src="assets/text/ladaVestaTextDesktop.svg?v=1.0.2" alt="Road Map Q4 Text Chinese" class="roadMapQ4TextCn hidden" loading="lazy">
-                <img src="assets/text/ladaVestaTextMobile.svg?v=1.0.2" alt="Road Map Q4 Text English" class="roadMapQ4TextMobileEng">
-                <img src="assets/text/ladaVestaTextMobile.svg?v=1.0.2" alt="Road Map Q4 Text Chinese" class="roadMapQ4TextMobileCn hidden" loading="lazy">
+                <img src="assets/text/ladaVestaTextDesktop.svg" alt="Road Map Q4 Text English" class="roadMapQ4TextEng" loading="lazy">
+                <img src="assets/text/ladaVestaTextDesktop.svg" alt="Road Map Q4 Text Chinese" class="roadMapQ4TextCn hidden" loading="lazy">
+                <img src="assets/text/ladaVestaTextMobile.svg" alt="Road Map Q4 Text English" class="roadMapQ4TextMobileEng">
+                <img src="assets/text/ladaVestaTextMobile.svg" alt="Road Map Q4 Text Chinese" class="roadMapQ4TextMobileCn hidden" loading="lazy">
             </div>
             <div class="roadMapQ1Text">
-                <img src="assets/text/havalH3TextDesktop.svg?v=1.0.2" alt="Road Map Q1 Text English" class="roadMapQ1TextEng" loading="lazy">
-                <img src="assets/text/havalH3TextDesktop.svg?v=1.0.2" alt="Road Map Q1 Text Chinese" class="roadMapQ1TextCn hidden" loading="lazy">
-                <img src="assets/text/havalH3TextMobile.svg?v=1.0.2" alt="Road Map Q1 Text English" class="roadMapQ1TextMobileEng" loading="lazy">
-                <img src="assets/text/havalH3TextMobile.svg?v=1.0.2" alt="Road Map Q1 Text Chinese" class="roadMapQ1TextMobileCn hidden" loading="lazy">
+                <img src="assets/text/havalH3TextDesktop.svg" alt="Road Map Q1 Text English" class="roadMapQ1TextEng" loading="lazy">
+                <img src="assets/text/havalH3TextDesktop.svg" alt="Road Map Q1 Text Chinese" class="roadMapQ1TextCn hidden" loading="lazy">
+                <img src="assets/text/havalH3TextMobile.svg" alt="Road Map Q1 Text English" class="roadMapQ1TextMobileEng" loading="lazy">
+                <img src="assets/text/havalH3TextMobile.svg" alt="Road Map Q1 Text Chinese" class="roadMapQ1TextMobileCn hidden" loading="lazy">
             </div>
 
             <a href="https://t.me/DurianoBot" target="_blank">
-                <img src="assets/arrows/arrowPlayButton1.svg?v=1.0.2" alt="Arrow Play Button Top Middle" class="arrowPlayButtonTopMiddle" loading="lazy">
-                <img src="assets/arrows/arrowPlayButton2.svg?v=1.0.2" alt="Arrow Play Button Top Left" class="arrowPlayButtonTopLeft" loading="lazy">
-                <img src="assets/arrows/arrowPlayButton1.svg?v=1.0.2" alt="Arrow Play Button Top Right" class="arrowPlayButtonTopRight" loading="lazy">
-                <img src="assets/arrows/arrowPlayButton1.svg?v=1.0.2" alt="Arrow Play Button Down Left" class="arrowPlayButtonDownLeft" loading="lazy">
-                <img src="assets/arrows/arrowPlayButton2.svg?v=1.0.2" alt="Arrow Play Button Down Right" class="arrowPlayButtonDownRight" loading="lazy">
-                <img src="assets/buttons/playButton.svg?v=1.0.2" alt="Play Button" class="playButtonFooter" loading="lazy">
+                <img src="assets/arrows/arrowPlayButton1.svg" alt="Arrow Play Button Top Middle" class="arrowPlayButtonTopMiddle" loading="lazy">
+                <img src="assets/arrows/arrowPlayButton2.svg" alt="Arrow Play Button Top Left" class="arrowPlayButtonTopLeft" loading="lazy">
+                <img src="assets/arrows/arrowPlayButton1.svg" alt="Arrow Play Button Top Right" class="arrowPlayButtonTopRight" loading="lazy">
+                <img src="assets/arrows/arrowPlayButton1.svg" alt="Arrow Play Button Down Left" class="arrowPlayButtonDownLeft" loading="lazy">
+                <img src="assets/arrows/arrowPlayButton2.svg" alt="Arrow Play Button Down Right" class="arrowPlayButtonDownRight" loading="lazy">
+                <img src="assets/buttons/playButton.svg" alt="Play Button" class="playButtonFooter" loading="lazy">
             </a>
 
-            <img src="assets/background/bridge_background.svg?v=1.0.2" class="bridge-background" loading="lazy">
-            <img src="assets/background/bridge_background_mobile.svg?v=1.0.2" class="bridge-background-mobile" loading="lazy">
+            <img src="assets/background/bridge_background.svg" class="bridge-background" loading="lazy">
+            <img src="assets/background/bridge_background_mobile.svg" class="bridge-background-mobile" loading="lazy">
 
-            <img src="assets/background/textureMiddle.svg?v=1.0.2" class="textureMiddle" loading="lazy">
-            <img src="assets/background/textureLeft.svg?v=1.0.2" class="textureLeft" loading="lazy">
-            <img src="assets/background/textureRight.svg?v=1.0.2" class="textureRight" loading="lazy">
-            <img src="assets/background/textureLeftUltra.svg?v=1.0.2" class="textureLeftUltra" loading="lazy">
-            <img src="assets/background/textureRightUltra.svg?v=1.0.2" class="textureRightUltra" loading="lazy">
-            <img src="assets/background/textureMiddleMobile.svg?v=1.0.2" class="textureMiddleMobile" loading="lazy">
-            <img src="assets/characters/shadow.svg?v=1.0.2" class="shadow" loading="lazy">
+            <img src="assets/background/textureMiddle.svg" class="textureMiddle" loading="lazy">
+            <img src="assets/background/textureLeft.svg" class="textureLeft" loading="lazy">
+            <img src="assets/background/textureRight.svg" class="textureRight" loading="lazy">
+            <img src="assets/background/textureLeftUltra.svg" class="textureLeftUltra" loading="lazy">
+            <img src="assets/background/textureRightUltra.svg" class="textureRightUltra" loading="lazy">
+            <img src="assets/background/textureMiddleMobile.svg" class="textureMiddleMobile" loading="lazy">
+            <img src="assets/characters/shadow.svg" class="shadow" loading="lazy">
 
-            <img src="assets/background/bambooSmallLeft.svg?v=1.0.2" class="bamboo_small_left" loading="lazy">
-            <img src="assets/background/bambooSmallRight.svg?v=1.0.2" class="bamboo_small_right" loading="lazy">
-            <img src="assets/background/bambooSmallLeftMobile.svg?v=1.0.2" class="bamboo_small_left_mobile" loading="lazy">
-            <img src="assets/background/bambooSmallRightMobile.svg?v=1.0.2" class="bamboo_small_right_mobile" loading="lazy">
-            <img src="assets/background/bambooBigLeft1.svg?v=1.0.2" class="bamboo_big_left_1" loading="lazy">
-            <img src="assets/background/bambooBigLeft1Ultra.svg?v=1.0.2" class="bamboo_big_left_1_ultra" loading="lazy">
-            <img src="assets/background/bambooBigLeft2.svg?v=1.0.2" class="bamboo_big_left_2" loading="lazy">
-            <img src="assets/background/bambooBigRight1.svg?v=1.0.2" class="bamboo_big_right_1" loading="lazy">
-            <img src="assets/background/bambooBigRight1Ultra.svg?v=1.0.2" class="bamboo_big_right_1_ultra" loading="lazy">
-            <img src="assets/background/bambooBigRight2.svg?v=1.0.2" class="bamboo_big_right_2" loading="lazy">
-            <img src="assets/background/bambooBigLeftMobile.svg?v=1.0.2" class="bamboo_big_left_mobile" loading="lazy">
-            <img src="assets/background/bambooBigRightMobile.svg?v=1.0.2" class="bamboo_big_right_mobile" loading="lazy">
-            <img src="assets/background/footer.svg?v=1.0.2" class="footer" loading="lazy">
-            <img src="assets/background/footer_mobile.svg?v=1.0.2" class="footer-mobile" loading="lazy">
+            <img src="assets/background/bambooSmallLeft.svg" class="bamboo_small_left" loading="lazy">
+            <img src="assets/background/bambooSmallRight.svg" class="bamboo_small_right" loading="lazy">
+            <img src="assets/background/bambooSmallLeftMobile.svg" class="bamboo_small_left_mobile" loading="lazy">
+            <img src="assets/background/bambooSmallRightMobile.svg" class="bamboo_small_right_mobile" loading="lazy">
+            <img src="assets/background/bambooBigLeft1.svg" class="bamboo_big_left_1" loading="lazy">
+            <img src="assets/background/bambooBigLeft1Ultra.svg" class="bamboo_big_left_1_ultra" loading="lazy">
+            <img src="assets/background/bambooBigLeft2.svg" class="bamboo_big_left_2" loading="lazy">
+            <img src="assets/background/bambooBigRight1.svg" class="bamboo_big_right_1" loading="lazy">
+            <img src="assets/background/bambooBigRight1Ultra.svg" class="bamboo_big_right_1_ultra" loading="lazy">
+            <img src="assets/background/bambooBigRight2.svg" class="bamboo_big_right_2" loading="lazy">
+            <img src="assets/background/bambooBigLeftMobile.svg" class="bamboo_big_left_mobile" loading="lazy">
+            <img src="assets/background/bambooBigRightMobile.svg" class="bamboo_big_right_mobile" loading="lazy">
+            <img src="assets/background/footer.svg" class="footer" loading="lazy">
+            <img src="assets/background/footer_mobile.svg" class="footer-mobile" loading="lazy">
         </div>
     </div>
-    <script type="module" src="js/main.js?v=1.0.2"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
