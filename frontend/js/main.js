@@ -1,6 +1,6 @@
 import initializeLanguageSwitchers from './languageSwitchers.js';
 import handleScroll from './scrollHandler.js';
-// import '../styles/main.css';
+import '../styles/main.css';
 
 document.addEventListener('DOMContentLoaded', function() {
 

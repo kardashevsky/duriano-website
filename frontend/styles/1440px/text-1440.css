@@ -1,6 +1,5 @@
 @media screen and (min-width: 431px) and (max-width: 1440px) {
 
-  /* Скрытие текстовых блоков */
   .p2eTextMobileEng,
   .p2eTextMobileCn,
   .roadMapQ3TextMobileEng,
@@ -12,13 +11,12 @@
     display: none;
   }
 
-  /* Стили для .duriano-header */
   .duriano-header {
-    width: 670px; /* Уменьшаем на 25% от исходной ширины 893px */
-    height: 107.83px; /* Уменьшаем на 25% от исходной высоты 143.77px */
+    width: 670px;
+    height: 107.83px;
     position: absolute;
-    left: 400px; /* Смещаем влево на 25% от текущего значения 550px */
-    top: 107.33px; /* Смещаем вверх на 25% от текущего значения 143.77px */
+    left: 400px;
+    top: 107.33px;
     transform: translate(0%, 0px);
     animation: slideDurianoHeader 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     will-change: transform, opacity;
@@ -32,105 +30,103 @@
       opacity: 0;
     }
     100% {
-      top: 135.84px; /* Уменьшаем на 25% от исходного значения 181.12px */
+      top: 135.84px;
       opacity: 1;
     }
   }
 
-  /* Стили для .p2eTextEng */
   .p2eTextEng {
-    width: 410.25px; /* Уменьшаем на 25% от исходной ширины 547px */
-    height: 165.75px; /* Уменьшаем на 25% от исходной высоты 221px */
+    width: 410.25px;
+    height: 165.75px;
     position: absolute;
-    top: 267.75px; /* Смещаем вверх на 25% от текущего значения 357px */
-    left: 672px; /* Смещаем влево на 25% от текущего значения 896px */
+    top: 267.75px;
+    left: 672px;
     animation: slideDownP2eTextEng 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
 
   @keyframes slideDownP2eTextEng {
     0% {
-      top: 125.25px; /* Смещаем вверх на 25% от текущего значения 157px */
+      top: 125.25px;
       opacity: 0;
     }
     100% {
-      top: 267.75px; /* Смещаем вверх на 25% от текущего значения 357px */
+      top: 267.75px;
       opacity: 1;
     }
   }
 
-  /* Стили для .p2eTextCn */
   .p2eTextCn {
-    width: 374.25px; /* Уменьшаем на 25% от исходной ширины 499px */
-    height: 165.75px; /* Уменьшаем на 25% от исходной высоты 221px */
+    width: 374.25px;
+    height: 165.75px;
     position: absolute;
-    left: 672px; /* Смещаем влево на 25% от текущего значения 896px */
+    left: 672px;
     animation: slideDownP2eTextCn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
 
   @keyframes slideDownP2eTextCn {
     0% {
-      top: 125.25px; /* Смещаем вверх на 25% от текущего значения 157px */
+      top: 125.25px;
       opacity: 0;
     }
     100% {
-      top: 267.75px; /* Смещаем вверх на 25% от текущего значения 357px */
+      top: 267.75px;
       opacity: 1;
     }
   }
 
-  /* Стили для .howToHeaderEng */
+
   .howToHeaderEng {
-    width: 375.75px; /* Уменьшаем на 25% от исходной ширины 501px */
-    height: 110.25px; /* Высота не изменяется */
+    width: 375.75px;
+    height: 110.25px;
     position: absolute;
-    left: 532.5px; /* Смещаем влево на 25% от текущего значения 710px */
-    top: 975px; /* Смещаем вверх на 25% от текущего значения 1300px */
+    left: 532.5px;
+    top: 975px;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
   .howToHeaderEng.visible {
-    top: 900px; /* Смещаем вверх на 25% от текущего значения 1200px */
+    top: 900px;
     opacity: 1;
   }
 
-  /* Стили для .howToHeaderCn */
+
   .howToHeaderCn {
-    width: 288px; /* Уменьшаем на 25% от исходной ширины 384px */
-    height: 110.25px; /* Высота не изменяется */
+    width: 288px;
+    height: 110.25px;
     position: absolute;
-    left: 575.25px; /* Смещаем влево на 25% от текущего значения 767px */
-    top: 975px; /* Смещаем вверх на 25% от текущего значения 1300px */
+    left: 575.25px;
+    top: 975px;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
   .howToHeaderCn.visible {
-    top: 900px; /* Смещаем вверх на 25% от текущего значения 1200px */
+    top: 900px;
     opacity: 1;
   }
 
-  /* Стили для .trailerHeaderEng */
+
   .trailerHeaderEng {
-    width: 367.5px; /* Уменьшаем на 25% от исходной ширины 490px */
-    height: 110.25px; /* Высота не изменяется */
+    width: 367.5px;
+    height: 110.25px;
     position: absolute;
-    top: 1725px; /* Смещаем вверх на 25% от текущего значения 2300px */
-    left: 536.25px; /* Смещаем влево на 25% от текущего значения 715px */
+    top: 1725px;
+    left: 536.25px;
     pointer-events: none;
     z-index: 3;
     opacity: 0;
@@ -139,17 +135,16 @@
   }
 
   .trailerHeaderEng.visible {
-    top: 1650px; /* Смещаем вверх на 25% от текущего значения 2200px */
+    top: 1650px;
     opacity: 1;
   }
 
-  /* Стили для .trailerHeaderCn */
   .trailerHeaderCn {
-    width: 288px; /* Уменьшаем на 25% от исходной ширины 384px */
-    height: 110.25px; /* Высота не изменяется */
+    width: 288px;
+    height: 110.25px;
     position: absolute;
-    top: 1725px; /* Смещаем вверх на 25% от текущего значения 2300px */
-    left: 575.25px; /* Смещаем влево на 25% от текущего значения 767px */
+    top: 1725px;
+    left: 575.25px;
     pointer-events: none;
     z-index: 3;
     opacity: 0;
@@ -158,17 +153,16 @@
   }
 
   .trailerHeaderCn.visible {
-    top: 1650px; /* Смещаем вверх на 25% от текущего значения 2200px */
+    top: 1650px;
     opacity: 1;
   }
 
-  /* Стили для .roadmapHeaderEng */
   .roadmapHeaderEng {
-    width: 450.75px; /* Уменьшаем на 25% от исходной ширины 601px */
-    height: 110.25px; /* Высота не изменяется */
+    width: 450.75px;
+    height: 110.25px;
     position: absolute;
-    top: 2535px; /* Смещаем вверх на 25% от текущего значения 3380px */
-    left: 498.75px; /* Смещаем влево на 25% от текущего значения 665px */
+    top: 2535px;
+    left: 498.75px;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
@@ -177,17 +171,16 @@
   }
 
   .roadmapHeaderEng.visible {
-    top: 2460px; /* Смещаем вверх на 25% от текущего значения 3280px */
+    top: 2460px;
     opacity: 1;
   }
 
-  /* Стили для .roadmapHeaderCn */
   .roadmapHeaderCn {
-    width: 288px; /* Уменьшаем на 25% от исходной ширины 384px */
-    height: 110.25px; /* Высота не изменяется */
+    width: 288px;
+    height: 110.25px;
     position: absolute;
-    top: 2535px; /* Смещаем вверх на 25% от текущего значения 3380px */
-    left: 575.25px; /* Смещаем влево на 25% от текущего значения 767px */
+    top: 2535px;
+    left: 575.25px;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
@@ -196,11 +189,10 @@
   }
 
   .roadmapHeaderCn.visible {
-    top: 2460px; /* Смещаем вверх на 25% от текущего значения 3280px */
+    top: 2460px;
     opacity: 1;
   }
 
-  /* Стили для .q3Header */
   .q3Header {
     width: 143.5px;
     height: 119px;
@@ -211,7 +203,7 @@
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
 
   .q3Header.visible {
@@ -219,7 +211,6 @@
     opacity: 1;
   }
 
-  /* Стили для .q4Header */
   .q4Header {
     width: 137.9px;
     height: 108.5px;
@@ -230,7 +221,7 @@
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
 
   .q4Header.visible {
@@ -238,7 +229,6 @@
     opacity: 1;
   }
 
-  /* Стили для .q1Header */
   .q1Header {
     width: 152.6px;
     height: 100.1px;
@@ -249,7 +239,7 @@
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
 
   .q1Header.visible {
@@ -257,18 +247,17 @@
     opacity: 1;
   }
 
-  /* Стили для .roadMapQ3TextEng */
   .roadMapQ3TextEng {
-    width: 315px; /* 350px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 315px;
+    height: 45px;
     position: absolute;
-    left: 1290px; /* Смещаем влево на 25% от текущего значения 1700px */
-    top: 2860px; /* Смещаем вверх на 25% от текущего значения 3680px */
+    left: 1290px;
+    top: 2860px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ3TextEng.visible {
@@ -276,18 +265,17 @@
     opacity: 1;
   }
   
-  /* Стили для .roadMapQ3TextCn */
   .roadMapQ3TextCn {
-    width: 315px; /* 350px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 315px;
+    height: 45px;
     position: absolute;
-    left: 1290px; /* Смещаем влево на 25% от текущего значения 1700px */
-    top: 2860px; /* Смещаем вверх на 25% от текущего значения 3680px */
+    left: 1290px;
+    top: 2860px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ3TextCn.visible {
@@ -295,48 +283,45 @@
     opacity: 1;
   }
   
-  /* Стили для .roadMapQ4TextEng */
   .roadMapQ4TextEng {
-    width: 373.5px; /* 415px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 373.5px;
+    height: 45px;
     position: absolute;
-    left: 0px; /* Смещаем влево на 25% от текущего значения 2080px */
-    top: 3150px; /* Смещаем вверх на 25% от текущего значения 4800px */
+    left: 0px;
+    top: 3150px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ4TextEng.visible {
-    left: 270px; /* Смещаем влево на 25% от текущего значения 1307px */
+    left: 270px;
     opacity: 1;
   }
   
-  /* Стили для .roadMapQ4TextCn */
   .roadMapQ4TextCn {
-    width: 373.5px; /* 415px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 373.5px;
+    height: 45px;
     position: absolute;
-    left: 0px; /* Смещаем влево на 25% от текущего значения 2080px */
-    top: 3150px; /* Смещаем вверх на 25% от текущего значения 4800px */
+    left: 0px;
+    top: 3150px;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ4TextCn.visible {
-    left: 250px; /* Смещаем влево на 25% от текущего значения 1307px */
+    left: 250px;
     opacity: 1;
   }
   
-  /* Стили для .roadMapQ1TextEng */
   .roadMapQ1TextEng {
-    width: 305.1px; /* 339px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 305.1px;
+    height: 45px;
     position: absolute;
     left: 1000px;
     top: 3500px;
@@ -344,7 +329,7 @@
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ1TextEng.visible {
@@ -352,10 +337,9 @@
     opacity: 1;
   }
   
-  /* Стили для .roadMapQ1TextCn */
   .roadMapQ1TextCn {
-    width: 305.1px; /* 339px * 0.9 */
-    height: 45px; /* 50px * 0.9 */
+    width: 305.1px;
+    height: 45px;
     position: absolute;
     left: 1000px;
     top: 3500px;
@@ -363,7 +347,7 @@
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ1TextCn.visible {

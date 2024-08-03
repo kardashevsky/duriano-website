@@ -2,9 +2,9 @@
 @media screen and (min-width: 431px) and (max-width: 1440px) {
 
   .character {
-    width: 326.25px; /* 75% от оригинала 435px */
-    height: 527.25px; /* 75% от оригинала 703px */
-    left: 345px; /* 75% от оригинала 476px */
+    width: 326.25px;
+    height: 527.25px;
+    left: 345px;
     animation: slideDownCharacter 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     opacity: 0;
     will-change: top, opacity;
@@ -15,20 +15,20 @@
 
   @keyframes slideDownCharacter {
     0% {
-      top: -150px; /* 75% от оригинала -200px */
+      top: -150px;
       opacity: 0;
     }
     100% {
-      top: 237px; /* 75% от оригинала 316px */
+      top: 237px;
       opacity: 1;
     }
   }
 
   .shadow {
-    width: 264px; /* 75% от оригинала 352px */
-    height: 48.75px; /* 75% от оригинала 65px */
-    top: 738.75px; /* 75% от оригинала 985px */
-    left: 387.75px; /* 75% от оригинала 517px */
+    width: 264px;
+    height: 48.75px;
+    top: 738.75px;
+    left: 387.75px;
     will-change: transform;
     pointer-events: none;
     animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
@@ -48,12 +48,12 @@
   }
 
   .startCharacter {
-    width: 241.15px; /* 75% от оригинала 321.53px */
-    height: 277.32px; /* 75% от оригинала 369.76px */
-    top: 1440px; /* 75% от оригинала 1920px */
-    left: 332.25px; /* 75% от оригинала 443px */
+    width: 241.15px;
+    height: 277.32px;
+    top: 1440px;
+    left: 332.25px;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -61,35 +61,35 @@
   }
 
   .startCharacter.visible {
-    top: 1140px; /* 75% от оригинала 1520px */
+    top: 1140px;
     opacity: 1;
   }
 
   .smashCharacter {
-    width: 222.53px; /* 75% от оригинала 296.7px */
-    height: 265.1px; /* 75% от оригинала 353.47px */
-    top: 1383.75px; /* 75% от оригинала 1845px */
-    left: 611.25px; /* 75% от оригинала 815px */
+    width: 222.53px;
+    height: 265.1px;
+    top: 1383.75px;
+    left: 611.25px;
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
     position: absolute;
   }
 
   .smashCharacter.visible {
-    top: 1083.75px; /* 75% от оригинала 1445px */
+    top: 1083.75px;
     opacity: 1;
   }
 
   .earnCharacter {
-    width: 237.25px; /* 75% от оригинала 316.33px */
-    height: 282.52px; /* 75% от оригинала 376.69px */
-    top: 1440px; /* 75% от оригинала 1920px */
-    left: 877.5px; /* 75% от оригинала 1170px */
+    width: 237.25px;
+    height: 282.52px;
+    top: 1440px;
+    left: 877.5px;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
@@ -97,7 +97,7 @@
   }
 
   .earnCharacter.visible {
-    top: 1140px; /* 75% от оригинала 1520px */
+    top: 1140px;
     opacity: 1;
   }
 
@@ -109,7 +109,7 @@
     opacity: 0;
     will-change: transform, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
     position: absolute;
   }
@@ -127,7 +127,7 @@
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
     position: absolute;
   }
@@ -140,18 +140,18 @@
   .playToEarnCharacter {
     width: 490px;
     height: 240px;
-    top: 3420px; /* 75% от оригинала 4419px */
-    left: -100px; /* 75% от оригинала -300px */
+    top: 3420px;
+    left: -100px;
     opacity: 0;
     will-change: transform, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
     position: absolute;
   }
 
   .playToEarnCharacter.visible {
-    left: 300px; /* 75% от оригинала 429px */
+    left: 300px;
     opacity: 1;
   }
 }
