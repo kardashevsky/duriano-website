@@ -44,7 +44,7 @@
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   @keyframes slideDownP2eTextEng {
@@ -67,7 +67,7 @@
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
 
   @keyframes slideDownP2eTextCn {
@@ -88,7 +88,7 @@
     left: 710px;
     top: 1300px;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -106,7 +106,7 @@
     left: 767px;
     top: 1300px;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -199,7 +199,7 @@
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .q3Header.visible {
@@ -217,7 +217,7 @@
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .q4Header.visible {
@@ -235,7 +235,7 @@
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .q1Header.visible {
@@ -253,7 +253,7 @@
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ3TextEng.visible {
@@ -271,7 +271,7 @@
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ3TextCn.visible {
@@ -289,7 +289,7 @@
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ4TextEng.visible {
@@ -307,7 +307,7 @@
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ4TextCn.visible {
@@ -325,7 +325,7 @@
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ1TextEng.visible {
@@ -343,7 +343,7 @@
     opacity: 0;
     will-change: left, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .roadMapQ1TextCn.visible {

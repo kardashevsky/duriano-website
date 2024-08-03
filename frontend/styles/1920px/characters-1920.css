@@ -32,7 +32,7 @@
     will-change: transform;
     pointer-events: none;
     animation: shadow 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-    z-index: 2;
+    z-index: 4;
   }
 
   @keyframes shadow {
@@ -53,7 +53,7 @@
     top: 1920px;
     left: 443px;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -73,7 +73,7 @@
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
   }
 
@@ -89,7 +89,7 @@
     left: 1170px;
     top: 1920px;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     will-change: top, opacity;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s, opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
@@ -109,7 +109,7 @@
     opacity: 0;
     will-change: transform, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
   }
 
@@ -127,7 +127,7 @@
     opacity: 0;
     will-change: top, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     transition: top 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
   }
 
@@ -145,7 +145,7 @@
     opacity: 0;
     will-change: transform, opacity;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
     transition: left 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
   }
 

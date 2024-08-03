@@ -96,7 +96,7 @@
     height: 1083.79px;
     top: 0px;
     left: 0px;
-    z-index: 2;
+    z-index: 3;
     will-change: left;
     position: absolute;
     pointer-events: none;
@@ -118,7 +118,7 @@
     position: absolute;
     top: 14.95px;
     left: 1640px;
-    z-index: 2;
+    z-index: 3;
     will-change: left;
     pointer-events: none;
     animation: slideBambooSmallRight 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
@@ -139,7 +139,7 @@
     width: 1920px;
     height: 263.5px;
     top: 919px;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     pointer-events: none;
   }
@@ -149,7 +149,7 @@
     height: 5225px;
     left: -10px;
     top: 1020px;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     pointer-events: none;
   }
@@ -169,7 +169,7 @@
     height: 5225px;
     left: 1550px;
     top: 1020px;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     pointer-events: none;
   }
@@ -178,7 +178,7 @@
     width: 490px;
     height: 3000.51px;
     top: -30px;
-    z-index: 2;
+    z-index: 3;
     will-change: left;
     position: absolute;
     pointer-events: none;
@@ -198,7 +198,7 @@
     width: 490px;
     height: 3000.51px;
     top: -30px;
-    z-index: 2;
+    z-index: 3;
     will-change: left;
     position: absolute;
     pointer-events: none;
@@ -219,7 +219,7 @@
     height: 6522.76px;
     top: 850px;
     left: -860px;
-    z-index: 2;
+    z-index: 3;
     transform: rotate(1deg);
     position: absolute;
     pointer-events: none;
@@ -231,7 +231,7 @@
     height: 6522.76px;
     left: 900px;
     top: 800px;
-    z-index: 2;
+    z-index: 3;
     transform: rotate(0deg);
     position: absolute;
     pointer-events: none;
