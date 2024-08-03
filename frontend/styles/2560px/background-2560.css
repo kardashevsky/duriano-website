@@ -150,13 +150,15 @@
   }
 
   .bridge-backgroundUltraWide {
-    width: 21728.5px;
+
     height: 905.5px;
     top: 817px;
     z-index: 3;
     position: absolute;
     pointer-events: none;
     display: block;
+    object-fit: cover;
+    max-width: calc(100vw-11px);
   }
 
   .textureLeftUltra {
